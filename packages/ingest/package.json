@@ -1,0 +1,22 @@
+{
+  "name": "@irisfield/driftwatch-ingest",
+  "version": "0.0.1",
+  "description": "CLI: scrape, chunk, embed, and upsert docs into pgvector.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "driftwatch-ingest": "./dist/cli.mjs"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint --cache src",
+    "format": "prettier --write \"src/**/*.ts\" --list-different"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
