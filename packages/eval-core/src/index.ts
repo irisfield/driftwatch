@@ -1,4 +1,11 @@
 export {
+  assertNoRegression,
+  assertRetrievalHealthy,
+  type HealthThresholds,
+  type RegressionThresholds,
+} from "./assert.js";
+export { compareReports, type MetricDelta, type RetrievalReportDelta } from "./compare.js";
+export {
   type EvaluateOptions,
   evaluateRetrieval,
   type QueryResult,
