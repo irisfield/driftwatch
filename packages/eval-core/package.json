@@ -53,5 +53,8 @@
     "embeddings",
     "pgvector",
     "typescript"
-  ]
+  ],
+  "dependencies": {
+    "zod": "^4.4.3"
+  }
 }
