@@ -1,0 +1,41 @@
+{
+  "name": "driftwatch-workspace",
+  "private": true,
+  "workspaces": ["packages/eval-core", "packages/ingest"],
+  "scripts": {
+    "build": "bun run --filter '@irisfield/driftwatch' build",
+    "test": "bun run --filter '*' test",
+    "lint": "bun run --filter '*' lint",
+    "type-check": "bun run --filter '*' type-check",
+    "prepare": "[ -x node_modules/.bin/husky ] && node_modules/.bin/husky || true"
+  },
+  "lint-staged": {
+    "{packages/eval-core/src,packages/eval-core/test,packages/ingest/src}/**/*.ts": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "singleQuote": false,
+    "semi": true,
+    "printWidth": 100
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^1.0.0",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/node": "^25.9.0",
+    "@vitest/coverage-v8": "^4.1.6",
+    "eslint": "^10.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import-x": "^4.16.2",
+    "eslint-plugin-unicorn": "^64.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.5",
+    "prettier": "^3.8.3",
+    "rollup": "^4.60.4",
+    "rollup-plugin-dts": "^6.4.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.4",
+    "vitest": "^4.1.6"
+  }
+}
