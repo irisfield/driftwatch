@@ -1,0 +1,57 @@
+{
+  "name": "@irisfield/driftwatch",
+  "version": "0.0.1",
+  "description": "Retrieval-quality evaluation and CI gate library for RAG systems.",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    },
+    "./assert": {
+      "types": "./dist/assert.d.ts",
+      "import": "./dist/assert.mjs"
+    },
+    "./compare": {
+      "types": "./dist/compare.d.ts",
+      "import": "./dist/compare.mjs"
+    }
+  },
+  "sideEffects": false,
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "rollup -c",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint --cache src test",
+    "format": "prettier --write \"{src,test}/**/*.ts\" --list-different",
+    "prepublishOnly": "bun run lint && bun run type-check && bun run test && bun run build"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/irisfield/driftwatch#readme",
+  "bugs": {
+    "url": "https://github.com/irisfield/driftwatch/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irisfield/driftwatch.git"
+  },
+  "keywords": [
+    "rag",
+    "retrieval",
+    "evaluation",
+    "ci",
+    "recall",
+    "mrr",
+    "ndcg",
+    "embeddings",
+    "pgvector",
+    "typescript"
+  ]
+}
