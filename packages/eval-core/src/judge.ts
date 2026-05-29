@@ -21,6 +21,7 @@ export interface JudgeOptions {
   rubric: string;
   rubricVersion: string;
   callModel: (prompt: string) => Promise<string>;
+  /** Directory for judgment cache files. Resolved against process.cwd() when relative. Defaults to ".driftwatch-cache/judge". */
   cacheDir?: string;
 }
 
@@ -128,7 +129,10 @@ async function judgeChunk(
   cacheDir: string,
 ): Promise<JudgeResult> {
   const contentHash = sha256hex(chunk.content);
-  const cacheKey = sha256hex(JSON.stringify({ query, contentHash, model, rubricVersion }));
+  const rubricHash = sha256hex(rubric);
+  const cacheKey = sha256hex(
+    JSON.stringify({ query, contentHash, model, rubricVersion, rubricHash }),
+  );
   const cacheFile = path.join(cacheDir, `${cacheKey}.json`);
 
   const cached = await readCache(cacheFile);
