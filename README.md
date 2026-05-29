@@ -48,7 +48,7 @@ bun add @irisfield/driftwatch
 ## Quick start
 
 ```ts
-import { evaluateRetrieval, assertNoRegression, loadGoldenDataset } from "@irisfield/driftwatch";
+import { assertNoRegression, compareReports, evaluateRetrieval, loadGoldenDataset } from "@irisfield/driftwatch";
 import baseline from "./baseline-report.json";
 
 const golden = await loadGoldenDataset("./golden/queries.json");
@@ -61,8 +61,9 @@ const report = await evaluateRetrieval({
   },
 });
 
-// throws if Recall@5 dropped more than 5% from baseline
-assertNoRegression(report, baseline, { maxRecallDrop: 0.05 });
+// diff against committed baseline, throws if Recall@5 dropped more than 5%
+const delta = compareReports(baseline, report);
+assertNoRegression(delta, { maxRecallDrop: 0.05 });
 ```
 
 Add this to CI alongside your existing tests. When a change regresses retrieval, the build fails before it ships.
