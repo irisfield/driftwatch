@@ -18,5 +18,11 @@
   "engines": {
     "node": ">=22"
   },
+  "dependencies": {
+    "@types/pg": "^8.20.0",
+    "gpt-tokenizer": "^3.4.0",
+    "node-html-parser": "^7.1.0",
+    "pg": "^8.21.0"
+  },
   "license": "MIT"
 }
