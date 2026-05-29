@@ -19,4 +19,5 @@ export {
   loadGoldenDataset,
   validateGoldenDataset,
 } from "./golden-schema.js";
+export { judgeRelevance, type JudgeChunk, type JudgeOptions, type JudgeResult } from "./judge.js";
 export { hitRate, mrr, ndcgAtK, precisionAtK, recallAtK } from "./metrics.js";
