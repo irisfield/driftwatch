@@ -71,25 +71,37 @@ export function createCachedEmbedder(embed: EmbedFn, cacheDir: string): EmbedFn 
     const results: (number[] | undefined)[] = Array.from({ length: texts.length });
     const misses: CacheMiss[] = [];
 
-    for (const [i, hash] of hashes.entries()) {
-      const filePath = path.join(resolvedDir, `${hash}.json`);
-      try {
-        const raw = await readFile(filePath, "utf8");
-        const parsed: unknown = JSON.parse(raw);
-        if (isNumberArray(parsed)) {
-          results[i] = parsed;
-        } else {
-          misses.push({ textIndex: i, hash });
+    // Read all cache files in parallel — they are fully independent.
+    const cacheReadResults = await Promise.all(
+      hashes.map(async (hash, i) => {
+        const filePath = path.join(resolvedDir, `${hash}.json`);
+        try {
+          const raw = await readFile(filePath, "utf8");
+          const parsed: unknown = JSON.parse(raw);
+          if (isNumberArray(parsed)) {
+            return { hit: true as const, index: i, embedding: parsed };
+          }
+          return { hit: false as const, index: i, hash };
+        } catch {
+          return { hit: false as const, index: i, hash };
         }
-      } catch {
-        misses.push({ textIndex: i, hash });
+      }),
+    );
+
+    for (const entry of cacheReadResults) {
+      if (entry.hit) {
+        results[entry.index] = entry.embedding;
+      } else {
+        misses.push({ textIndex: entry.index, hash: entry.hash });
       }
     }
 
     if (misses.length > 0) {
       const missTexts = misses.map(({ textIndex }) => texts[textIndex] ?? "");
-      const embeddings = await embed(missTexts);
+      // mkdir before embed so the directory exists if embed() throws mid-batch
+      // and a retry resumes from this point rather than failing on the write.
       await mkdir(resolvedDir, { recursive: true });
+      const embeddings = await embed(missTexts);
 
       for (const [j, { textIndex, hash }] of misses.entries()) {
         const embedding = embeddings[j];
