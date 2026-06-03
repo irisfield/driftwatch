@@ -9,14 +9,17 @@ CREATE TABLE IF NOT EXISTS documents (
   raw_text        text        NOT NULL,
   corpus          text        NOT NULL,
   embedding_model text        NOT NULL,
-  ingested_at     timestamptz NOT NULL DEFAULT now()
+  ingested_at     timestamptz NOT NULL DEFAULT now(),
+
+  CONSTRAINT documents_url_section_unique UNIQUE (source_url, section_path)
 );
 
 -- Chunks: token-sized fragments, each carrying its own halfvec embedding.
 -- content_hash is SHA-256 hex of content; the ingest CLI uses it for
 -- idempotent upserts (skip re-embedding when content has not changed).
--- UNIQUE (content_hash) enforces the idempotency invariant at the DB level
--- so concurrent ingest workers cannot insert duplicate chunks.
+-- UNIQUE (document_id, content_hash) scopes deduplication per document so
+-- identical text shared across two different documents each gets its own
+-- chunk row, ensuring corpus-filtered retrieval returns results from both.
 CREATE TABLE IF NOT EXISTS chunks (
   id              uuid        PRIMARY KEY DEFAULT gen_random_uuid(),
   document_id     uuid        NOT NULL REFERENCES documents (id) ON DELETE CASCADE,
@@ -28,7 +31,7 @@ CREATE TABLE IF NOT EXISTS chunks (
   embedding_model text        NOT NULL,
 
   CONSTRAINT chunks_document_chunk_unique UNIQUE (document_id, chunk_index),
-  CONSTRAINT chunks_content_hash_unique   UNIQUE (content_hash)
+  CONSTRAINT chunks_content_hash_unique   UNIQUE (document_id, content_hash)
 );
 
 -- HNSW index for approximate nearest-neighbour search.
