@@ -4,7 +4,9 @@
   "tasks": {
     "dev": "deno serve --watch supabase/functions/search-docs/index.ts"
   },
-  "imports": {},
+  "imports": {
+    "pg": "npm:pg@^8.0.0"
+  },
   "lint": {
     "rules": {
       "tags": ["recommended"]
