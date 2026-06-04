@@ -1,9 +1,6 @@
 {
   "name": "@irisfield/driftwatch-mcp-server",
   "version": "0.0.1",
-  "tasks": {
-    "dev": "deno serve --watch supabase/functions/search-docs/index.ts"
-  },
   "imports": {
     "pg": "npm:pg@^8.0.0"
   },

@@ -8,8 +8,8 @@ const { Pool } = pg;
 
 export type DbPool = InstanceType<typeof Pool>;
 
-export function createPool(connectionString: string): DbPool {
-  return new Pool({ connectionString, max: 5 });
+export function createPool(connectionString: string, max = 5): DbPool {
+  return new Pool({ connectionString, max });
 }
 
 export async function closePool(pool: DbPool): Promise<void> {
