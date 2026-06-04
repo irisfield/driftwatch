@@ -1,6 +1,4 @@
 {
-  "name": "@irisfield/driftwatch-mcp-server",
-  "version": "0.0.1",
   "imports": {
     "pg": "npm:pg@^8.0.0"
   },
