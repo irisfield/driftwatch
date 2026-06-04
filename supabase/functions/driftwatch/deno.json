@@ -1,0 +1,20 @@
+{
+  "imports": {
+    "mcp-lite": "npm:mcp-lite@0.8.2",
+    "zod": "npm:zod@^4.0.0",
+    "pg": "npm:pg@^8.0.0"
+  },
+  "tasks": {
+    "dev": "deno serve --allow-net --allow-env --watch index.ts"
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "singleQuote": false,
+    "semiColons": true,
+    "lineWidth": 100
+  }
+}
