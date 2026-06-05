@@ -1,8 +1,11 @@
 import { type GoldenDataset } from "./golden-schema.js";
 import { hitRate, mrr, ndcgAtK, precisionAtK, recallAtK } from "./metrics.js";
 
+import type { CorpusFingerprint } from "./fingerprint.js";
+
 export interface QueryResult {
   query: string;
+  source?: "user" | "synthetic";
   relevant: string[];
   retrieved: string[];
   recallAtK: number;
@@ -21,12 +24,14 @@ export interface RetrievalReport {
   hitRate: number;
   queries: QueryResult[];
   evaluatedAt: string;
+  fingerprint?: CorpusFingerprint;
 }
 
 export interface EvaluateOptions {
   golden: GoldenDataset;
   retrieve: (query: string) => Promise<string[]>;
   k: number;
+  fingerprint?: CorpusFingerprint;
 }
 
 function mean(values: number[]): number {
@@ -43,6 +48,7 @@ export async function evaluateRetrieval(options: EvaluateOptions): Promise<Retri
     const retrieved = await retrieve(entry.query);
     queryResults.push({
       query: entry.query,
+      source: entry.source,
       relevant: entry.relevant,
       retrieved,
       recallAtK: recallAtK(retrieved, entry.relevant, k),
@@ -62,5 +68,6 @@ export async function evaluateRetrieval(options: EvaluateOptions): Promise<Retri
     hitRate: mean(queryResults.map((q) => q.hitRate)),
     queries: queryResults,
     evaluatedAt,
+    fingerprint: options.fingerprint,
   };
 }

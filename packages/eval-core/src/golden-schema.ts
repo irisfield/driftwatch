@@ -5,8 +5,9 @@ import { z } from "zod";
 export const goldenEntrySchema = z.object({
   query: z.string().min(1, "query must not be empty"),
   relevant: z
-    .array(z.string().min(1, "relevant IDs must not be empty strings"))
+    .array(z.uuid({ error: "relevant IDs must be valid document UUIDs" }))
     .min(1, "relevant must contain at least one document ID"),
+  source: z.enum(["user", "synthetic"]).optional(),
 });
 
 export const goldenDatasetSchema = z
