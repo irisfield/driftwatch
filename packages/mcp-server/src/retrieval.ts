@@ -16,7 +16,7 @@ export async function closePool(pool: DbPool): Promise<void> {
   await pool.end();
 }
 
-const RETRIEVAL_SQL = `
+export const RETRIEVAL_SQL = `
   SELECT
     c.id             AS chunk_id,
     c.document_id    AS document_id,
