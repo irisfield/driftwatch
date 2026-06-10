@@ -1,0 +1,91 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun run type-check
+        working-directory: packages/eval-core
+      - run: bun run test
+        working-directory: packages/eval-core
+
+  retrieval-gate:
+    needs: unit
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      # Localhost DSN for the service container — not a secret
+      EVAL_DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres
+    steps:
+      - uses: actions/checkout@v6
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+
+      - name: apply migration
+        run: psql $EVAL_DATABASE_URL -f supabase/migrations/20260528000000_init.sql
+        env:
+          PGPASSWORD: postgres
+
+      - name: restore embed cache
+        uses: actions/cache@v5
+        with:
+          path: .driftwatch-cache/embeddings
+          key: embeds-${{ hashFiles('golden/supabase.json') }}
+
+      # --limit 20 keeps CI fast; the same 20 URLs are fetched every run (sitemap order is stable)
+      - name: ingest corpus
+        run: |
+          bun run packages/ingest/src/cli.ts \
+            --corpus supabase \
+            --limit 20 \
+            --cache-dir .driftwatch-cache/embeddings
+        env:
+          DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: retrieval gate
+        run: bun run scripts/assert-no-regression.ts --corpus supabase
+        env:
+          DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      # Non-blocking diagnostic — never fails the build
+      - name: judge report
+        continue-on-error: true
+        run: bun run scripts/run-judge.ts --corpus supabase --sample 5
+        env:
+          DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          JUDGE_API_KEY: ${{ secrets.JUDGE_API_KEY }}
+          JUDGE_MODEL: gpt-4o-mini
+
+      - name: upload current report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: retrieval-reports
+          path: |
+            golden/supabase-current.json
+            golden/supabase-judge-report.json
+          retention-days: 30
+          if-no-files-found: warn
