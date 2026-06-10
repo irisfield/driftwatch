@@ -1,0 +1,4 @@
+{
+  "rubric": "A chunk is relevant if it directly answers the query. A chunk that only mentions the topic in passing, or is tangentially related without providing actionable information, is not relevant.",
+  "rubricVersion": "1.0"
+}
