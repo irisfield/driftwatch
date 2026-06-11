@@ -19,7 +19,7 @@ export interface FingerprintClassification {
 // Only gate metrics are required; diagnostic metrics are optional
 export interface QueryResultDelta {
   query: string;
-  source?: "user" | "synthetic";
+  source?: "user" | "synthetic" | undefined;
   hitRate: MetricDelta;
   recallAtK: MetricDelta;
   mrr?: MetricDelta;

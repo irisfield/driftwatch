@@ -5,7 +5,7 @@ import type { CorpusFingerprint } from "./fingerprint.js";
 
 export interface QueryResult {
   query: string;
-  source?: "user" | "synthetic";
+  source?: "user" | "synthetic" | undefined;
   relevant: string[];
   retrieved: string[];
   recallAtK: number;
@@ -24,7 +24,7 @@ export interface RetrievalReport {
   hitRate: number;
   queries: QueryResult[];
   evaluatedAt: string;
-  fingerprint?: CorpusFingerprint;
+  fingerprint?: CorpusFingerprint | undefined;
 }
 
 export interface EvaluateOptions {
