@@ -11,7 +11,7 @@ export interface ScrapedDocument {
   embeddingModel: string;
 }
 
-export async function fetchSitemap(sitemapUrl: string): Promise<string[]> {
+export async function fetchSitemap(sitemapUrl: string, pathFilter = "/docs"): Promise<string[]> {
   const response = await fetch(sitemapUrl);
   if (!response.ok) {
     throw new Error(`fetchSitemap: HTTP ${String(response.status)} for ${sitemapUrl}`);
@@ -25,7 +25,7 @@ export async function fetchSitemap(sitemapUrl: string): Promise<string[]> {
       urls.push(url);
     }
   }
-  return urls.filter((u) => u.includes("/docs/") || u.includes("/docs"));
+  return urls.filter((u) => u.includes(pathFilter));
 }
 
 export async function fetchDocument(
@@ -61,7 +61,10 @@ export async function fetchDocument(
   const sectionPath = parsed.pathname;
 
   const mainEl =
-    root.querySelector("main") ?? root.querySelector("article") ?? root.querySelector("body");
+    (corpus.contentSelector === undefined ? null : root.querySelector(corpus.contentSelector)) ??
+    root.querySelector("main") ??
+    root.querySelector("article") ??
+    root.querySelector("body");
   const rawText = (mainEl?.text ?? "")
     .replaceAll("\t", " ")
     .replaceAll(/[ \t]+\n/g, "\n")

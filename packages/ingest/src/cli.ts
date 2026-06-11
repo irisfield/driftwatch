@@ -92,7 +92,12 @@ async function main(): Promise<void> {
     if (corpusConfig === undefined) continue;
 
     console.log(`\nFetching sitemap for corpus: ${name}`);
-    const allUrls = await fetchSitemap(corpusConfig.sitemapUrl);
+    const allUrls = await fetchSitemap(corpusConfig.sitemapUrl, corpusConfig.sitemapPathFilter);
+    if (allUrls.length === 0) {
+      throw new Error(
+        `fetchSitemap returned 0 URLs for corpus "${name}" (sitemapUrl=${corpusConfig.sitemapUrl}, pathFilter=${corpusConfig.sitemapPathFilter ?? "/docs"})`,
+      );
+    }
     const urls = allUrls.slice(0, opts.limit);
     console.log(`  ${String(urls.length)} URLs to process`);
 
