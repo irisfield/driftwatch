@@ -18,7 +18,7 @@ function isOpenAIResponse(value: unknown): value is OpenAIResponse {
   return true;
 }
 
-export async function callChatCompletion(
+export async function callOpenAIChatCompletion(
   apiKey: string,
   model: string,
   prompt: string,
@@ -45,5 +45,9 @@ export async function callChatCompletion(
   if (!isOpenAIResponse(json)) {
     throw new Error("OpenAI chat completions API: unexpected response shape");
   }
-  return json.choices[0].message.content.trim();
+  const choice = json.choices[0];
+  if (choice === undefined) {
+    throw new Error("OpenAI chat completions API: no choices in response");
+  }
+  return choice.message.content.trim();
 }
