@@ -1,7 +1,9 @@
+import path from "node:path";
+
 import { chunkDocument } from "./chunk.js";
 import { CORPORA } from "./corpus-config.js";
 import { closePool, createPool, selectOrInsertDocument, upsertChunks } from "./db.js";
-import { createCachedEmbedder, createOpenAIEmbedder } from "./embed.js";
+import { createCachedEmbedder, createEmbedder } from "./embed.js";
 import { fetchDocument, fetchSitemap } from "./scrape.js";
 
 import type { ChunkWithEmbedding } from "./db.js";
@@ -10,6 +12,7 @@ interface CliOptions {
   corpus: string;
   databaseUrl: string;
   openaiKey: string;
+  geminiKey: string;
   limit: number;
   dryRun: boolean;
   cacheDir: string;
@@ -20,6 +23,7 @@ function parseArgs(argv: string[]): CliOptions {
   let corpus = "both";
   let databaseUrl = process.env.DATABASE_URL ?? "";
   let openaiKey = process.env.OPENAI_API_KEY ?? "";
+  let geminiKey = process.env.GEMINI_API_KEY ?? "";
   let limit = Number.POSITIVE_INFINITY;
   let dryRun = false;
   let cacheDir = ".driftwatch-cache/embeddings";
@@ -36,6 +40,9 @@ function parseArgs(argv: string[]): CliOptions {
     } else if (arg === "--openai-key" && next !== undefined) {
       openaiKey = next;
       i++;
+    } else if (arg === "--gemini-key" && next !== undefined) {
+      geminiKey = next;
+      i++;
     } else if (arg === "--limit" && next !== undefined) {
       const parsed = Number.parseInt(next, 10);
       if (Number.isNaN(parsed) || parsed < 1) {
@@ -51,7 +58,7 @@ function parseArgs(argv: string[]): CliOptions {
     }
   }
 
-  return { corpus, databaseUrl, openaiKey, limit, dryRun, cacheDir };
+  return { corpus, databaseUrl, openaiKey, geminiKey, limit, dryRun, cacheDir };
 }
 
 function sleep(ms: number): Promise<void> {
@@ -64,9 +71,6 @@ async function main(): Promise<void> {
   if (!opts.dryRun && opts.databaseUrl === "") {
     throw new Error("--database-url or DATABASE_URL is required");
   }
-  if (!opts.dryRun && opts.openaiKey === "") {
-    throw new Error("--openai-key or OPENAI_API_KEY is required");
-  }
 
   const selectedCorpusNames = opts.corpus === "both" ? Object.keys(CORPORA) : [opts.corpus];
 
@@ -77,11 +81,6 @@ async function main(): Promise<void> {
   }
 
   const pool = opts.dryRun ? null : createPool(opts.databaseUrl);
-  const baseEmbedder = opts.dryRun
-    ? null
-    : createOpenAIEmbedder(opts.openaiKey, "text-embedding-3-small");
-  const embedder =
-    opts.dryRun || baseEmbedder === null ? null : createCachedEmbedder(baseEmbedder, opts.cacheDir);
 
   let totalDocs = 0;
   let totalChunksInserted = 0;
@@ -90,6 +89,16 @@ async function main(): Promise<void> {
   for (const name of selectedCorpusNames) {
     const corpusConfig = CORPORA[name];
     if (corpusConfig === undefined) continue;
+
+    const embedder = opts.dryRun
+      ? null
+      : createCachedEmbedder(
+          createEmbedder(corpusConfig.embeddingModel, {
+            openaiApiKey: opts.openaiKey || undefined,
+            geminiApiKey: opts.geminiKey || undefined,
+          }),
+          path.join(opts.cacheDir, corpusConfig.embeddingModel),
+        );
 
     console.log(`\nFetching sitemap for corpus: ${name}`);
     const allUrls = await fetchSitemap(corpusConfig.sitemapUrl, corpusConfig.sitemapPathFilter);

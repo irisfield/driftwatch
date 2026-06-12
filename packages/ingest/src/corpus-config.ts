@@ -12,17 +12,17 @@ export const CORPORA: Record<string, CorpusConfig> = {
   supabase: {
     name: "supabase",
     sitemapUrl: "https://supabase.com/docs/sitemap.xml",
-    embeddingModel: "text-embedding-3-small",
+    embeddingModel: "gemini-embedding-001",
   },
   mcp: {
     name: "mcp",
     sitemapUrl: "https://modelcontextprotocol.io/sitemap.xml",
-    embeddingModel: "text-embedding-3-small",
+    embeddingModel: "gemini-embedding-001",
   },
   postgres: {
     name: "postgres",
     sitemapUrl: "https://www.postgresql.org/sitemap.xml",
-    embeddingModel: "text-embedding-3-small",
+    embeddingModel: "gemini-embedding-001",
     // Pinned to PG 18 (current stable) for corpus stability. /docs/19/ is the
     // in-development "devel" branch and changes too frequently for a golden set.
     sitemapPathFilter: "/docs/18/",
