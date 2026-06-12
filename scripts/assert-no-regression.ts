@@ -1,4 +1,5 @@
 import { readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
 
 import pg from "pg";
 
@@ -11,7 +12,8 @@ import type { CalibratedThresholds } from "../packages/eval-core/src/calibrate-t
 import { compareReports } from "../packages/eval-core/src/compare.ts";
 import { evaluateRetrieval, type RetrievalReport } from "../packages/eval-core/src/evaluate.ts";
 import { loadGoldenDataset } from "../packages/eval-core/src/golden-schema.ts";
-import { createCachedEmbedder, createOpenAIEmbedder } from "../packages/ingest/src/embed.ts";
+import { CORPORA } from "../packages/ingest/src/corpus-config.ts";
+import { createCachedEmbedder, createEmbedder } from "../packages/ingest/src/embed.ts";
 import { fetchCorpusFingerprint } from "./_fingerprint.ts";
 import { makeRetrieveFn } from "./_retrieve.ts";
 
@@ -49,9 +51,12 @@ const baselinePath = `golden/${corpus}-baseline.json`;
 const thresholdsPath = "golden/thresholds.json";
 const currentPath = `golden/${corpus}-current.json`;
 
-const openaiKey = requireEnv("OPENAI_API_KEY");
 const databaseUrl = requireEnv("DATABASE_URL");
-const embeddingModel = process.env["OPENAI_EMBEDDING_MODEL"] ?? "text-embedding-3-small";
+const corpusConfig = CORPORA[corpus];
+if (corpusConfig === undefined) {
+  throw new Error(`unknown corpus "${corpus}". Valid: ${Object.keys(CORPORA).join(", ")}`);
+}
+const embeddingModel = corpusConfig.embeddingModel;
 
 // Load baseline — throw with actionable message if absent
 let baselineRaw: string;
@@ -96,8 +101,11 @@ const pool = new pg.Pool({ connectionString: databaseUrl, max: 5 });
 try {
   const fingerprint = await fetchCorpusFingerprint(pool, corpus);
   const embedder = createCachedEmbedder(
-    createOpenAIEmbedder(openaiKey, embeddingModel),
-    ".driftwatch-cache/embeddings",
+    createEmbedder(embeddingModel, {
+      openaiApiKey: process.env["OPENAI_API_KEY"],
+      geminiApiKey: process.env["GEMINI_API_KEY"],
+    }),
+    path.join(".driftwatch-cache/embeddings", embeddingModel),
   );
   const retrieve = makeRetrieveFn(embedder, pool, corpus, k);
 

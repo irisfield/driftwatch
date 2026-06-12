@@ -9,7 +9,8 @@ import {
 } from "../packages/eval-core/src/calibrate-thresholds.ts";
 import { evaluateRetrieval } from "../packages/eval-core/src/evaluate.ts";
 import { loadGoldenDataset } from "../packages/eval-core/src/golden-schema.ts";
-import { createCachedEmbedder, createOpenAIEmbedder } from "../packages/ingest/src/embed.ts";
+import { CORPORA } from "../packages/ingest/src/corpus-config.ts";
+import { createCachedEmbedder, createEmbedder } from "../packages/ingest/src/embed.ts";
 import { assertGoldenNotStale } from "./_db.ts";
 import { fetchCorpusFingerprint } from "./_fingerprint.ts";
 import { makeRetrieveFn } from "./_retrieve.ts";
@@ -55,9 +56,12 @@ const runs = parseInt(args["runs"] ?? "10", 10);
 const k = parseInt(args["k"] ?? "5", 10);
 const output = args["output"] ?? "golden/thresholds.json";
 
-const openaiKey = requireEnv("OPENAI_API_KEY");
 const databaseUrl = requireEnv("DATABASE_URL");
-const embeddingModel = process.env["OPENAI_EMBEDDING_MODEL"] ?? "text-embedding-3-small";
+const corpusConfig = CORPORA[corpus];
+if (corpusConfig === undefined) {
+  throw new Error(`unknown corpus "${corpus}". Valid: ${Object.keys(CORPORA).join(", ")}`);
+}
+const embeddingModel = corpusConfig.embeddingModel;
 
 const golden = await loadGoldenDataset(`golden/${corpus}.json`);
 
@@ -69,8 +73,11 @@ try {
 
   const fingerprint = await fetchCorpusFingerprint(pool, corpus);
   const embedder = createCachedEmbedder(
-    createOpenAIEmbedder(openaiKey, embeddingModel),
-    ".driftwatch-cache/embeddings",
+    createEmbedder(embeddingModel, {
+      openaiApiKey: process.env["OPENAI_API_KEY"],
+      geminiApiKey: process.env["GEMINI_API_KEY"],
+    }),
+    path.join(".driftwatch-cache/embeddings", embeddingModel),
   );
   const retrieve = makeRetrieveFn(embedder, pool, corpus, k);
 
