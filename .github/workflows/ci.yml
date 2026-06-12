@@ -62,12 +62,14 @@ jobs:
         env:
           DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: retrieval gate
         run: bun run scripts/assert-no-regression.ts --corpus supabase
         env:
           DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       # Non-blocking diagnostic — never fails the build
       - name: judge report
@@ -76,8 +78,9 @@ jobs:
         env:
           DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           JUDGE_API_KEY: ${{ secrets.JUDGE_API_KEY }}
-          JUDGE_MODEL: gpt-4o-mini
+          JUDGE_MODEL: gemini-2.5-flash-lite
 
       - name: upload current report
         if: always()
