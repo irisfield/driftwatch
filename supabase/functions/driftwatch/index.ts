@@ -6,17 +6,20 @@ import { createQueryEmbedder } from "../../../packages/mcp-server/src/embed.ts";
 
 const DATABASE_URL = Deno.env.get("DATABASE_URL");
 const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY");
-const EMBEDDING_MODEL = Deno.env.get("EMBEDDING_MODEL") ?? "text-embedding-3-small";
+const GEMINI_API_KEY = Deno.env.get("GEMINI_API_KEY");
+const EMBEDDING_MODEL = Deno.env.get("EMBEDDING_MODEL") ?? "gemini-embedding-001";
 
 if (!DATABASE_URL) throw new Error("DATABASE_URL environment variable is required");
-if (!OPENAI_API_KEY) throw new Error("OPENAI_API_KEY environment variable is required");
 
 // max:2 — Edge Functions run in isolated Deno processes; each cold start creates
 // a new Pool. Keeping the ceiling low limits connection accumulation on Postgres
 // when many isolates are alive simultaneously. Route through Supavisor
 // (transaction mode) in production to eliminate the per-isolate leak entirely.
 const pool = createPool(DATABASE_URL, 2);
-const embedFn = createQueryEmbedder(OPENAI_API_KEY, EMBEDDING_MODEL);
+const embedFn = createQueryEmbedder(EMBEDDING_MODEL, {
+  openaiApiKey: OPENAI_API_KEY,
+  geminiApiKey: GEMINI_API_KEY,
+});
 
 // Characters beyond this limit are truncated in get_document responses to stay
 // well under the Edge Function 6 MB response size ceiling.
