@@ -3,9 +3,12 @@ import path from "node:path";
 
 import pg from "pg";
 
-import { validateGoldenDataset, type GoldenEntry } from "../packages/eval-core/src/golden-schema.ts";
+import {
+  validateGoldenDataset,
+  type GoldenEntry,
+} from "../packages/eval-core/src/golden-schema.ts";
+import { callChatCompletion } from "./_chat.ts";
 import { fetchCorpusFingerprint } from "./_fingerprint.ts";
-import { callChatCompletion } from "./_openai.ts";
 
 function parseArgs(argv: string[]): Record<string, string> {
   const args: Record<string, string> = {};
@@ -38,9 +41,10 @@ const corpus = args["corpus"] ?? "supabase";
 const samples = parseInt(args["samples"] ?? "50", 10);
 const output = args["output"] ?? `golden/${corpus}.json`;
 
-const openaiKey = requireEnv("OPENAI_API_KEY");
 const databaseUrl = requireEnv("DATABASE_URL");
-const bootstrapModel = process.env["BOOTSTRAP_MODEL"] ?? "gpt-4o-mini";
+const bootstrapModel = requireEnv("BOOTSTRAP_MODEL");
+const openaiApiKey = process.env["OPENAI_API_KEY"];
+const geminiApiKey = process.env["GEMINI_API_KEY"];
 
 const pool = new pg.Pool({ connectionString: databaseUrl, max: 5 });
 
@@ -73,7 +77,7 @@ try {
       "directly and completely answers. Paraphrase — do not copy the excerpt's vocabulary " +
       "into the question. Output only the question, no explanation.\n\nExcerpt:\n" +
       row.content;
-    const question = await callChatCompletion(openaiKey, bootstrapModel, prompt);
+    const question = await callChatCompletion(bootstrapModel, prompt, { openaiApiKey, geminiApiKey });
     if (question.length === 0) {
       process.stdout.write(" skipped (empty response)\n");
       continue;
