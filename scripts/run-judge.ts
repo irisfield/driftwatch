@@ -1,12 +1,14 @@
 import { readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
 
 import pg from "pg";
 
 import { judgeRelevance, type JudgeChunk } from "../packages/eval-core/src/judge.ts";
 import { loadGoldenDataset, type GoldenEntry } from "../packages/eval-core/src/golden-schema.ts";
-import { createCachedEmbedder, createOpenAIEmbedder } from "../packages/ingest/src/embed.ts";
+import { CORPORA } from "../packages/ingest/src/corpus-config.ts";
+import { createCachedEmbedder, createEmbedder } from "../packages/ingest/src/embed.ts";
 import { RETRIEVAL_SQL } from "../packages/mcp-server/src/retrieval.ts";
-import { callChatCompletion } from "./_openai.ts";
+import { callChatCompletion } from "./_chat.ts";
 
 function parseArgs(argv: string[]): Record<string, string> {
   const args: Record<string, string> = {};
@@ -68,11 +70,14 @@ const corpus = args["corpus"] ?? "supabase";
 const sampleCount = parseInt(args["sample"] ?? "5", 10);
 const k = parseInt(args["k"] ?? "5", 10);
 
-const openaiKey = requireEnv("OPENAI_API_KEY");
 const judgeApiKey = requireEnv("JUDGE_API_KEY");
 const databaseUrl = requireEnv("DATABASE_URL");
-const embeddingModel = process.env["OPENAI_EMBEDDING_MODEL"] ?? "text-embedding-3-small";
-const judgeModel = process.env["JUDGE_MODEL"] ?? "gpt-4o-mini";
+const corpusConfig = CORPORA[corpus];
+if (corpusConfig === undefined) {
+  throw new Error(`unknown corpus "${corpus}". Valid: ${Object.keys(CORPORA).join(", ")}`);
+}
+const embeddingModel = corpusConfig.embeddingModel;
+const judgeModel = process.env["JUDGE_MODEL"] ?? "gemini-2.5-flash";
 
 const golden = await loadGoldenDataset(`golden/${corpus}.json`);
 const sampled: GoldenEntry[] = sampleRandom(golden, sampleCount);
@@ -90,8 +95,11 @@ const pool = new pg.Pool({ connectionString: databaseUrl, max: 5 });
 
 try {
   const embedder = createCachedEmbedder(
-    createOpenAIEmbedder(openaiKey, embeddingModel),
-    ".driftwatch-cache/embeddings",
+    createEmbedder(embeddingModel, {
+      openaiApiKey: process.env["OPENAI_API_KEY"],
+      geminiApiKey: process.env["GEMINI_API_KEY"],
+    }),
+    path.join(".driftwatch-cache/embeddings", embeddingModel),
   );
 
   async function retrieveChunks(query: string): Promise<JudgeChunk[]> {
@@ -113,7 +121,7 @@ try {
   }
 
   const callModel = (prompt: string): Promise<string> =>
-    callChatCompletion(judgeApiKey, judgeModel, prompt);
+    callChatCompletion(judgeModel, prompt, { openaiApiKey: judgeApiKey, geminiApiKey: judgeApiKey });
 
   console.log(
     `Running judge: corpus="${corpus}", sample=${String(sampled.length)}, model=${judgeModel}...`,
