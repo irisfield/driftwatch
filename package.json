@@ -1,7 +1,10 @@
 {
   "name": "driftwatch-workspace",
   "private": true,
-  "workspaces": ["packages/eval-core", "packages/ingest"],
+  "workspaces": [
+    "packages/eval-core",
+    "packages/ingest"
+  ],
   "scripts": {
     "build": "bun run --filter '@irisfield/driftwatch' build",
     "test": "bun run --filter '*' test",
@@ -24,6 +27,7 @@
     "@rollup/plugin-terser": "^1.0.0",
     "@rollup/plugin-typescript": "^12.3.0",
     "@types/node": "^25.9.0",
+    "@types/pg": "^8.20.0",
     "@vitest/coverage-v8": "^4.1.6",
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
@@ -31,6 +35,7 @@
     "eslint-plugin-unicorn": "^64.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.5",
+    "pg": "^8.21.0",
     "prettier": "^3.8.3",
     "rollup": "^4.60.4",
     "rollup-plugin-dts": "^6.4.1",
