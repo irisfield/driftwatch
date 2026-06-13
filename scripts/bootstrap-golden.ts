@@ -61,23 +61,28 @@ try {
     [corpus, samples],
   );
 
-  console.log(
-    `Generating questions for ${String(rows.length)} chunks from corpus "${corpus}"...`,
-  );
+  console.log(`Generating questions for ${String(rows.length)} chunks from corpus "${corpus}"...`);
 
   const entries: GoldenEntry[] = [];
+  let stoppedEarly = false;
   for (let i = 0; i < rows.length; i++) {
     const row = rows[i];
     if (row === undefined) continue;
-    process.stdout.write(
-      `  [${String(i + 1)}/${String(rows.length)}] chunk ${row.chunk_id}...`,
-    );
+    process.stdout.write(`  [${String(i + 1)}/${String(rows.length)}] chunk ${row.chunk_id}...`);
     const prompt =
       "Given this documentation excerpt, write one specific question that this excerpt " +
       "directly and completely answers. Paraphrase — do not copy the excerpt's vocabulary " +
       "into the question. Output only the question, no explanation.\n\nExcerpt:\n" +
       row.content;
-    const question = await callChatCompletion(bootstrapModel, prompt, { openaiApiKey, geminiApiKey });
+    let question: string;
+    try {
+      question = await callChatCompletion(bootstrapModel, prompt, { openaiApiKey, geminiApiKey });
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      process.stdout.write(` failed (${message})\n`);
+      stoppedEarly = true;
+      break;
+    }
     if (question.length === 0) {
       process.stdout.write(" skipped (empty response)\n");
       continue;
@@ -95,10 +100,16 @@ try {
   console.log(`Embedding model: ${fingerprint.embeddingModel}`);
   console.log(`Corpus hash:     ${fingerprint.corpusHash.slice(0, 8)}...`);
   console.log("");
-  console.log(
-    "Note: all pairs are synthetic. Run calibration before using assert-no-regression:",
-  );
+  console.log("Note: all pairs are synthetic. Run calibration before using assert-no-regression:");
   console.log(`  bun run scripts/calibrate-thresholds.ts --corpus ${corpus}`);
+
+  if (stoppedEarly) {
+    console.log("");
+    console.log(
+      `Stopped early after a request error — wrote ${String(entries.length)}/${String(rows.length)} pairs generated so far.`,
+    );
+    process.exitCode = 1;
+  }
 } finally {
   await pool.end();
 }
