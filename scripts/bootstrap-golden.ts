@@ -51,11 +51,20 @@ const pool = new pg.Pool({ connectionString: databaseUrl, max: 5 });
 try {
   const fingerprint = await fetchCorpusFingerprint(pool, corpus);
 
+  // One chunk per document, then a random sample of documents. Sampling
+  // chunks directly with ORDER BY random() skews toward documents with many
+  // chunks (a single long tutorial can dominate the golden set), leaving most
+  // of the corpus unrepresented.
   const { rows } = await pool.query<ChunkRow>(
-    `SELECT c.id AS chunk_id, c.document_id, c.content
-     FROM chunks c
-     JOIN documents d ON d.id = c.document_id
-     WHERE d.corpus = $1
+    `SELECT chunk_id, document_id, content
+     FROM (
+       SELECT c.id AS chunk_id, c.document_id, c.content,
+              ROW_NUMBER() OVER (PARTITION BY c.document_id ORDER BY random()) AS rn
+       FROM chunks c
+       JOIN documents d ON d.id = c.document_id
+       WHERE d.corpus = $1
+     ) ranked
+     WHERE rn = 1
      ORDER BY random()
      LIMIT $2`,
     [corpus, samples],
@@ -70,9 +79,12 @@ try {
     if (row === undefined) continue;
     process.stdout.write(`  [${String(i + 1)}/${String(rows.length)}] chunk ${row.chunk_id}...`);
     const prompt =
-      "Given this documentation excerpt, write one specific question that this excerpt " +
-      "directly and completely answers. Paraphrase — do not copy the excerpt's vocabulary " +
-      "into the question. Output only the question, no explanation.\n\nExcerpt:\n" +
+      "Given this documentation excerpt, write one specific question that a developer " +
+      "would type into a documentation search bar, which this excerpt directly and " +
+      "completely answers. Name the concept, feature, or task the excerpt covers " +
+      'instead of referring to "this snippet", "this code", or "this record". ' +
+      "Paraphrase — do not copy the excerpt's vocabulary into the question. Output only " +
+      "the question, no explanation.\n\nExcerpt:\n" +
       row.content;
     let question: string;
     try {
