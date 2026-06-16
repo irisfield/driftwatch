@@ -1,0 +1,149 @@
+[
+  {
+    "query": "How do I find my Supabase Data API URL and keys?",
+    "relevant": [
+      "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can I monitor application events and performance using Supabase?",
+    "relevant": [
+      "e7f1a326-613b-404b-a518-e7258bf02db7"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do AI embeddings represent the similarity between different types of data?",
+    "relevant": [
+      "32edad27-fd9e-4ad5-a86a-7aca79862765"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can I ensure messages are delivered reliably and only once to background processes using Supabase?",
+    "relevant": [
+      "1553fbac-4404-4325-8242-bceb2fd7acb6"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How to optimize pgvector index build parameters for query performance?",
+    "relevant": [
+      "03b762b7-6c50-4022-87a4-0be7d544a675"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How to access request headers for authorization in PostgREST?",
+    "relevant": [
+      "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can I send instant messages between users in my application?",
+    "relevant": [
+      "8e047084-7081-47a1-ba64-2df402012794"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can I connect Supabase projects to Vercel?",
+    "relevant": [
+      "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How to retrieve specific columns from a Supabase table?",
+    "relevant": [
+      "dd7133ff-6993-4d3d-952c-359c355b01b4"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I move users from Auth0 to Supabase?",
+    "relevant": [
+      "1a7122ae-7aca-4faf-9d22-30e5cc9d605a"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can I integrate OpenAI models into my Edge Functions?",
+    "relevant": [
+      "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How does Postgres' full-text search enable precise word or phrase matching in data retrieval?",
+    "relevant": [
+      "37d2dcf4-e2f3-4faf-8c66-263344822b43"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I set up Supabase for local development?",
+    "relevant": [
+      "66352cca-08ed-49c6-b49c-64ff36242f56"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "What are the different types of storage buckets available in Supabase and what are they used for?",
+    "relevant": [
+      "bc3349ac-c8ee-4a14-854e-bd41d0e0689e"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can I connect my AI agent to my Supabase project to manage its schema and queries?",
+    "relevant": [
+      "2f6dc3bc-437d-4c6b-aeec-811623a7b017"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I start the local Supabase development environment?",
+    "relevant": [
+      "df8fee98-0fc9-4213-8917-fd5310304872"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can I get notified about Supabase platform outages?",
+    "relevant": [
+      "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I create a new collection in the database?",
+    "relevant": [
+      "90438d24-d735-45de-94c6-d96707935dc3"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "What authentication methods does Supabase Auth support?",
+    "relevant": [
+      "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can I set up automatic deployments for my Supabase project?",
+    "relevant": [
+      "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How to extract JSON data from an incoming request object in an asynchronous function?",
+    "relevant": [
+      "79870e02-6f7f-4353-b111-b393f0a3de5c"
+    ],
+    "source": "synthetic"
+  }
+]

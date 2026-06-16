@@ -1,0 +1,411 @@
+{
+  "k": 5,
+  "recallAtK": 1,
+  "precisionAtK": 0.20000000000000004,
+  "mrr": 0.9206349206349207,
+  "ndcgAtK": 0.9410409289115674,
+  "hitRate": 1,
+  "queries": [
+    {
+      "query": "How do I find my Supabase Data API URL and keys?",
+      "source": "synthetic",
+      "relevant": [
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+      ],
+      "retrieved": [
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How can I monitor application events and performance using Supabase?",
+      "source": "synthetic",
+      "relevant": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "retrieved": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do AI embeddings represent the similarity between different types of data?",
+      "source": "synthetic",
+      "relevant": [
+        "32edad27-fd9e-4ad5-a86a-7aca79862765"
+      ],
+      "retrieved": [
+        "32edad27-fd9e-4ad5-a86a-7aca79862765",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How can I ensure messages are delivered reliably and only once to background processes using Supabase?",
+      "source": "synthetic",
+      "relevant": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6"
+      ],
+      "retrieved": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How to optimize pgvector index build parameters for query performance?",
+      "source": "synthetic",
+      "relevant": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "retrieved": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How to access request headers for authorization in PostgREST?",
+      "source": "synthetic",
+      "relevant": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How can I send instant messages between users in my application?",
+      "source": "synthetic",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How can I connect Supabase projects to Vercel?",
+      "source": "synthetic",
+      "relevant": [
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c"
+      ],
+      "retrieved": [
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How to retrieve specific columns from a Supabase table?",
+      "source": "synthetic",
+      "relevant": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "retrieved": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I move users from Auth0 to Supabase?",
+      "source": "synthetic",
+      "relevant": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a"
+      ],
+      "retrieved": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c",
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "How can I integrate OpenAI models into my Edge Functions?",
+      "source": "synthetic",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "How does Postgres' full-text search enable precise word or phrase matching in data retrieval?",
+      "source": "synthetic",
+      "relevant": [
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43"
+      ],
+      "retrieved": [
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I set up Supabase for local development?",
+      "source": "synthetic",
+      "relevant": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56"
+      ],
+      "retrieved": [
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "What are the different types of storage buckets available in Supabase and what are they used for?",
+      "source": "synthetic",
+      "relevant": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e"
+      ],
+      "retrieved": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How can I connect my AI agent to my Supabase project to manage its schema and queries?",
+      "source": "synthetic",
+      "relevant": [
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017"
+      ],
+      "retrieved": [
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I start the local Supabase development environment?",
+      "source": "synthetic",
+      "relevant": [
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "retrieved": [
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How can I get notified about Supabase platform outages?",
+      "source": "synthetic",
+      "relevant": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+      ],
+      "retrieved": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I create a new collection in the database?",
+      "source": "synthetic",
+      "relevant": [
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "retrieved": [
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "What authentication methods does Supabase Auth support?",
+      "source": "synthetic",
+      "relevant": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+      ],
+      "retrieved": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How can I set up automatic deployments for my Supabase project?",
+      "source": "synthetic",
+      "relevant": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "retrieved": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How to extract JSON data from an incoming request object in an asynchronous function?",
+      "source": "synthetic",
+      "relevant": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "retrieved": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    }
+  ],
+  "evaluatedAt": "2026-06-16T01:59:53.746Z",
+  "fingerprint": {
+    "corpusHash": "81f377a0863e578255ccd48952d2fa5a999521ee40e672a9f59049453fc7a809",
+    "embeddingModel": "gemini-embedding-001"
+  }
+}
