@@ -72,7 +72,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       # Non-blocking diagnostic — never fails the build
-      - name: judge report
+      - name: judge report (supabase)
         continue-on-error: true
         run: bun run scripts/run-judge.ts --corpus supabase --sample 5
         env:
@@ -82,7 +82,39 @@ jobs:
           JUDGE_API_KEY: ${{ secrets.JUDGE_API_KEY }}
           JUDGE_MODEL: gemini-2.5-flash-lite
 
-      - name: upload current report
+      - name: restore embed cache (postgres)
+        uses: actions/cache@v5
+        with:
+          path: .driftwatch-cache/embeddings
+          key: embeds-postgres-${{ hashFiles('golden/postgres.json') }}
+
+      # --limit 20 keeps CI fast; same 20 URLs fetched every run (sitemap order is stable)
+      - name: ingest corpus (postgres)
+        run: |
+          bun run packages/ingest/src/cli.ts \
+            --corpus postgres \
+            --limit 20 \
+            --cache-dir .driftwatch-cache/embeddings
+        env:
+          DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: retrieval gate (postgres)
+        run: bun run scripts/assert-no-regression.ts --corpus postgres
+        env:
+          DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: judge report (postgres)
+        continue-on-error: true
+        run: bun run scripts/run-judge.ts --corpus postgres --sample 5
+        env:
+          DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          JUDGE_API_KEY: ${{ secrets.JUDGE_API_KEY }}
+          JUDGE_MODEL: gemini-2.5-flash-lite
+
+      - name: upload current reports
         if: always()
         uses: actions/upload-artifact@v7
         with:
@@ -90,5 +122,7 @@ jobs:
           path: |
             golden/supabase-current.json
             golden/supabase-judge-report.json
+            golden/postgres-current.json
+            golden/postgres-judge-report.json
           retention-days: 30
           if-no-files-found: warn

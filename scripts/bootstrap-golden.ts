@@ -74,7 +74,10 @@ try {
 
   const entries: GoldenEntry[] = [];
   let stoppedEarly = false;
+  // ponytail: 3.5 s inter-request delay keeps burst rate ≤ 17 RPM, under the free-tier cap
+  const INTER_REQUEST_DELAY_MS = 3500;
   for (let i = 0; i < rows.length; i++) {
+    if (i > 0) await new Promise<void>((resolve) => setTimeout(resolve, INTER_REQUEST_DELAY_MS));
     const row = rows[i];
     if (row === undefined) continue;
     process.stdout.write(`  [${String(i + 1)}/${String(rows.length)}] chunk ${row.chunk_id}...`);
