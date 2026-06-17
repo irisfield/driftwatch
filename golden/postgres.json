@@ -138,5 +138,105 @@
       "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
     ],
     "source": "synthetic"
+  },
+  {
+    "query": "i need to move my postgres server to a newer version without losing data, what's the normal way people do upgrades",
+    "relevant": ["ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"],
+    "source": "user"
+  },
+  {
+    "query": "if one query fails in the middle of a transaction does postgres undo everything or do i have to clean it up myself",
+    "relevant": ["790d54b4-be78-4a29-8838-6545ea6c6412"],
+    "source": "user"
+  },
+  {
+    "query": "inside a plpgsql function how am i supposed to save a query result into a variable",
+    "relevant": ["2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"],
+    "source": "user"
+  },
+  {
+    "query": "can i do if statements and loops inside postgres functions or do i need to handle that in my application code",
+    "relevant": ["bb70da62-31bd-4d61-9d51-c06b17650f3c"],
+    "source": "user"
+  },
+  {
+    "query": "i'm using plpython and want to catch an error without blowing up the whole transaction, is there some kind of nested transaction thing",
+    "relevant": ["de18cce1-b56e-4d4b-9b33-0b82c1185f1a"],
+    "source": "user"
+  },
+  {
+    "query": "where does postgres keep all the metadata about tables and columns, can i query that directly",
+    "relevant": ["40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"],
+    "source": "user"
+  },
+  {
+    "query": "how can i see which tables are included in a logical replication publication",
+    "relevant": ["081f6d03-fa3f-460f-8799-411d919bd88f"],
+    "source": "user"
+  },
+  {
+    "query": "i'm writing a foreign data wrapper and can't figure out which functions postgres expects me to implement",
+    "relevant": ["3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"],
+    "source": "user"
+  },
+  {
+    "query": "when postgres queries a foreign table how does it decide what work can be pushed to the remote server",
+    "relevant": ["b054279b-79fd-41fa-81a7-80138f141e33", "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"],
+    "source": "user"
+  },
+  {
+    "query": "after taking a backup how can i verify all the files are actually there and nothing got corrupted",
+    "relevant": ["8ab28149-352e-4d6c-a32c-ec619307ba56"],
+    "source": "user"
+  },
+  {
+    "query": "can a postgres column contain something that looks like a whole row with multiple fields in it",
+    "relevant": ["fa2e2b16-5a37-4989-9b71-bcbf90f2f968"],
+    "source": "user"
+  },
+  {
+    "query": "what exactly is an oid in postgres and why do some tables have one of those numbers pointing at other objects",
+    "relevant": ["26e378a8-b60c-4c76-ae5d-3e18b27c3621"],
+    "source": "user"
+  },
+  {
+    "query": "postgres accepted a timestamp during daylight savings but i'm not sure which actual time it picked, how does that work",
+    "relevant": ["467cbcca-b6ae-45bf-9cf9-02b441e443ec"],
+    "source": "user"
+  },
+  {
+    "query": "i'm trying to learn postgres from scratch, what's the basic flow for creating tables and running queries",
+    "relevant": ["15c61406-46ca-410c-a85b-a58c453b0511"],
+    "source": "user"
+  },
+  {
+    "query": "what's the difference between a materialized view and a normal view, does postgres keep the data stored somewhere",
+    "relevant": ["07693e0b-f689-4aef-80e3-dfb2d875388a"],
+    "source": "user"
+  },
+  {
+    "query": "i have data in another database and want postgres to treat it like a table, is that what foreign tables are for",
+    "relevant": ["2f21f5a8-8818-4d17-9c69-fe7b220654d0"],
+    "source": "user"
+  },
+  {
+    "query": "is there a postgres command that updates existing rows and inserts missing ones in a single statement",
+    "relevant": ["fd9bbd34-72aa-4fff-b50a-86f603376dbe"],
+    "source": "user"
+  },
+  {
+    "query": "i accidentally dropped a user mapping and now my foreign server connection broke, how are user mappings removed again",
+    "relevant": ["7933bbd6-0169-40b0-a8ea-7b95943a9b99"],
+    "source": "user"
+  },
+  {
+    "query": "what are those built in postgres roles that already exist before i create any users, and what permissions do they have",
+    "relevant": ["1acfad7e-7a9a-4d2f-852a-95b9a516adf0"],
+    "source": "user"
+  },
+  {
+    "query": "i'm setting up a brand new postgres instance on a server, what actually creates the initial database cluster and files",
+    "relevant": ["585773c9-c8bb-4604-b267-7b7730c28df2"],
+    "source": "user"
   }
 ]

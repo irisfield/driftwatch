@@ -1,9 +1,9 @@
 {
   "k": 5,
   "recallAtK": 1,
-  "precisionAtK": 0.20000000000000004,
-  "mrr": 0.96,
-  "ndcgAtK": 0.969342640361727,
+  "precisionAtK": 0.20500000000000007,
+  "mrr": 0.9675,
+  "ndcgAtK": 0.9734375837488546,
   "hitRate": 1,
   "queries": [
     {
@@ -377,9 +377,382 @@
       "mrr": 0.2,
       "ndcgAtK": 0.38685280723454163,
       "hitRate": 1
+    },
+    {
+      "query": "i need to move my postgres server to a newer version without losing data, what's the normal way people do upgrades",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "if one query fails in the middle of a transaction does postgres undo everything or do i have to clean it up myself",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "inside a plpgsql function how am i supposed to save a query result into a variable",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i do if statements and loops inside postgres functions or do i need to handle that in my application code",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "dc08868f-ca37-43ec-9657-4230c1489cce"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "i'm using plpython and want to catch an error without blowing up the whole transaction, is there some kind of nested transaction thing",
+      "source": "user",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "where does postgres keep all the metadata about tables and columns, can i query that directly",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "5e30f4d3-5299-484e-bf36-132097161f62"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i see which tables are included in a logical replication publication",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "i'm writing a foreign data wrapper and can't figure out which functions postgres expects me to implement",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "when postgres queries a foreign table how does it decide what work can be pushed to the remote server",
+      "source": "user",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.4,
+      "mrr": 1,
+      "ndcgAtK": 0.9197207891481876,
+      "hitRate": 1
+    },
+    {
+      "query": "after taking a backup how can i verify all the files are actually there and nothing got corrupted",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can a postgres column contain something that looks like a whole row with multiple fields in it",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what exactly is an oid in postgres and why do some tables have one of those numbers pointing at other objects",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "postgres accepted a timestamp during daylight savings but i'm not sure which actual time it picked, how does that work",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "i'm trying to learn postgres from scratch, what's the basic flow for creating tables and running queries",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the difference between a materialized view and a normal view, does postgres keep the data stored somewhere",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "i have data in another database and want postgres to treat it like a table, is that what foreign tables are for",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is there a postgres command that updates existing rows and inserts missing ones in a single statement",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "i accidentally dropped a user mapping and now my foreign server connection broke, how are user mappings removed again",
+      "source": "user",
+      "relevant": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "retrieved": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what are those built in postgres roles that already exist before i create any users, and what permissions do they have",
+      "source": "user",
+      "relevant": [
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0"
+      ],
+      "retrieved": [
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "dc08868f-ca37-43ec-9657-4230c1489cce"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "i'm setting up a brand new postgres instance on a server, what actually creates the initial database cluster and files",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
     }
   ],
-  "evaluatedAt": "2026-06-17T05:17:48.900Z",
+  "evaluatedAt": "2026-06-17T05:41:01.076Z",
   "fingerprint": {
     "corpusHash": "08ad4cb469ebd86f3a40ecdf0102d4614c1859e8cb0244e82bbb342d1d7a6d5b",
     "embeddingModel": "gemini-embedding-001"

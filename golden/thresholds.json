@@ -50,7 +50,7 @@
         "runs": 10
       }
     },
-    "syntheticFraction": 1,
+    "syntheticFraction": 0.5,
     "runsUsed": 10
   }
 }
