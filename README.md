@@ -1,111 +1,102 @@
 # driftwatch
 
-Retrieval regression testing for RAG systems. Define a golden dataset, run your retriever against it, and fail the build when quality drops.
+When retrieval degrades, the LLM still answers fluently, dashboards stay green, and you find out from users. driftwatch measures Recall@K, MRR, nDCG, and HitRate against a golden dataset and fails the CI build when results regress past a committed baseline. A reference MCP server on Supabase Edge Functions and pgvector demonstrates the library on a live corpus of Supabase and PostgreSQL documentation.
 
 ---
 
-## The problem
+## Install
 
-When a database query breaks, you get a 500 error. When retrieval degrades, you get a 200 with the wrong documents. The LLM still produces a fluent answer. Your dashboards stay green. You find out from users.
-
-This happens after changes that look safe: swapping an embedding model, retuning chunk size, adjusting HNSW parameters. Recall drops silently. Nothing crashes.
-
----
-
-## How it works
-
-You supply a **golden dataset** — 30–50 query/correct-document pairs — and your **`retrieve()` function**. driftwatch runs your retriever against every golden query, computes rank metrics (Recall@K, MRR, nDCG), diffs the result against a committed baseline, and throws when retrieval has regressed past a configured threshold.
-
-The gate is deterministic math — no LLM calls, no external services, no cost per CI run. An optional LLM-as-judge diagnostic is available separately and is always non-blocking.
-
-```
-golden dataset + retrieve()
-         |
-         v
-   evaluate: Recall@K, MRR, nDCG
-         |
-         v
-   diff against baseline-report.json  <-- committed to git
-         |
-         v
-   Recall@5: 0.84 -> 0.61  (threshold: 0.05 drop)
-         |
-         v
-   assertNoRegression throws  -->  CI fails, PR blocked
+```bash
+npm install @irisfield/driftwatch
+# or
+deno add jsr:@irisfield/driftwatch
 ```
 
 ---
 
-## Installation
+## Quickstart
 
-```sh
-bun add @irisfield/driftwatch
-# npm install @irisfield/driftwatch
-```
+```typescript
+import { evaluateRetrieval, assertRetrievalHealthy, loadGoldenDataset } from "@irisfield/driftwatch";
 
----
-
-## Quick start
-
-```ts
-import { assertNoRegression, compareReports, evaluateRetrieval, loadGoldenDataset } from "@irisfield/driftwatch";
-import baseline from "./baseline-report.json";
-
-const golden = await loadGoldenDataset("./golden/queries.json");
+const golden = await loadGoldenDataset("golden/my-corpus.json");
 
 const report = await evaluateRetrieval({
   golden,
   retrieve: async (query) => {
-    // your retrieval implementation — pgvector, Pinecone, Weaviate, anything
-    return myVectorSearch(query, { topK: 5 });
+    // Return a ranked array of document IDs, most relevant first.
+    return myVectorSearch(query);
   },
+  k: 5,
 });
 
-// diff against committed baseline, throws if Recall@5 dropped more than 5%
-const delta = compareReports(baseline, report);
-assertNoRegression(delta, { maxRecallDrop: 0.05 });
+assertRetrievalHealthy(report, { minRecallAtK: 0.7, minMrr: 0.6 });
 ```
 
-Add this to CI alongside your existing tests. When a change regresses retrieval, the build fails before it ships.
+`assertRetrievalHealthy` throws a `DriftGateError` when metrics fall below the configured thresholds. To diff against a committed baseline instead of fixed thresholds, use `assertNoRegression(compareReports(baseline, report), thresholds)`.
 
 ---
 
-## Packages
+## MCP client setup
 
-**`@irisfield/driftwatch`**
+The reference MCP server is deployed as a Supabase Edge Function. To connect Claude Code, add the following to `.claude/settings.json`:
 
-The reusable library. Runtime-agnostic TypeScript — works with any retrieval stack. The `retrieve()` function is user-supplied, so the library has no opinion about your vector database, embedding model, or infrastructure.
+```json
+{
+  "mcpServers": {
+    "driftwatch": {
+      "type": "http",
+      "url": "https://<your-project>.supabase.co/functions/v1/driftwatch"
+    }
+  }
+}
+```
 
-Exports: `evaluateRetrieval`, `compareReports`, `assertRetrievalHealthy`, `assertNoRegression`, `judgeRelevance` (LLM-as-judge, optional).
+For Cursor: _(Configuration path pending verification against a real Cursor install.)_
 
-**Reference MCP server**
+The server exposes three tools:
 
-A docs-RAG server on Supabase Edge Functions and pgvector, serving the Supabase and MCP documentation to agents. driftwatch enforces retrieval quality in CI before any change deploys. It is the library's reference integration — a real production-grade system with the gate wired in, not a toy demo.
+- `search_docs(query, k?, corpus?)` — returns ranked chunks with source URLs
+- `get_document(document_id)` — returns full document text
+- `list_corpora()` — returns available corpora and last ingest time
 
----
-
-## Why retrieval, not end-to-end quality
-
-Retrieval and generation fail for different reasons. When you swap an embedding model, the LLM did not change — your retrieved context did. Evaluating the full pipeline conflates two separate failure modes and makes both harder to debug. driftwatch isolates retrieval so the signal is clean: this change, at this layer, caused recall to drop by this amount.
-
----
-
-## Comparison
-
-The metrics — Recall@K, MRR, nDCG — are standard information retrieval math, not novel. Frameworks like RAGAS, promptfoo, and DeepEval implement them too, and if you are in Python building a full eval platform, reach for one of those first.
-
-driftwatch occupies a different position: a small, TypeScript-native library that does one job (retrieval regression testing in CI) and fits into a git-based workflow without external infrastructure.
-
-|                  | driftwatch            | RAGAS / TruLens    | Braintrust / LangSmith |
-| ---------------- | --------------------- | ------------------ | ---------------------- |
-| Language         | TypeScript            | Python             | JS + Python            |
-| Focus            | retrieval only        | full RAG stack     | full LLM lifecycle     |
-| CI gate          | deterministic, native | possible but heavy | external SaaS          |
-| Baseline storage | JSON committed to git | external           | external dashboard     |
-| Cost per CI run  | none                  | LLM calls required | metered                |
+The function is unauthenticated. See Known Limitations below.
 
 ---
 
-## License
+## Prior art
 
-MIT
+Recall@K, MRR, nDCG, and LLM-as-judge are standard retrieval evaluation techniques. [RAGAS](https://docs.ragas.io), [promptfoo](https://promptfoo.dev), and [DeepEval](https://docs.confident-ai.com) implement them well. The contribution here is different: a CI-gated, golden-dataset-driven harness wired into a real MCP server on Supabase pgvector, packaged so any team can drop it into their own retrieval system and fail the build on regression.
+
+---
+
+## Shipped vs roadmap
+
+| Feature | Status |
+|---|---|
+| Recall@K, MRR, nDCG, HitRate, Precision@K metrics | Shipped |
+| Golden dataset schema, loader, validator | Shipped |
+| `evaluateRetrieval`, `compareReports`, `assertNoRegression` | Shipped |
+| LLM-as-judge (non-blocking, cached, temp 0) | Shipped |
+| Reference MCP server (`search_docs`, `get_document`, `list_corpora`) | Shipped |
+| pgvector HNSW retrieval with `halfvec(1536)` | Shipped |
+| CI gate (GitHub Actions, pgvector service container) | Shipped |
+| Second corpus (PostgreSQL docs) | In progress |
+| Authentication on the Edge Function | Roadmap |
+| Hosted public demo | Roadmap |
+| Embedding-swap study | Roadmap |
+
+---
+
+## Known limitations
+
+- The Edge Function is unauthenticated. Supabase MCP-on-Edge authentication is not yet available. Anyone with the URL can call the tools.
+- This release uses a single embedding model: `gemini-embedding-001` at 1536 dimensions.
+- The ingest CLI is an offline Node/Bun tool. The Edge Function does not ingest documents.
+- The golden dataset requires manual validation. The bootstrap script drafts candidate pairs; a human must validate each one before committing.
+
+---
+
+## Contributing
+
+Issues are triaged weekly. Pull requests are welcome. Breaking changes require a major version bump. See [CONTRIBUTING.md](CONTRIBUTING.md) for the development setup and release process.
