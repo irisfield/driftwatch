@@ -1,0 +1,142 @@
+[
+  {
+    "query": "What changes were introduced in Release 18.1?",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can I get the error code and message within a PL/pgSQL exception handler?",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How is the number of returned rows managed when executing a query with SPI?",
+    "relevant": [
+      "6f9c968e-a9ab-4441-906a-9f9c5692ac5f"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I get the name of a column's data type using its row description and column number?",
+    "relevant": [
+      "46c1713f-b18e-4018-b1bd-4c38b15a5a23"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "What are the potential areas of change to consider when upgrading PostgreSQL to a new major version?",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How to estimate the size of a foreign table during query planning?",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I create a statement that performs no action in PL/pgSQL?",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I reference a database object by name instead of its OID in a function call?",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I add new data to a database table?",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How to find the data type of elements within an array column?",
+    "relevant": [
+      "75543b26-3945-43f2-873f-2395441fcd9a"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I create a composite type value as a literal in SQL?",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How does PostgreSQL handle timestamps that fall during daylight saving time changes?",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "What information is included in a PostgreSQL backup manifest?",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I ensure that database operations within a PL/Python function are either fully committed or rolled back, even if a Python exception occurs?",
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can I enable more detailed output from the EXPLAIN command for debugging the query planner?",
+    "relevant": [
+      "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How to force a specific server parameter during database cluster initialization?",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I create a materialized view in SQL?",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How do I delete a user's connection details for a foreign server?",
+    "relevant": [
+      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can a foreign data wrapper implement remote aggregation or other operations above the scan and join level?",
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "How can I find information about table partitioning keys?",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "synthetic"
+  }
+]

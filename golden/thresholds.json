@@ -25,5 +25,32 @@
     },
     "syntheticFraction": 1,
     "runsUsed": 10
+  },
+  "postgres": {
+    "regression": {
+      "maxRecallDrop": 0.01,
+      "maxHitRateDrop": 0.01
+    },
+    "perQueryFloors": {
+      "minHitRate": 1
+    },
+    "stats": {
+      "recallAtK": {
+        "mean": 1,
+        "stdev": 0,
+        "min": 1,
+        "max": 1,
+        "runs": 10
+      },
+      "hitRate": {
+        "mean": 1,
+        "stdev": 0,
+        "min": 1,
+        "max": 1,
+        "runs": 10
+      }
+    },
+    "syntheticFraction": 1,
+    "runsUsed": 10
   }
 }

@@ -1,0 +1,387 @@
+{
+  "k": 5,
+  "recallAtK": 1,
+  "precisionAtK": 0.20000000000000004,
+  "mrr": 0.96,
+  "ndcgAtK": 0.969342640361727,
+  "hitRate": 1,
+  "queries": [
+    {
+      "query": "What changes were introduced in Release 18.1?",
+      "source": "synthetic",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How can I get the error code and message within a PL/pgSQL exception handler?",
+      "source": "synthetic",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How is the number of returned rows managed when executing a query with SPI?",
+      "source": "synthetic",
+      "relevant": [
+        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f"
+      ],
+      "retrieved": [
+        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I get the name of a column's data type using its row description and column number?",
+      "source": "synthetic",
+      "relevant": [
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23"
+      ],
+      "retrieved": [
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "What are the potential areas of change to consider when upgrading PostgreSQL to a new major version?",
+      "source": "synthetic",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How to estimate the size of a foreign table during query planning?",
+      "source": "synthetic",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I create a statement that performs no action in PL/pgSQL?",
+      "source": "synthetic",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I reference a database object by name instead of its OID in a function call?",
+      "source": "synthetic",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "dc08868f-ca37-43ec-9657-4230c1489cce",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I add new data to a database table?",
+      "source": "synthetic",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How to find the data type of elements within an array column?",
+      "source": "synthetic",
+      "relevant": [
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "retrieved": [
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I create a composite type value as a literal in SQL?",
+      "source": "synthetic",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How does PostgreSQL handle timestamps that fall during daylight saving time changes?",
+      "source": "synthetic",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "What information is included in a PostgreSQL backup manifest?",
+      "source": "synthetic",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I ensure that database operations within a PL/Python function are either fully committed or rolled back, even if a Python exception occurs?",
+      "source": "synthetic",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How can I enable more detailed output from the EXPLAIN command for debugging the query planner?",
+      "source": "synthetic",
+      "relevant": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "retrieved": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f",
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How to force a specific server parameter during database cluster initialization?",
+      "source": "synthetic",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I create a materialized view in SQL?",
+      "source": "synthetic",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How do I delete a user's connection details for a foreign server?",
+      "source": "synthetic",
+      "relevant": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "retrieved": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How can a foreign data wrapper implement remote aggregation or other operations above the scan and join level?",
+      "source": "synthetic",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "How can I find information about table partitioning keys?",
+      "source": "synthetic",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.2,
+      "ndcgAtK": 0.38685280723454163,
+      "hitRate": 1
+    }
+  ],
+  "evaluatedAt": "2026-06-17T05:17:48.900Z",
+  "fingerprint": {
+    "corpusHash": "08ad4cb469ebd86f3a40ecdf0102d4614c1859e8cb0244e82bbb342d1d7a6d5b",
+    "embeddingModel": "gemini-embedding-001"
+  }
+}
