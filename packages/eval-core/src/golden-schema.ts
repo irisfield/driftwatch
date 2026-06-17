@@ -2,7 +2,14 @@ import { readFile } from "node:fs/promises";
 
 import { z } from "zod";
 
-export const goldenEntrySchema = z.object({
+export interface GoldenEntry {
+  query: string;
+  relevant: string[];
+  source?: "user" | "synthetic" | undefined;
+}
+export type GoldenDataset = GoldenEntry[];
+
+export const goldenEntrySchema: z.ZodType<GoldenEntry> = z.object({
   query: z.string().min(1, "query must not be empty"),
   relevant: z
     .array(z.uuid({ error: "relevant IDs must be valid document UUIDs" }))
@@ -10,12 +17,9 @@ export const goldenEntrySchema = z.object({
   source: z.enum(["user", "synthetic"]).optional(),
 });
 
-export const goldenDatasetSchema = z
+export const goldenDatasetSchema: z.ZodType<GoldenDataset> = z
   .array(goldenEntrySchema)
   .min(1, "golden dataset must contain at least one entry");
-
-export type GoldenEntry = z.infer<typeof goldenEntrySchema>;
-export type GoldenDataset = z.infer<typeof goldenDatasetSchema>;
 
 export function validateGoldenDataset(data: unknown): GoldenDataset {
   const result = goldenDatasetSchema.safeParse(data);

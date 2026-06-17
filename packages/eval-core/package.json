@@ -1,6 +1,6 @@
 {
   "name": "@irisfield/driftwatch",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Retrieval-quality evaluation and CI gate library for RAG systems.",
   "type": "module",
   "types": "./dist/index.d.ts",
@@ -16,6 +16,22 @@
     "./compare": {
       "types": "./dist/compare.d.ts",
       "import": "./dist/compare.mjs"
+    },
+    "./evaluate": {
+      "types": "./dist/evaluate.d.ts",
+      "import": "./dist/evaluate.mjs"
+    },
+    "./golden-schema": {
+      "types": "./dist/golden-schema.d.ts",
+      "import": "./dist/golden-schema.mjs"
+    },
+    "./judge": {
+      "types": "./dist/judge.d.ts",
+      "import": "./dist/judge.mjs"
+    },
+    "./metrics": {
+      "types": "./dist/metrics.d.ts",
+      "import": "./dist/metrics.mjs"
     }
   },
   "sideEffects": false,

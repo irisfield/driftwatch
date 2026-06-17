@@ -1,0 +1,13 @@
+{
+  "name": "@irisfield/driftwatch",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./src/index.ts",
+    "./assert": "./src/assert.ts",
+    "./compare": "./src/compare.ts",
+    "./evaluate": "./src/evaluate.ts",
+    "./golden-schema": "./src/golden-schema.ts",
+    "./judge": "./src/judge.ts",
+    "./metrics": "./src/metrics.ts"
+  }
+}

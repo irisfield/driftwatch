@@ -3,7 +3,7 @@ import dts from "rollup-plugin-dts";
 
 const tsconfig = "./tsconfig.build.json";
 
-const subpaths = ["assert", "compare"];
+const subpaths = ["assert", "compare", "evaluate", "golden-schema", "judge", "metrics"];
 
 const subpathBuilds = subpaths.flatMap((name) => [
   {
