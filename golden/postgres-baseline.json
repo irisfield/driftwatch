@@ -1,48 +1,11 @@
 {
   "k": 5,
-  "recallAtK": 1,
-  "precisionAtK": 0.20500000000000007,
-  "mrr": 0.9675,
-  "ndcgAtK": 0.9734375837488546,
-  "hitRate": 1,
+  "recallAtK": 0.9970149253731343,
+  "precisionAtK": 0.20059701492537438,
+  "mrr": 0.9408955223880596,
+  "ndcgAtK": 0.9550482703039282,
+  "hitRate": 0.9970149253731343,
   "queries": [
-    {
-      "query": "What changes were introduced in Release 18.1?",
-      "source": "synthetic",
-      "relevant": [
-        "2aff215a-8e52-4c34-8056-6d01339feb97"
-      ],
-      "retrieved": [
-        "2aff215a-8e52-4c34-8056-6d01339feb97",
-        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
-        "081f6d03-fa3f-460f-8799-411d919bd88f",
-        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0",
-        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How can I get the error code and message within a PL/pgSQL exception handler?",
-      "source": "synthetic",
-      "relevant": [
-        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
-      ],
-      "retrieved": [
-        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
-        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
-        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
-        "524ab67d-94de-46c9-a567-1914d997b98e"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
     {
       "query": "How is the number of returned rows managed when executing a query with SPI?",
       "source": "synthetic",
@@ -79,303 +42,6 @@
       "precisionAtK": 0.2,
       "mrr": 1,
       "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "What are the potential areas of change to consider when upgrading PostgreSQL to a new major version?",
-      "source": "synthetic",
-      "relevant": [
-        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
-      ],
-      "retrieved": [
-        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
-        "2aff215a-8e52-4c34-8056-6d01339feb97",
-        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
-        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
-        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How to estimate the size of a foreign table during query planning?",
-      "source": "synthetic",
-      "relevant": [
-        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
-      ],
-      "retrieved": [
-        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
-        "b054279b-79fd-41fa-81a7-80138f141e33",
-        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
-        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How do I create a statement that performs no action in PL/pgSQL?",
-      "source": "synthetic",
-      "relevant": [
-        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
-      ],
-      "retrieved": [
-        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
-        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
-        "790d54b4-be78-4a29-8838-6545ea6c6412"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How do I reference a database object by name instead of its OID in a function call?",
-      "source": "synthetic",
-      "relevant": [
-        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
-      ],
-      "retrieved": [
-        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
-        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
-        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
-        "dc08868f-ca37-43ec-9657-4230c1489cce",
-        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How do I add new data to a database table?",
-      "source": "synthetic",
-      "relevant": [
-        "15c61406-46ca-410c-a85b-a58c453b0511"
-      ],
-      "retrieved": [
-        "15c61406-46ca-410c-a85b-a58c453b0511",
-        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
-        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
-        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
-        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How to find the data type of elements within an array column?",
-      "source": "synthetic",
-      "relevant": [
-        "75543b26-3945-43f2-873f-2395441fcd9a"
-      ],
-      "retrieved": [
-        "75543b26-3945-43f2-873f-2395441fcd9a",
-        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
-        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
-        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
-        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How do I create a composite type value as a literal in SQL?",
-      "source": "synthetic",
-      "relevant": [
-        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
-      ],
-      "retrieved": [
-        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
-        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
-        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
-        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
-        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How does PostgreSQL handle timestamps that fall during daylight saving time changes?",
-      "source": "synthetic",
-      "relevant": [
-        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
-      ],
-      "retrieved": [
-        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
-        "790d54b4-be78-4a29-8838-6545ea6c6412",
-        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
-        "2aff215a-8e52-4c34-8056-6d01339feb97",
-        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "What information is included in a PostgreSQL backup manifest?",
-      "source": "synthetic",
-      "relevant": [
-        "8ab28149-352e-4d6c-a32c-ec619307ba56"
-      ],
-      "retrieved": [
-        "8ab28149-352e-4d6c-a32c-ec619307ba56",
-        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
-        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
-        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
-        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How do I ensure that database operations within a PL/Python function are either fully committed or rolled back, even if a Python exception occurs?",
-      "source": "synthetic",
-      "relevant": [
-        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
-      ],
-      "retrieved": [
-        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
-        "790d54b4-be78-4a29-8838-6545ea6c6412",
-        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
-        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
-        "524ab67d-94de-46c9-a567-1914d997b98e"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How can I enable more detailed output from the EXPLAIN command for debugging the query planner?",
-      "source": "synthetic",
-      "relevant": [
-        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
-      ],
-      "retrieved": [
-        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
-        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
-        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
-        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f",
-        "585773c9-c8bb-4604-b267-7b7730c28df2"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How to force a specific server parameter during database cluster initialization?",
-      "source": "synthetic",
-      "relevant": [
-        "585773c9-c8bb-4604-b267-7b7730c28df2"
-      ],
-      "retrieved": [
-        "585773c9-c8bb-4604-b267-7b7730c28df2",
-        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
-        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
-        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
-        "07693e0b-f689-4aef-80e3-dfb2d875388a"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How do I create a materialized view in SQL?",
-      "source": "synthetic",
-      "relevant": [
-        "07693e0b-f689-4aef-80e3-dfb2d875388a"
-      ],
-      "retrieved": [
-        "07693e0b-f689-4aef-80e3-dfb2d875388a",
-        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
-        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
-        "15c61406-46ca-410c-a85b-a58c453b0511",
-        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How do I delete a user's connection details for a foreign server?",
-      "source": "synthetic",
-      "relevant": [
-        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
-      ],
-      "retrieved": [
-        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
-        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
-        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
-        "b054279b-79fd-41fa-81a7-80138f141e33"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How can a foreign data wrapper implement remote aggregation or other operations above the scan and join level?",
-      "source": "synthetic",
-      "relevant": [
-        "b054279b-79fd-41fa-81a7-80138f141e33"
-      ],
-      "retrieved": [
-        "b054279b-79fd-41fa-81a7-80138f141e33",
-        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How can I find information about table partitioning keys?",
-      "source": "synthetic",
-      "relevant": [
-        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
-      ],
-      "retrieved": [
-        "081f6d03-fa3f-460f-8799-411d919bd88f",
-        "75543b26-3945-43f2-873f-2395441fcd9a",
-        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
-        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
-        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 0.2,
-      "ndcgAtK": 0.38685280723454163,
       "hitRate": 1
     },
     {
@@ -715,7 +381,7 @@
     },
     {
       "query": "what are those built in postgres roles that already exist before i create any users, and what permissions do they have",
-      "source": "user",
+      "source": "synthetic",
       "relevant": [
         "1acfad7e-7a9a-4d2f-852a-95b9a516adf0"
       ],
@@ -750,9 +416,5838 @@
       "mrr": 1,
       "ndcgAtK": 1,
       "hitRate": 1
+    },
+    {
+      "query": "can i upgrade postgres in place or do i need to create a new cluster and move the data over",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "after a failed statement postgres says the current transaction is aborted, what is the right way to recover",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what does commit actually do if i ran several updates and inserts in one postgres transaction",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i make sure a group of postgres statements either all succeed or all get rolled back",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "in plpgsql do i use select into or perform when i do not care about the query result",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i run dynamic sql inside a postgres function when the table name is only known at runtime",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the clean way to raise an error from a plpgsql function with my own message",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i loop through rows returned by a query inside a postgres function",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can a plpgsql exception block catch one error and let the function continue running",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i return early from a plpgsql function when a condition is met",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i find the element type stored inside a postgres array column",
+      "source": "user",
+      "relevant": [
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "retrieved": [
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is there a catalog query that tells me whether a type is an array type and what its base type is",
+      "source": "user",
+      "relevant": [
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "retrieved": [
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "in plpython can i wrap a risky insert in a subtransaction so only that insert rolls back",
+      "source": "user",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens to database changes made inside a plpython subtransaction if python raises an exception",
+      "source": "user",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "which postgres catalog tables should i look at to inspect database metadata",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is information_schema the only way to inspect postgres tables or can i query pg_catalog directly",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is pg_opfamily used for when postgres decides how indexes compare values",
+      "source": "synthetic",
+      "relevant": [
+        "5e30f4d3-5299-484e-bf36-132097161f62"
+      ],
+      "retrieved": [
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "where can i see the operator families that belong to a postgres index access method",
+      "source": "synthetic",
+      "relevant": [
+        "5e30f4d3-5299-484e-bf36-132097161f62"
+      ],
+      "retrieved": [
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i list all tables that are being published for logical replication",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does postgres have a view that expands publication membership into the actual published tables",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "which callback tells postgres the size and cost of a foreign scan",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "when building an fdw which callbacks are needed for planning versus executing the scan",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.4,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how does a foreign data wrapper tell the planner it can push down joins or aggregates",
+      "source": "user",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what does postgres mean by upper relation paths in fdw planning",
+      "source": "user",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "where should i look if i want the original papers behind postgres geqo",
+      "source": "synthetic",
+      "relevant": [
+        "8ea167b3-0710-4509-9321-e9c8efa31972"
+      ],
+      "retrieved": [
+        "8ea167b3-0710-4509-9321-e9c8efa31972",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is there a bibliography for the genetic query optimizer used by postgres",
+      "source": "synthetic",
+      "relevant": [
+        "8ea167b3-0710-4509-9321-e9c8efa31972"
+      ],
+      "retrieved": [
+        "8ea167b3-0710-4509-9321-e9c8efa31972",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what fields are at the top level of a postgres backup manifest json file",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i tell which wal ranges and checksums are recorded in a postgres backup manifest",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i define a postgres type that groups several fields together like a struct",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i access one field from a composite type column in a select statement",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does postgres have regclass and regtype instead of just using raw oid numbers",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "dc08868f-ca37-43ec-9657-4230c1489cce"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i pass a table name to a postgres function that expects an object identifier",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what does postgres do with a timestamp that falls in the missing hour during daylight savings",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "when a local timestamp happens twice because clocks move back, which one does postgres choose",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what are the basic sql commands i need to create a table insert rows and query them in postgres",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i update or delete rows after following the basic postgres tutorial examples",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 0,
+      "precisionAtK": 0,
+      "mrr": 0,
+      "ndcgAtK": 0,
+      "hitRate": 0
+    },
+    {
+      "query": "how do i define a foreign table in postgres that points at data on another server",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what options can i put on create foreign table for a postgres fdw table",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i refresh a materialized view after the underlying tables have changed",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i create a materialized view from a query and give the result columns names",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i run insert or update statements on a remote postgres database through dblink",
+      "source": "synthetic",
+      "relevant": [
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "retrieved": [
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what does dblink_exec return when a command succeeds or fails on the remote connection",
+      "source": "synthetic",
+      "relevant": [
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "retrieved": [
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the syntax to drop a user mapping for a foreign server in postgres",
+      "source": "user",
+      "relevant": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "retrieved": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i drop a foreign server user mapping only if it exists so my migration does not fail",
+      "source": "user",
+      "relevant": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "retrieved": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what changed in postgres 18.1 that might affect an upgrade or maintenance release",
+      "source": "user",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "where can i read the official notes for the postgres 18.1 bug fixes",
+      "source": "user",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i get more verbose explain output that shows planner internals",
+      "source": "user",
+      "relevant": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "retrieved": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is pg_overexplain for and how is it different from normal explain",
+      "source": "user",
+      "relevant": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "retrieved": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what initdb option sets the locale or encoding when creating a new postgres cluster",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can initdb create checksums for a new postgres data directory",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "should i use merge when i need postgres to insert missing rows and update matching rows",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how does postgres merge decide whether to run the matched or not matched action",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between pg_upgrade's link mode and copy mode",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to run reindex after a pg_upgrade",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can pg_upgrade skip the dump and restore step entirely",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what extensions or custom types can break a postgres major version upgrade",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "dc08868f-ca37-43ec-9657-4230c1489cce"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does pg_upgrade need the old and new postgres binaries installed at the same time",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "dc08868f-ca37-43ec-9657-4230c1489cce",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i upgrade across more than one major version in a single pg_upgrade run",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do replication slots survive a pg_upgrade or do i need to recreate them",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does postgres abort the whole transaction after one failed statement instead of just that statement",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between begin commit and autocommit in postgres",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i nest begin transaction blocks in postgres",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do savepoints let me roll back part of a transaction without losing everything",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what isolation level does postgres use by default for a transaction",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can a single sql statement contain more than one savepoint",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i find out if a column is an array and what type its elements are using information_schema",
+      "source": "user",
+      "relevant": [
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "retrieved": [
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "5e30f4d3-5299-484e-bf36-132097161f62"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does information_schema.columns show ARRAY as the data type instead of the real element type",
+      "source": "user",
+      "relevant": [
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "retrieved": [
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is element_types the right information_schema view to look up array element types",
+      "source": "user",
+      "relevant": [
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "retrieved": [
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do i get too many rows returned when using select into in plpgsql",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i build and run a dynamic sql string safely with format and quote_ident in plpgsql",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens if select into finds no matching row in a plpgsql function",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i raise a custom exception with an error code in plpgsql",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i assign a value to a plpgsql variable without running a query",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between raise notice and raise exception in plpgsql",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "dc08868f-ca37-43ec-9657-4230c1489cce"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "is there a way to skip declaring a variable type explicitly in plpgsql",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do i get a continue cannot be used outside a loop error in my exception handler",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between foreach and for loops in plpgsql",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i loop over the elements of an array in plpgsql",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i use a case statement instead of nested if else in plpgsql",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i exit a loop early in plpgsql without using an exception",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between exit and continue in a plpgsql loop",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i use the python with statement to manage a subtransaction in plpython",
+      "source": "user",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does a plpython subtransaction rollback automatically when an exception escapes the with block",
+      "source": "user",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i catch a specific spi error in plpython without aborting the whole function",
+      "source": "user",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between information_schema and pg_catalog and which one should i use",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do pg_catalog table and column names not match what i see in information_schema",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "are pg_catalog internals stable across postgres major versions or can they change",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "dc08868f-ca37-43ec-9657-4230c1489cce"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "why do some pg_catalog columns store arrays of oids instead of readable names",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "why does pg_publication_tables show more tables than pg_publication_rel for a for all tables publication",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i check which columns are included when a publication uses a column list",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does pg_publication_tables show the row filter applied to a published table",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how is pg_publication_tables different from just joining pg_publication and pg_class manually",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the minimum set of callbacks a read only foreign data wrapper has to implement",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "which fdw callback is responsible for actually fetching rows during execution",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i implement explain output for my custom foreign data wrapper",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to implement the analyze callback for a foreign data wrapper or is it optional",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what does GetForeignPaths actually need to add to the planner for a foreign table",
+      "source": "user",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how does postgres decide whether to push a where clause down to the foreign server",
+      "source": "user",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is an upper relation in the context of fdw planning",
+      "source": "user",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why would a foreign data wrapper choose not to support sorted or merge join paths",
+      "source": "user",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "can i use the backup manifest to verify a restored cluster without re reading every file",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what tool actually validates a postgres backup manifest",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does the backup manifest include checksums for every single file in the backup",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is the backup manifest itself protected by a checksum so a corrupted manifest is detected",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do i need extra parentheses when selecting a field from a composite type column",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can a function return a composite type instead of multiple out parameters",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i cast a row of columns into a composite type value",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i build a composite type value out of variables inside a plpgsql function",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i compare two composite type values for equality in postgres",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does casting a table name to regclass let me avoid hardcoding its oid",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens to a regclass value if the table it points to gets renamed",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "are oid values stable across a pg_dump and restore",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between oid and regproc when referring to a function",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "dc08868f-ca37-43ec-9657-4230c1489cce",
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does postgres throw an error or just pick a time when a timestamp falls in the dst gap",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how does the time zone abbreviation affect which offset postgres picks for an ambiguous local time",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why did changing the session time zone change how an ambiguous timestamp gets interpreted",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is there a setting that makes postgres reject ambiguous timestamps instead of guessing",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the very first thing i should try after creating a table in the postgres tutorial",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do joins work between two tables in the basic postgres tutorial",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between update and delete in this part of the postgres tutorial",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the very first sql command i should run to confirm my postgres connection works in this tutorial",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i remove rows from a table without removing the table itself in this tutorial",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to match the column types exactly between the foreign table and the remote table",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i add a check constraint to a foreign table in postgres",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i set per column options like column_name on a foreign table",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens if the remote table's column order does not match the foreign table definition",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens if i query a materialized view before running refresh materialized view for the first time",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i refresh a materialized view without locking it for reads using concurrently",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does create materialized view let me pick a different storage method like a regular table",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to drop and recreate a materialized view to change its underlying query",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the performance tradeoff of refreshing a materialized view often versus rarely",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to be the owner of the foreign server to drop a user mapping",
+      "source": "user",
+      "relevant": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "retrieved": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens to a foreign table's access if i drop the user mapping it relies on",
+      "source": "user",
+      "relevant": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "retrieved": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i find out which user mappings currently exist for a foreign server before dropping one",
+      "source": "user",
+      "relevant": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "retrieved": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is postgres 18.1 a security release or just bug fixes",
+      "source": "user",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0",
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to restart or just reload after applying a postgres minor version update like 18.1",
+      "source": "user",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "should i wait before applying postgres 18.1 in production or apply minor releases right away",
+      "source": "user",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to install an extension to use pg_overexplain or is it built in",
+      "source": "user",
+      "relevant": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "retrieved": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "dc08868f-ca37-43ec-9657-4230c1489cce",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what extra planner details does pg_overexplain show that regular explain does not",
+      "source": "user",
+      "relevant": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "retrieved": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can pg_overexplain output be turned into a visual or graphical plan or is it text only",
+      "source": "user",
+      "relevant": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "retrieved": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between initdb's data checksums flag and turning checksums on later",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "where does initdb get the default username and password from if i don't specify one",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i change the locale of a postgres cluster after running initdb",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens if i run initdb pointing at a data directory that already has files in it",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can merge in postgres delete rows that no longer exist in the source",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does postgres merge support multiple when matched clauses with different conditions",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is merge in postgres atomic the same way a single insert or update statement is",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens if a row matches more than one when clause in a merge statement",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can the merge statement reference more than one source table or only one",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i roll back to a savepoint more than once in the same transaction",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i return a value out of a plpgsql loop once a condition is met",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i nest one composite type inside another composite type's field",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i use btree_gist to stop two rows from having overlapping date ranges",
+      "source": "user",
+      "relevant": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "retrieved": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do i need the btree_gist extension to add an exclude constraint on a plain integer column",
+      "source": "user",
+      "relevant": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "retrieved": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i set up an exclude using gist constraint to prevent double booking a meeting room",
+      "source": "user",
+      "relevant": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "retrieved": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why doesn't my postgres docker image have pltcl support built in",
+      "source": "user",
+      "relevant": [
+        "dc08868f-ca37-43ec-9657-4230c1489cce"
+      ],
+      "retrieved": [
+        "dc08868f-ca37-43ec-9657-4230c1489cce",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between pltcl and the untrusted pltclu variant",
+      "source": "user",
+      "relevant": [
+        "dc08868f-ca37-43ec-9657-4230c1489cce"
+      ],
+      "retrieved": [
+        "dc08868f-ca37-43ec-9657-4230c1489cce",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is pl/tcl still worth using or is it mostly legacy at this point",
+      "source": "user",
+      "relevant": [
+        "dc08868f-ca37-43ec-9657-4230c1489cce"
+      ],
+      "retrieved": [
+        "dc08868f-ca37-43ec-9657-4230c1489cce",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between read committed and repeatable read isolation levels in postgres",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my transaction deadlock even though postgres is supposed to detect it automatically",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do savepoints let me roll back part of a transaction without aborting the whole thing",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does mvcc actually prevent transactions from blocking each other or just sometimes",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why can't i create a temp table and have it survive across separate transactions",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens to a sequence's value if the transaction that incremented it gets rolled back",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i set the isolation level for just one statement instead of the whole transaction",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does an error inside a transaction abort everything until i rollback even if i catch it in my app",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does pg_upgrade fail with a version mismatch error on an extension like postgis",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to update extensions manually after running pg_upgrade",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "dc08868f-ca37-43ec-9657-4230c1489cce",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does pg_upgrade complain about a missing loadable library from the old installation",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can pg_upgrade migrate a database that uses a third party extension like timescaledb",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "dc08868f-ca37-43ec-9657-4230c1489cce",
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does pg_upgrade preserve table statistics or do i need to run analyze after upgrading",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the difference between pg_upgrade's --check flag and actually performing the upgrade",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is it safe to run pg_upgrade in link mode if i need a fallback to the old cluster",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why can't i use refresh materialized view concurrently and with no data together",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does refreshing a materialized view lock it and block reads while it runs",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need a unique index before i can refresh a materialized view concurrently",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how is a materialized view different from a regular view if both just run a query",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to manually refresh a materialized view or does postgres do it automatically",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i create an index on a materialized view the same way i would on a table",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do i have to explicitly cast a row literal to a composite type in a query",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my client library throw a malformed record literal error for composite types",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can postgres store an array of composite type values in a single column",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i access a single field out of a composite type value in a query",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can a table column have a composite type made up of other composite types",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does inserting a composite type value require wrapping it in row and casting",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does creating a foreign table fail saying the server does not exist",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what options do i need to set in create foreign table for postgres_fdw to work",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i map columns to a different name or type on the remote table with postgres_fdw",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "do foreign tables support indexes the same way regular postgres tables do",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i update or delete rows in a foreign table through postgres_fdw",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my logical replication subscription never reach a fully synced state",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i tell which tables are actually included in a postgres publication",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why is the database size growing so much during logical replication setup",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.2,
+      "ndcgAtK": 0.38685280723454163,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i check whether a specific table is part of a postgres publication",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the difference between a publication created for all tables versus a specific table list",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does postgres accept a timestamp that doesn't actually exist because of daylight saving",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how does postgres decide which offset to use for an ambiguous local time during a dst change",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why did my timestamp without time zone get shifted unexpectedly when daylight saving changed",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does casting a table name to regclass fail when there are two tables with the same name in different schemas",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does casting an oid column to regclass sometimes return null",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "5e30f4d3-5299-484e-bf36-132097161f62"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the point of the regclass type instead of just using the raw oid",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do system catalog columns store oid values instead of just using regular integers",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does initdb fail with an invalid locale settings error in docker",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the difference between setting data checksums at initdb time versus enabling them later",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i pass multiple postgres_initdb_args at once without them conflicting",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what locale does initdb pick by default if i don't specify one",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to take any manual action after a postgres minor version upgrade",
+      "source": "user",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "where do i find out if a postgres point release changed something that could break my app",
+      "source": "user",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how often does postgres release minor versions and should i always apply them immediately",
+      "source": "user",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "can a merge statement fire row level triggers the same way insert update and delete do",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the actual difference between merge and insert on conflict do update",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does merge support a transition table for trigger access to old and new rows",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does merge evaluate the when conditions in the order i write them",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i use merge with a source that's the result of a complex join or subquery",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i return a set of rows from a plpgsql function using return query",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the right way to raise an exception with a custom message in plpgsql",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "why does raise notice not show up when i call my function from a client library",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i assign the result of a query into a plpgsql variable",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the syntax for calling another plpgsql function and using its return value",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the difference between a plpgsql function and a plpgsql procedure",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "dc08868f-ca37-43ec-9657-4230c1489cce",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i loop over the results of a query inside a plpgsql function",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the difference between exit and continue inside a plpgsql loop",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i write a for loop that iterates over a range of integers in plpgsql",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i nest a begin exception block inside a loop in plpgsql",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why can't i commit inside a plpython subtransaction block",
+      "source": "user",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does a plpython subtransaction roll back automatically if an exception is raised inside it",
+      "source": "user",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do plpython subtransactions interact with cursors that are still open",
+      "source": "user",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what callback functions does a foreign data wrapper need to implement to support inserts",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is there a framework that handles the low level c callbacks for writing a custom fdw",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to implement every fdw callback or only the ones for the operations i support",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how does postgres estimate the cost of scanning a foreign table during planning",
+      "source": "user",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "can a foreign data wrapper push down filters or joins to the remote server during planning",
+      "source": "user",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my foreign table scan show a generic high cost estimate in explain",
+      "source": "user",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the backup_manifest file that pg_basebackup creates used for",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i verify a postgres backup actually matches its manifest checksums",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why did i get a manifest checksum error when restoring a backup",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does pg_basebackup always generate a backup manifest or do i need to enable it",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's actually inside a postgres backup_manifest file besides checksums",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "5e30f4d3-5299-484e-bf36-132097161f62"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do i get a server does not exist error when creating a user mapping",
+      "source": "user",
+      "relevant": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "retrieved": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does dropping a foreign server automatically drop its user mappings or do i need cascade",
+      "source": "user",
+      "relevant": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "retrieved": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the syntax difference between drop user mapping and drop user mapping if exists",
+      "source": "user",
+      "relevant": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "retrieved": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i find out what type the elements of an array column actually are",
+      "source": "user",
+      "relevant": [
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "retrieved": [
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the element_types view in information_schema actually used for",
+      "source": "user",
+      "relevant": [
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "retrieved": [
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does information_schema.columns show array types differently from element_types",
+      "source": "user",
+      "relevant": [
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "retrieved": [
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "are postgres system catalog tables considered stable to query directly or can they change between versions",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the safest way to query postgres system catalogs without breaking on a version upgrade",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why shouldn't i just join directly against pg_class and pg_attribute instead of using a view",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "are the pg_catalog views guaranteed to stay the same across major postgres versions",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i use btree_gist to add a unique-like constraint on a plain text column combined with a range",
+      "source": "user",
+      "relevant": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "retrieved": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is btree_gist required for every exclude constraint or only ones using range types",
+      "source": "user",
+      "relevant": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "retrieved": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what data types does btree_gist add gist operator support for",
+      "source": "user",
+      "relevant": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "retrieved": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "5e30f4d3-5299-484e-bf36-132097161f62",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the most beginner friendly path through the postgres tutorial for someone new to sql",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does the postgres tutorial cover basic ddl like creating tables and inserting data",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is the official postgres tutorial enough to learn sql or should i use something else first",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what extra debug information does pg_overexplain add that the regular explain command doesn't show",
+      "source": "user",
+      "relevant": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "retrieved": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my connection stay idle in transaction and lock up the connection pool",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i make postgres automatically kill connections that stay idle in transaction too long",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does postgres throw could not serialize access due to concurrent update",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to retry my transaction myself when i get a serialization failure error",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "why does read committed isolation never throw serialization errors but serializable does",
+      "source": "user",
+      "relevant": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does pg_upgrade --check report a failure even though the servers are actually compatible",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is dump and restore safer than pg_upgrade for a dockerized postgres major version upgrade",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why did postgres 18's docker image change its data directory path",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does pg_upgrade's link mode require enough free disk space for a full copy of the data",
+      "source": "user",
+      "relevant": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is merge actually faster than insert on conflict for bulk upserts",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "when should i use insert on conflict instead of merge for a single row upsert",
+      "source": "user",
+      "relevant": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "retrieved": [
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does a materialized view keep returning stale data after the underlying table changes",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i lose the indexes on a materialized view when i refresh it non-concurrently",
+      "source": "user",
+      "relevant": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a"
+      ],
+      "retrieved": [
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the actual difference between select into and perform in plpgsql",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why doesn't perform set the found variable the same way select into does",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do i get an error running a plain select without into inside a plpgsql function",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can a procedure commit or rollback a transaction inside itself but a function can't",
+      "source": "user",
+      "relevant": [
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "retrieved": [
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "dc08868f-ca37-43ec-9657-4230c1489cce"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i loop over an array using foreach instead of a regular for loop in plpgsql",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the difference between foreach in array and looping over unnest in a for loop",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need the slice keyword when using foreach on a one dimensional array",
+      "source": "user",
+      "relevant": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "retrieved": [
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "where can i find a beginner friendly postgres tutorial that covers create table and insert",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's a good starting point for learning sql basics specifically in postgres",
+      "source": "user",
+      "relevant": [
+        "15c61406-46ca-410c-a85b-a58c453b0511"
+      ],
+      "retrieved": [
+        "15c61406-46ca-410c-a85b-a58c453b0511",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "8ea167b3-0710-4509-9321-e9c8efa31972",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i still fetch rows from a cursor after the subtransaction that opened it gets rolled back",
+      "source": "user",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i still need a try except block around a plpython subtransaction if it auto rolls back on error",
+      "source": "user",
+      "relevant": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+      ],
+      "retrieved": [
+        "de18cce1-b56e-4d4b-9b33-0b82c1185f1a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "524ab67d-94de-46c9-a567-1914d997b98e"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "should i use a composite type or just store a jsonb blob for structured data",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i use a composite type as a function argument to bundle related columns together",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does postgres let me return a composite type from a function but not insert one directly into a normal column easily",
+      "source": "user",
+      "relevant": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "retrieved": [
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the difference between regproc and regprocedure when a function name is overloaded",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "dc08868f-ca37-43ec-9657-4230c1489cce",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does casting a function name to regproc fail when there are multiple overloads with that name",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "dc08868f-ca37-43ec-9657-4230c1489cce"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what does to_regproc return instead of raising an error compared to a plain regproc cast",
+      "source": "user",
+      "relevant": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "retrieved": [
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does postgres recommend timestamptz over plain timestamp for almost everything",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does timestamp without time zone actually ignore the timezone offset i send it",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why is there no storage size difference between timestamp and timestamptz if they behave so differently",
+      "source": "user",
+      "relevant": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+      ],
+      "retrieved": [
+        "467cbcca-b6ae-45bf-9cf9-02b441e443ec",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does introspecting array column types take so long in some postgres client drivers",
+      "source": "user",
+      "relevant": [
+        "75543b26-3945-43f2-873f-2395441fcd9a"
+      ],
+      "retrieved": [
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "46c1713f-b18e-4018-b1bd-4c38b15a5a23",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i bulk import all the tables from a remote schema as foreign tables instead of creating each one by hand",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "07693e0b-f689-4aef-80e3-dfb2d875388a",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "can import foreign schema exclude certain tables instead of importing everything",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the setup order for postgres_fdw — server, user mapping, then foreign table or some other order",
+      "source": "user",
+      "relevant": [
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "how does a foreign data wrapper implement join pushdown so two remote tables can be joined on the remote side",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what callback do i set to null if my fdw doesn't support rechecking pushed down joins",
+      "source": "user",
+      "relevant": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do mysql_fdw and oracle_fdw actually push joins down to the remote server or just fetch and join locally",
+      "source": "user",
+      "relevant": [
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "retrieved": [
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "what error do i get if i try to drop a foreign server without cascade while a user mapping still depends on it",
+      "source": "user",
+      "relevant": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+      ],
+      "retrieved": [
+        "7933bbd6-0169-40b0-a8ea-7b95943a9b99",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to refresh the subscription after adding a new table to an existing publication",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i add a table to a publication that was created for all tables",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is adding a table to a publication transactional or can it leave things half-replicated",
+      "source": "user",
+      "relevant": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "retrieved": [
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "790d54b4-be78-4a29-8838-6545ea6c6412",
+        "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what stages does pg_verifybackup go through to check a backup is actually valid",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can pg_verifybackup catch every possible corruption or just obvious ones like missing files",
+      "source": "user",
+      "relevant": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56"
+      ],
+      "retrieved": [
+        "8ab28149-352e-4d6c-a32c-ec619307ba56",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does createdb fail saying the new encoding is incompatible with the template database",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "524ab67d-94de-46c9-a567-1914d997b98e",
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "should i create new databases from template0 instead of template1 to avoid encoding errors",
+      "source": "user",
+      "relevant": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2"
+      ],
+      "retrieved": [
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "1acfad7e-7a9a-4d2f-852a-95b9a516adf0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "should i wait before applying a new postgres minor version or just apply it right away",
+      "source": "user",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "790d54b4-be78-4a29-8838-6545ea6c6412"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to restart postgres to apply a minor version update or is it hot-swappable",
+      "source": "user",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "should i upgrade replicas or the primary server first when applying a minor release",
+      "source": "user",
+      "relevant": [
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "retrieved": [
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "can btree_gist exclude constraints mix an equality check on one column with a range check on another",
+      "source": "user",
+      "relevant": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "retrieved": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "2aff215a-8e52-4c34-8056-6d01339feb97"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i stop two rows from sharing a cage if the animal type is different using btree_gist",
+      "source": "user",
+      "relevant": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12"
+      ],
+      "retrieved": [
+        "ce08663a-3bb2-448f-afe5-24bf049fda12",
+        "fa2e2b16-5a37-4989-9b71-bcbf90f2f968",
+        "bb70da62-31bd-4d61-9d51-c06b17650f3c",
+        "2aff215a-8e52-4c34-8056-6d01339feb97",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what does explain debug mode show that a normal explain output doesn't",
+      "source": "user",
+      "relevant": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "retrieved": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe",
+        "585773c9-c8bb-4604-b267-7b7730c28df2",
+        "b054279b-79fd-41fa-81a7-80138f141e33"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the range_table option in pg_overexplain actually showing me",
+      "source": "user",
+      "relevant": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "retrieved": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "081f6d03-fa3f-460f-8799-411d919bd88f",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does pg_overexplain output look like internal planner data structures instead of a normal query plan",
+      "source": "user",
+      "relevant": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+      ],
+      "retrieved": [
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+        "b054279b-79fd-41fa-81a7-80138f141e33",
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "6f9c968e-a9ab-4441-906a-9f9c5692ac5f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why is information_schema considered more stable across versions than pg_catalog",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "5e30f4d3-5299-484e-bf36-132097161f62"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does information_schema expose postgres specific features or only the sql standard ones",
+      "source": "user",
+      "relevant": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+      ],
+      "retrieved": [
+        "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0",
+        "75543b26-3945-43f2-873f-2395441fcd9a",
+        "26e378a8-b60c-4c76-ae5d-3e18b27c3621",
+        "f5f31ab9-d455-45fb-a47c-de1c5ab3b124",
+        "081f6d03-fa3f-460f-8799-411d919bd88f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
     }
   ],
-  "evaluatedAt": "2026-06-17T05:41:01.076Z",
+  "evaluatedAt": "2026-06-19T04:33:04.836Z",
   "fingerprint": {
     "corpusHash": "08ad4cb469ebd86f3a40ecdf0102d4614c1859e8cb0244e82bbb342d1d7a6d5b",
     "embeddingModel": "gemini-embedding-001"

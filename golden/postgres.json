@@ -1,19 +1,5 @@
 [
   {
-    "query": "What changes were introduced in Release 18.1?",
-    "relevant": [
-      "2aff215a-8e52-4c34-8056-6d01339feb97"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How can I get the error code and message within a PL/pgSQL exception handler?",
-    "relevant": [
-      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
-    ],
-    "source": "synthetic"
-  },
-  {
     "query": "How is the number of returned rows managed when executing a query with SPI?",
     "relevant": [
       "6f9c968e-a9ab-4441-906a-9f9c5692ac5f"
@@ -28,215 +14,2336 @@
     "source": "synthetic"
   },
   {
-    "query": "What are the potential areas of change to consider when upgrading PostgreSQL to a new major version?",
+    "query": "i need to move my postgres server to a newer version without losing data, what's the normal way people do upgrades",
     "relevant": [
       "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
     ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How to estimate the size of a foreign table during query planning?",
-    "relevant": [
-      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How do I create a statement that performs no action in PL/pgSQL?",
-    "relevant": [
-      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How do I reference a database object by name instead of its OID in a function call?",
-    "relevant": [
-      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How do I add new data to a database table?",
-    "relevant": [
-      "15c61406-46ca-410c-a85b-a58c453b0511"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How to find the data type of elements within an array column?",
-    "relevant": [
-      "75543b26-3945-43f2-873f-2395441fcd9a"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How do I create a composite type value as a literal in SQL?",
-    "relevant": [
-      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How does PostgreSQL handle timestamps that fall during daylight saving time changes?",
-    "relevant": [
-      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "What information is included in a PostgreSQL backup manifest?",
-    "relevant": [
-      "8ab28149-352e-4d6c-a32c-ec619307ba56"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How do I ensure that database operations within a PL/Python function are either fully committed or rolled back, even if a Python exception occurs?",
-    "relevant": [
-      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How can I enable more detailed output from the EXPLAIN command for debugging the query planner?",
-    "relevant": [
-      "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How to force a specific server parameter during database cluster initialization?",
-    "relevant": [
-      "585773c9-c8bb-4604-b267-7b7730c28df2"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How do I create a materialized view in SQL?",
-    "relevant": [
-      "07693e0b-f689-4aef-80e3-dfb2d875388a"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How do I delete a user's connection details for a foreign server?",
-    "relevant": [
-      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How can a foreign data wrapper implement remote aggregation or other operations above the scan and join level?",
-    "relevant": [
-      "b054279b-79fd-41fa-81a7-80138f141e33"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "How can I find information about table partitioning keys?",
-    "relevant": [
-      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
-    ],
-    "source": "synthetic"
-  },
-  {
-    "query": "i need to move my postgres server to a newer version without losing data, what's the normal way people do upgrades",
-    "relevant": ["ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"],
     "source": "user"
   },
   {
     "query": "if one query fails in the middle of a transaction does postgres undo everything or do i have to clean it up myself",
-    "relevant": ["790d54b4-be78-4a29-8838-6545ea6c6412"],
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
     "source": "user"
   },
   {
     "query": "inside a plpgsql function how am i supposed to save a query result into a variable",
-    "relevant": ["2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"],
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
     "source": "user"
   },
   {
     "query": "can i do if statements and loops inside postgres functions or do i need to handle that in my application code",
-    "relevant": ["bb70da62-31bd-4d61-9d51-c06b17650f3c"],
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
     "source": "user"
   },
   {
     "query": "i'm using plpython and want to catch an error without blowing up the whole transaction, is there some kind of nested transaction thing",
-    "relevant": ["de18cce1-b56e-4d4b-9b33-0b82c1185f1a"],
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
     "source": "user"
   },
   {
     "query": "where does postgres keep all the metadata about tables and columns, can i query that directly",
-    "relevant": ["40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"],
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
     "source": "user"
   },
   {
     "query": "how can i see which tables are included in a logical replication publication",
-    "relevant": ["081f6d03-fa3f-460f-8799-411d919bd88f"],
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
     "source": "user"
   },
   {
     "query": "i'm writing a foreign data wrapper and can't figure out which functions postgres expects me to implement",
-    "relevant": ["3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"],
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
     "source": "user"
   },
   {
     "query": "when postgres queries a foreign table how does it decide what work can be pushed to the remote server",
-    "relevant": ["b054279b-79fd-41fa-81a7-80138f141e33", "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"],
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33",
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
     "source": "user"
   },
   {
     "query": "after taking a backup how can i verify all the files are actually there and nothing got corrupted",
-    "relevant": ["8ab28149-352e-4d6c-a32c-ec619307ba56"],
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
     "source": "user"
   },
   {
     "query": "can a postgres column contain something that looks like a whole row with multiple fields in it",
-    "relevant": ["fa2e2b16-5a37-4989-9b71-bcbf90f2f968"],
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
     "source": "user"
   },
   {
     "query": "what exactly is an oid in postgres and why do some tables have one of those numbers pointing at other objects",
-    "relevant": ["26e378a8-b60c-4c76-ae5d-3e18b27c3621"],
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
     "source": "user"
   },
   {
     "query": "postgres accepted a timestamp during daylight savings but i'm not sure which actual time it picked, how does that work",
-    "relevant": ["467cbcca-b6ae-45bf-9cf9-02b441e443ec"],
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
     "source": "user"
   },
   {
     "query": "i'm trying to learn postgres from scratch, what's the basic flow for creating tables and running queries",
-    "relevant": ["15c61406-46ca-410c-a85b-a58c453b0511"],
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
     "source": "user"
   },
   {
     "query": "what's the difference between a materialized view and a normal view, does postgres keep the data stored somewhere",
-    "relevant": ["07693e0b-f689-4aef-80e3-dfb2d875388a"],
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
     "source": "user"
   },
   {
     "query": "i have data in another database and want postgres to treat it like a table, is that what foreign tables are for",
-    "relevant": ["2f21f5a8-8818-4d17-9c69-fe7b220654d0"],
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
     "source": "user"
   },
   {
     "query": "is there a postgres command that updates existing rows and inserts missing ones in a single statement",
-    "relevant": ["fd9bbd34-72aa-4fff-b50a-86f603376dbe"],
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
     "source": "user"
   },
   {
     "query": "i accidentally dropped a user mapping and now my foreign server connection broke, how are user mappings removed again",
-    "relevant": ["7933bbd6-0169-40b0-a8ea-7b95943a9b99"],
+    "relevant": [
+      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+    ],
     "source": "user"
   },
   {
     "query": "what are those built in postgres roles that already exist before i create any users, and what permissions do they have",
-    "relevant": ["1acfad7e-7a9a-4d2f-852a-95b9a516adf0"],
-    "source": "user"
+    "relevant": [
+      "1acfad7e-7a9a-4d2f-852a-95b9a516adf0"
+    ],
+    "source": "synthetic"
   },
   {
     "query": "i'm setting up a brand new postgres instance on a server, what actually creates the initial database cluster and files",
-    "relevant": ["585773c9-c8bb-4604-b267-7b7730c28df2"],
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i upgrade postgres in place or do i need to create a new cluster and move the data over",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "after a failed statement postgres says the current transaction is aborted, what is the right way to recover",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what does commit actually do if i ran several updates and inserts in one postgres transaction",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how can i make sure a group of postgres statements either all succeed or all get rolled back",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "in plpgsql do i use select into or perform when i do not care about the query result",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i run dynamic sql inside a postgres function when the table name is only known at runtime",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the clean way to raise an error from a plpgsql function with my own message",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i loop through rows returned by a query inside a postgres function",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can a plpgsql exception block catch one error and let the function continue running",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i return early from a plpgsql function when a condition is met",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how can i find the element type stored inside a postgres array column",
+    "relevant": [
+      "75543b26-3945-43f2-873f-2395441fcd9a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is there a catalog query that tells me whether a type is an array type and what its base type is",
+    "relevant": [
+      "75543b26-3945-43f2-873f-2395441fcd9a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "in plpython can i wrap a risky insert in a subtransaction so only that insert rolls back",
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what happens to database changes made inside a plpython subtransaction if python raises an exception",
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "which postgres catalog tables should i look at to inspect database metadata",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is information_schema the only way to inspect postgres tables or can i query pg_catalog directly",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is pg_opfamily used for when postgres decides how indexes compare values",
+    "relevant": [
+      "5e30f4d3-5299-484e-bf36-132097161f62"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "where can i see the operator families that belong to a postgres index access method",
+    "relevant": [
+      "5e30f4d3-5299-484e-bf36-132097161f62"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "how can i list all tables that are being published for logical replication",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does postgres have a view that expands publication membership into the actual published tables",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "which callback tells postgres the size and cost of a foreign scan",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "when building an fdw which callbacks are needed for planning versus executing the scan",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86",
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how does a foreign data wrapper tell the planner it can push down joins or aggregates",
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what does postgres mean by upper relation paths in fdw planning",
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "where should i look if i want the original papers behind postgres geqo",
+    "relevant": [
+      "8ea167b3-0710-4509-9321-e9c8efa31972"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "is there a bibliography for the genetic query optimizer used by postgres",
+    "relevant": [
+      "8ea167b3-0710-4509-9321-e9c8efa31972"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "what fields are at the top level of a postgres backup manifest json file",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how can i tell which wal ranges and checksums are recorded in a postgres backup manifest",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i define a postgres type that groups several fields together like a struct",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i access one field from a composite type column in a select statement",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does postgres have regclass and regtype instead of just using raw oid numbers",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i pass a table name to a postgres function that expects an object identifier",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what does postgres do with a timestamp that falls in the missing hour during daylight savings",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "when a local timestamp happens twice because clocks move back, which one does postgres choose",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what are the basic sql commands i need to create a table insert rows and query them in postgres",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i update or delete rows after following the basic postgres tutorial examples",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i define a foreign table in postgres that points at data on another server",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what options can i put on create foreign table for a postgres fdw table",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i refresh a materialized view after the underlying tables have changed",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i create a materialized view from a query and give the result columns names",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i run insert or update statements on a remote postgres database through dblink",
+    "relevant": [
+      "524ab67d-94de-46c9-a567-1914d997b98e"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "what does dblink_exec return when a command succeeds or fails on the remote connection",
+    "relevant": [
+      "524ab67d-94de-46c9-a567-1914d997b98e"
+    ],
+    "source": "synthetic"
+  },
+  {
+    "query": "what is the syntax to drop a user mapping for a foreign server in postgres",
+    "relevant": [
+      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i drop a foreign server user mapping only if it exists so my migration does not fail",
+    "relevant": [
+      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what changed in postgres 18.1 that might affect an upgrade or maintenance release",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "where can i read the official notes for the postgres 18.1 bug fixes",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how can i get more verbose explain output that shows planner internals",
+    "relevant": [
+      "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is pg_overexplain for and how is it different from normal explain",
+    "relevant": [
+      "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what initdb option sets the locale or encoding when creating a new postgres cluster",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can initdb create checksums for a new postgres data directory",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "should i use merge when i need postgres to insert missing rows and update matching rows",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how does postgres merge decide whether to run the matched or not matched action",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the difference between pg_upgrade's link mode and copy mode",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to run reindex after a pg_upgrade",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can pg_upgrade skip the dump and restore step entirely",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what extensions or custom types can break a postgres major version upgrade",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does pg_upgrade need the old and new postgres binaries installed at the same time",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i upgrade across more than one major version in a single pg_upgrade run",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do replication slots survive a pg_upgrade or do i need to recreate them",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does postgres abort the whole transaction after one failed statement instead of just that statement",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the difference between begin commit and autocommit in postgres",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i nest begin transaction blocks in postgres",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do savepoints let me roll back part of a transaction without losing everything",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what isolation level does postgres use by default for a transaction",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can a single sql statement contain more than one savepoint",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i find out if a column is an array and what type its elements are using information_schema",
+    "relevant": [
+      "75543b26-3945-43f2-873f-2395441fcd9a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does information_schema.columns show ARRAY as the data type instead of the real element type",
+    "relevant": [
+      "75543b26-3945-43f2-873f-2395441fcd9a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is element_types the right information_schema view to look up array element types",
+    "relevant": [
+      "75543b26-3945-43f2-873f-2395441fcd9a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why do i get too many rows returned when using select into in plpgsql",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i build and run a dynamic sql string safely with format and quote_ident in plpgsql",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what happens if select into finds no matching row in a plpgsql function",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i raise a custom exception with an error code in plpgsql",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i assign a value to a plpgsql variable without running a query",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the difference between raise notice and raise exception in plpgsql",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is there a way to skip declaring a variable type explicitly in plpgsql",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why do i get a continue cannot be used outside a loop error in my exception handler",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the difference between foreach and for loops in plpgsql",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i loop over the elements of an array in plpgsql",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i use a case statement instead of nested if else in plpgsql",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i exit a loop early in plpgsql without using an exception",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the difference between exit and continue in a plpgsql loop",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i use the python with statement to manage a subtransaction in plpython",
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does a plpython subtransaction rollback automatically when an exception escapes the with block",
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i catch a specific spi error in plpython without aborting the whole function",
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the difference between information_schema and pg_catalog and which one should i use",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why do pg_catalog table and column names not match what i see in information_schema",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "are pg_catalog internals stable across postgres major versions or can they change",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why do some pg_catalog columns store arrays of oids instead of readable names",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does pg_publication_tables show more tables than pg_publication_rel for a for all tables publication",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i check which columns are included when a publication uses a column list",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does pg_publication_tables show the row filter applied to a published table",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how is pg_publication_tables different from just joining pg_publication and pg_class manually",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the minimum set of callbacks a read only foreign data wrapper has to implement",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "which fdw callback is responsible for actually fetching rows during execution",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i implement explain output for my custom foreign data wrapper",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to implement the analyze callback for a foreign data wrapper or is it optional",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what does GetForeignPaths actually need to add to the planner for a foreign table",
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how does postgres decide whether to push a where clause down to the foreign server",
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is an upper relation in the context of fdw planning",
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why would a foreign data wrapper choose not to support sorted or merge join paths",
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i use the backup manifest to verify a restored cluster without re reading every file",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what tool actually validates a postgres backup manifest",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does the backup manifest include checksums for every single file in the backup",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is the backup manifest itself protected by a checksum so a corrupted manifest is detected",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why do i need extra parentheses when selecting a field from a composite type column",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can a function return a composite type instead of multiple out parameters",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i cast a row of columns into a composite type value",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i build a composite type value out of variables inside a plpgsql function",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i compare two composite type values for equality in postgres",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does casting a table name to regclass let me avoid hardcoding its oid",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what happens to a regclass value if the table it points to gets renamed",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "are oid values stable across a pg_dump and restore",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the difference between oid and regproc when referring to a function",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does postgres throw an error or just pick a time when a timestamp falls in the dst gap",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how does the time zone abbreviation affect which offset postgres picks for an ambiguous local time",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why did changing the session time zone change how an ambiguous timestamp gets interpreted",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is there a setting that makes postgres reject ambiguous timestamps instead of guessing",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the very first thing i should try after creating a table in the postgres tutorial",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do joins work between two tables in the basic postgres tutorial",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the difference between update and delete in this part of the postgres tutorial",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the very first sql command i should run to confirm my postgres connection works in this tutorial",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i remove rows from a table without removing the table itself in this tutorial",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to match the column types exactly between the foreign table and the remote table",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i add a check constraint to a foreign table in postgres",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i set per column options like column_name on a foreign table",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what happens if the remote table's column order does not match the foreign table definition",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what happens if i query a materialized view before running refresh materialized view for the first time",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i refresh a materialized view without locking it for reads using concurrently",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does create materialized view let me pick a different storage method like a regular table",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to drop and recreate a materialized view to change its underlying query",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the performance tradeoff of refreshing a materialized view often versus rarely",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to be the owner of the foreign server to drop a user mapping",
+    "relevant": [
+      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what happens to a foreign table's access if i drop the user mapping it relies on",
+    "relevant": [
+      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i find out which user mappings currently exist for a foreign server before dropping one",
+    "relevant": [
+      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is postgres 18.1 a security release or just bug fixes",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to restart or just reload after applying a postgres minor version update like 18.1",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "should i wait before applying postgres 18.1 in production or apply minor releases right away",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to install an extension to use pg_overexplain or is it built in",
+    "relevant": [
+      "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what extra planner details does pg_overexplain show that regular explain does not",
+    "relevant": [
+      "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can pg_overexplain output be turned into a visual or graphical plan or is it text only",
+    "relevant": [
+      "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the difference between initdb's data checksums flag and turning checksums on later",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "where does initdb get the default username and password from if i don't specify one",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i change the locale of a postgres cluster after running initdb",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what happens if i run initdb pointing at a data directory that already has files in it",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can merge in postgres delete rows that no longer exist in the source",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does postgres merge support multiple when matched clauses with different conditions",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is merge in postgres atomic the same way a single insert or update statement is",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what happens if a row matches more than one when clause in a merge statement",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can the merge statement reference more than one source table or only one",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i roll back to a savepoint more than once in the same transaction",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i return a value out of a plpgsql loop once a condition is met",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i nest one composite type inside another composite type's field",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i use btree_gist to stop two rows from having overlapping date ranges",
+    "relevant": [
+      "ce08663a-3bb2-448f-afe5-24bf049fda12"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why do i need the btree_gist extension to add an exclude constraint on a plain integer column",
+    "relevant": [
+      "ce08663a-3bb2-448f-afe5-24bf049fda12"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i set up an exclude using gist constraint to prevent double booking a meeting room",
+    "relevant": [
+      "ce08663a-3bb2-448f-afe5-24bf049fda12"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why doesn't my postgres docker image have pltcl support built in",
+    "relevant": [
+      "dc08868f-ca37-43ec-9657-4230c1489cce"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the difference between pltcl and the untrusted pltclu variant",
+    "relevant": [
+      "dc08868f-ca37-43ec-9657-4230c1489cce"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is pl/tcl still worth using or is it mostly legacy at this point",
+    "relevant": [
+      "dc08868f-ca37-43ec-9657-4230c1489cce"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the difference between read committed and repeatable read isolation levels in postgres",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does my transaction deadlock even though postgres is supposed to detect it automatically",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do savepoints let me roll back part of a transaction without aborting the whole thing",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does mvcc actually prevent transactions from blocking each other or just sometimes",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why can't i create a temp table and have it survive across separate transactions",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what happens to a sequence's value if the transaction that incremented it gets rolled back",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i set the isolation level for just one statement instead of the whole transaction",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does an error inside a transaction abort everything until i rollback even if i catch it in my app",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does pg_upgrade fail with a version mismatch error on an extension like postgis",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to update extensions manually after running pg_upgrade",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does pg_upgrade complain about a missing loadable library from the old installation",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can pg_upgrade migrate a database that uses a third party extension like timescaledb",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does pg_upgrade preserve table statistics or do i need to run analyze after upgrading",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the difference between pg_upgrade's --check flag and actually performing the upgrade",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is it safe to run pg_upgrade in link mode if i need a fallback to the old cluster",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why can't i use refresh materialized view concurrently and with no data together",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does refreshing a materialized view lock it and block reads while it runs",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need a unique index before i can refresh a materialized view concurrently",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how is a materialized view different from a regular view if both just run a query",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to manually refresh a materialized view or does postgres do it automatically",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i create an index on a materialized view the same way i would on a table",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why do i have to explicitly cast a row literal to a composite type in a query",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does my client library throw a malformed record literal error for composite types",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can postgres store an array of composite type values in a single column",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i access a single field out of a composite type value in a query",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can a table column have a composite type made up of other composite types",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does inserting a composite type value require wrapping it in row and casting",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does creating a foreign table fail saying the server does not exist",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what options do i need to set in create foreign table for postgres_fdw to work",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i map columns to a different name or type on the remote table with postgres_fdw",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do foreign tables support indexes the same way regular postgres tables do",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i update or delete rows in a foreign table through postgres_fdw",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does my logical replication subscription never reach a fully synced state",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i tell which tables are actually included in a postgres publication",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why is the database size growing so much during logical replication setup",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i check whether a specific table is part of a postgres publication",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the difference between a publication created for all tables versus a specific table list",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does postgres accept a timestamp that doesn't actually exist because of daylight saving",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how does postgres decide which offset to use for an ambiguous local time during a dst change",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why did my timestamp without time zone get shifted unexpectedly when daylight saving changed",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does casting a table name to regclass fail when there are two tables with the same name in different schemas",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does casting an oid column to regclass sometimes return null",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the point of the regclass type instead of just using the raw oid",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why do system catalog columns store oid values instead of just using regular integers",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does initdb fail with an invalid locale settings error in docker",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the difference between setting data checksums at initdb time versus enabling them later",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i pass multiple postgres_initdb_args at once without them conflicting",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what locale does initdb pick by default if i don't specify one",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to take any manual action after a postgres minor version upgrade",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "where do i find out if a postgres point release changed something that could break my app",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how often does postgres release minor versions and should i always apply them immediately",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can a merge statement fire row level triggers the same way insert update and delete do",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the actual difference between merge and insert on conflict do update",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does merge support a transition table for trigger access to old and new rows",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does merge evaluate the when conditions in the order i write them",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i use merge with a source that's the result of a complex join or subquery",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i return a set of rows from a plpgsql function using return query",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the right way to raise an exception with a custom message in plpgsql",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does raise notice not show up when i call my function from a client library",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i assign the result of a query into a plpgsql variable",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the syntax for calling another plpgsql function and using its return value",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the difference between a plpgsql function and a plpgsql procedure",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i loop over the results of a query inside a plpgsql function",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the difference between exit and continue inside a plpgsql loop",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i write a for loop that iterates over a range of integers in plpgsql",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i nest a begin exception block inside a loop in plpgsql",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why can't i commit inside a plpython subtransaction block",
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does a plpython subtransaction roll back automatically if an exception is raised inside it",
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do plpython subtransactions interact with cursors that are still open",
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what callback functions does a foreign data wrapper need to implement to support inserts",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is there a framework that handles the low level c callbacks for writing a custom fdw",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to implement every fdw callback or only the ones for the operations i support",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how does postgres estimate the cost of scanning a foreign table during planning",
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can a foreign data wrapper push down filters or joins to the remote server during planning",
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does my foreign table scan show a generic high cost estimate in explain",
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the backup_manifest file that pg_basebackup creates used for",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i verify a postgres backup actually matches its manifest checksums",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why did i get a manifest checksum error when restoring a backup",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does pg_basebackup always generate a backup manifest or do i need to enable it",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's actually inside a postgres backup_manifest file besides checksums",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why do i get a server does not exist error when creating a user mapping",
+    "relevant": [
+      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does dropping a foreign server automatically drop its user mappings or do i need cascade",
+    "relevant": [
+      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the syntax difference between drop user mapping and drop user mapping if exists",
+    "relevant": [
+      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i find out what type the elements of an array column actually are",
+    "relevant": [
+      "75543b26-3945-43f2-873f-2395441fcd9a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the element_types view in information_schema actually used for",
+    "relevant": [
+      "75543b26-3945-43f2-873f-2395441fcd9a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does information_schema.columns show array types differently from element_types",
+    "relevant": [
+      "75543b26-3945-43f2-873f-2395441fcd9a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "are postgres system catalog tables considered stable to query directly or can they change between versions",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the safest way to query postgres system catalogs without breaking on a version upgrade",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why shouldn't i just join directly against pg_class and pg_attribute instead of using a view",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "are the pg_catalog views guaranteed to stay the same across major postgres versions",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i use btree_gist to add a unique-like constraint on a plain text column combined with a range",
+    "relevant": [
+      "ce08663a-3bb2-448f-afe5-24bf049fda12"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is btree_gist required for every exclude constraint or only ones using range types",
+    "relevant": [
+      "ce08663a-3bb2-448f-afe5-24bf049fda12"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what data types does btree_gist add gist operator support for",
+    "relevant": [
+      "ce08663a-3bb2-448f-afe5-24bf049fda12"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the most beginner friendly path through the postgres tutorial for someone new to sql",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does the postgres tutorial cover basic ddl like creating tables and inserting data",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is the official postgres tutorial enough to learn sql or should i use something else first",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what extra debug information does pg_overexplain add that the regular explain command doesn't show",
+    "relevant": [
+      "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does my connection stay idle in transaction and lock up the connection pool",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i make postgres automatically kill connections that stay idle in transaction too long",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does postgres throw could not serialize access due to concurrent update",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to retry my transaction myself when i get a serialization failure error",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does read committed isolation never throw serialization errors but serializable does",
+    "relevant": [
+      "790d54b4-be78-4a29-8838-6545ea6c6412"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does pg_upgrade --check report a failure even though the servers are actually compatible",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is dump and restore safer than pg_upgrade for a dockerized postgres major version upgrade",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why did postgres 18's docker image change its data directory path",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does pg_upgrade's link mode require enough free disk space for a full copy of the data",
+    "relevant": [
+      "ef3cae0a-02a1-4e06-94c9-51ecf0ed066b"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is merge actually faster than insert on conflict for bulk upserts",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "when should i use insert on conflict instead of merge for a single row upsert",
+    "relevant": [
+      "fd9bbd34-72aa-4fff-b50a-86f603376dbe"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does a materialized view keep returning stale data after the underlying table changes",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i lose the indexes on a materialized view when i refresh it non-concurrently",
+    "relevant": [
+      "07693e0b-f689-4aef-80e3-dfb2d875388a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the actual difference between select into and perform in plpgsql",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why doesn't perform set the found variable the same way select into does",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why do i get an error running a plain select without into inside a plpgsql function",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can a procedure commit or rollback a transaction inside itself but a function can't",
+    "relevant": [
+      "2a5d5699-8efd-45e5-a2c8-2b6d3dcf3c6c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i loop over an array using foreach instead of a regular for loop in plpgsql",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the difference between foreach in array and looping over unnest in a for loop",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need the slice keyword when using foreach on a one dimensional array",
+    "relevant": [
+      "bb70da62-31bd-4d61-9d51-c06b17650f3c"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "where can i find a beginner friendly postgres tutorial that covers create table and insert",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's a good starting point for learning sql basics specifically in postgres",
+    "relevant": [
+      "15c61406-46ca-410c-a85b-a58c453b0511"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i still fetch rows from a cursor after the subtransaction that opened it gets rolled back",
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i still need a try except block around a plpython subtransaction if it auto rolls back on error",
+    "relevant": [
+      "de18cce1-b56e-4d4b-9b33-0b82c1185f1a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "should i use a composite type or just store a jsonb blob for structured data",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i use a composite type as a function argument to bundle related columns together",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does postgres let me return a composite type from a function but not insert one directly into a normal column easily",
+    "relevant": [
+      "fa2e2b16-5a37-4989-9b71-bcbf90f2f968"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the difference between regproc and regprocedure when a function name is overloaded",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does casting a function name to regproc fail when there are multiple overloads with that name",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what does to_regproc return instead of raising an error compared to a plain regproc cast",
+    "relevant": [
+      "26e378a8-b60c-4c76-ae5d-3e18b27c3621"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does postgres recommend timestamptz over plain timestamp for almost everything",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does timestamp without time zone actually ignore the timezone offset i send it",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why is there no storage size difference between timestamp and timestamptz if they behave so differently",
+    "relevant": [
+      "467cbcca-b6ae-45bf-9cf9-02b441e443ec"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does introspecting array column types take so long in some postgres client drivers",
+    "relevant": [
+      "75543b26-3945-43f2-873f-2395441fcd9a"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i bulk import all the tables from a remote schema as foreign tables instead of creating each one by hand",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can import foreign schema exclude certain tables instead of importing everything",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what's the setup order for postgres_fdw \u2014 server, user mapping, then foreign table or some other order",
+    "relevant": [
+      "2f21f5a8-8818-4d17-9c69-fe7b220654d0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how does a foreign data wrapper implement join pushdown so two remote tables can be joined on the remote side",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what callback do i set to null if my fdw doesn't support rechecking pushed down joins",
+    "relevant": [
+      "3dfd40cf-003b-4f9e-a1f7-d68f70ddbe86"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do mysql_fdw and oracle_fdw actually push joins down to the remote server or just fetch and join locally",
+    "relevant": [
+      "b054279b-79fd-41fa-81a7-80138f141e33"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what error do i get if i try to drop a foreign server without cascade while a user mapping still depends on it",
+    "relevant": [
+      "7933bbd6-0169-40b0-a8ea-7b95943a9b99"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to refresh the subscription after adding a new table to an existing publication",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can i add a table to a publication that was created for all tables",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "is adding a table to a publication transactional or can it leave things half-replicated",
+    "relevant": [
+      "081f6d03-fa3f-460f-8799-411d919bd88f"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what stages does pg_verifybackup go through to check a backup is actually valid",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can pg_verifybackup catch every possible corruption or just obvious ones like missing files",
+    "relevant": [
+      "8ab28149-352e-4d6c-a32c-ec619307ba56"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does createdb fail saying the new encoding is incompatible with the template database",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "should i create new databases from template0 instead of template1 to avoid encoding errors",
+    "relevant": [
+      "585773c9-c8bb-4604-b267-7b7730c28df2"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "should i wait before applying a new postgres minor version or just apply it right away",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "do i need to restart postgres to apply a minor version update or is it hot-swappable",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "should i upgrade replicas or the primary server first when applying a minor release",
+    "relevant": [
+      "2aff215a-8e52-4c34-8056-6d01339feb97"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "can btree_gist exclude constraints mix an equality check on one column with a range check on another",
+    "relevant": [
+      "ce08663a-3bb2-448f-afe5-24bf049fda12"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "how do i stop two rows from sharing a cage if the animal type is different using btree_gist",
+    "relevant": [
+      "ce08663a-3bb2-448f-afe5-24bf049fda12"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what does explain debug mode show that a normal explain output doesn't",
+    "relevant": [
+      "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "what is the range_table option in pg_overexplain actually showing me",
+    "relevant": [
+      "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why does pg_overexplain output look like internal planner data structures instead of a normal query plan",
+    "relevant": [
+      "f5f31ab9-d455-45fb-a47c-de1c5ab3b124"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "why is information_schema considered more stable across versions than pg_catalog",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
+    "source": "user"
+  },
+  {
+    "query": "does information_schema expose postgres specific features or only the sql standard ones",
+    "relevant": [
+      "40ff94a9-7fcb-4d2a-9668-160b2a4c5ff0"
+    ],
     "source": "user"
   }
 ]
