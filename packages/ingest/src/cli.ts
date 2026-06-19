@@ -100,14 +100,27 @@ async function main(): Promise<void> {
           path.join(opts.cacheDir, corpusConfig.embeddingModel),
         );
 
-    console.log(`\nFetching sitemap for corpus: ${name}`);
-    const allUrls = await fetchSitemap(corpusConfig.sitemapUrl, corpusConfig.sitemapPathFilter);
-    if (allUrls.length === 0) {
-      throw new Error(
-        `fetchSitemap returned 0 URLs for corpus "${name}" (sitemapUrl=${corpusConfig.sitemapUrl}, pathFilter=${corpusConfig.sitemapPathFilter ?? "/docs"})`,
-      );
+    let urls: string[];
+    if (corpusConfig.pinnedUrls === undefined) {
+      console.log(`\nFetching sitemap for corpus: ${name}`);
+      const allUrls = await fetchSitemap(corpusConfig.sitemapUrl, corpusConfig.sitemapPathFilter);
+      if (allUrls.length === 0) {
+        throw new Error(
+          `fetchSitemap returned 0 URLs for corpus "${name}" (sitemapUrl=${corpusConfig.sitemapUrl}, pathFilter=${corpusConfig.sitemapPathFilter ?? "/docs"})`,
+        );
+      }
+      urls = allUrls.slice(0, opts.limit);
+    } else {
+      // Pinned corpus: skip the live sitemap fetch entirely, and ignore --limit. A
+      // sitemap's <loc> order is not guaranteed stable across fetches, so slicing it
+      // would silently swap out documents the committed golden dataset was built
+      // against; --limit truncating the pinned list itself would do the same.
+      console.log(`\nUsing pinned URL list for corpus: ${name}`);
+      urls = corpusConfig.pinnedUrls;
+      if (urls.length === 0) {
+        throw new Error(`corpus "${name}" has an empty pinnedUrls list`);
+      }
     }
-    const urls = allUrls.slice(0, opts.limit);
     console.log(`  ${String(urls.length)} URLs to process`);
 
     for (const url of urls) {
