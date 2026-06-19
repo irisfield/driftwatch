@@ -1,308 +1,23 @@
 {
   "k": 5,
-  "recallAtK": 1,
-  "precisionAtK": 0.20000000000000004,
-  "mrr": 0.9206349206349207,
-  "ndcgAtK": 0.9410409289115674,
-  "hitRate": 1,
+  "recallAtK": 0.9848484848484849,
+  "precisionAtK": 0.19696969696969704,
+  "mrr": 0.8043771043771043,
+  "ndcgAtK": 0.8494486553631343,
+  "hitRate": 0.9848484848484849,
   "queries": [
     {
-      "query": "How do I find my Supabase Data API URL and keys?",
-      "source": "synthetic",
-      "relevant": [
-        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
-      ],
-      "retrieved": [
-        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
-        "dd7133ff-6993-4d3d-952c-359c355b01b4",
-        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
-        "05cca948-e989-4454-9f6d-c6b63250a197"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How can I monitor application events and performance using Supabase?",
-      "source": "synthetic",
-      "relevant": [
-        "e7f1a326-613b-404b-a518-e7258bf02db7"
-      ],
-      "retrieved": [
-        "e7f1a326-613b-404b-a518-e7258bf02db7",
-        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
-        "df8fee98-0fc9-4213-8917-fd5310304872",
-        "66352cca-08ed-49c6-b49c-64ff36242f56",
-        "8e047084-7081-47a1-ba64-2df402012794"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How do AI embeddings represent the similarity between different types of data?",
-      "source": "synthetic",
-      "relevant": [
-        "32edad27-fd9e-4ad5-a86a-7aca79862765"
-      ],
-      "retrieved": [
-        "32edad27-fd9e-4ad5-a86a-7aca79862765",
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
-        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
-        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
-        "1dbad218-16e1-493c-8ba7-2855b04981aa"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How can I ensure messages are delivered reliably and only once to background processes using Supabase?",
-      "source": "synthetic",
-      "relevant": [
-        "1553fbac-4404-4325-8242-bceb2fd7acb6"
-      ],
-      "retrieved": [
-        "1553fbac-4404-4325-8242-bceb2fd7acb6",
-        "8e047084-7081-47a1-ba64-2df402012794",
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
-        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
-        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How to optimize pgvector index build parameters for query performance?",
-      "source": "synthetic",
-      "relevant": [
-        "03b762b7-6c50-4022-87a4-0be7d544a675"
-      ],
-      "retrieved": [
-        "03b762b7-6c50-4022-87a4-0be7d544a675",
-        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
-        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
-        "90438d24-d735-45de-94c6-d96707935dc3"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How to access request headers for authorization in PostgREST?",
-      "source": "synthetic",
-      "relevant": [
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
-      ],
-      "retrieved": [
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
-        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
-        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
-        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
-        "dd7133ff-6993-4d3d-952c-359c355b01b4"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How can I send instant messages between users in my application?",
-      "source": "synthetic",
-      "relevant": [
-        "8e047084-7081-47a1-ba64-2df402012794"
-      ],
-      "retrieved": [
-        "8e047084-7081-47a1-ba64-2df402012794",
-        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
-        "dd7133ff-6993-4d3d-952c-359c355b01b4",
-        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How can I connect Supabase projects to Vercel?",
-      "source": "synthetic",
-      "relevant": [
-        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c"
-      ],
-      "retrieved": [
-        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c",
-        "dd7133ff-6993-4d3d-952c-359c355b01b4",
-        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
-        "1dbad218-16e1-493c-8ba7-2855b04981aa"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How to retrieve specific columns from a Supabase table?",
-      "source": "synthetic",
-      "relevant": [
-        "dd7133ff-6993-4d3d-952c-359c355b01b4"
-      ],
-      "retrieved": [
-        "dd7133ff-6993-4d3d-952c-359c355b01b4",
-        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
-        "1dbad218-16e1-493c-8ba7-2855b04981aa",
-        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
-        "05cca948-e989-4454-9f6d-c6b63250a197"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How do I move users from Auth0 to Supabase?",
-      "source": "synthetic",
-      "relevant": [
-        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a"
-      ],
-      "retrieved": [
-        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
-        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
-        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
-        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c",
-        "df8fee98-0fc9-4213-8917-fd5310304872"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 0.5,
-      "ndcgAtK": 0.6309297535714575,
-      "hitRate": 1
-    },
-    {
-      "query": "How can I integrate OpenAI models into my Edge Functions?",
-      "source": "synthetic",
-      "relevant": [
-        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
-      ],
-      "retrieved": [
-        "79870e02-6f7f-4353-b111-b393f0a3de5c",
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
-        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
-        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
-        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 0.3333333333333333,
-      "ndcgAtK": 0.5,
-      "hitRate": 1
-    },
-    {
-      "query": "How does Postgres' full-text search enable precise word or phrase matching in data retrieval?",
-      "source": "synthetic",
-      "relevant": [
-        "37d2dcf4-e2f3-4faf-8c66-263344822b43"
-      ],
-      "retrieved": [
-        "37d2dcf4-e2f3-4faf-8c66-263344822b43",
-        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
-        "1dbad218-16e1-493c-8ba7-2855b04981aa",
-        "03b762b7-6c50-4022-87a4-0be7d544a675",
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How do I set up Supabase for local development?",
-      "source": "synthetic",
-      "relevant": [
-        "66352cca-08ed-49c6-b49c-64ff36242f56"
-      ],
-      "retrieved": [
-        "df8fee98-0fc9-4213-8917-fd5310304872",
-        "66352cca-08ed-49c6-b49c-64ff36242f56",
-        "05cca948-e989-4454-9f6d-c6b63250a197",
-        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 0.5,
-      "ndcgAtK": 0.6309297535714575,
-      "hitRate": 1
-    },
-    {
-      "query": "What are the different types of storage buckets available in Supabase and what are they used for?",
-      "source": "synthetic",
-      "relevant": [
-        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e"
-      ],
-      "retrieved": [
-        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
-        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
-        "66352cca-08ed-49c6-b49c-64ff36242f56",
-        "df8fee98-0fc9-4213-8917-fd5310304872",
-        "05cca948-e989-4454-9f6d-c6b63250a197"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How can I connect my AI agent to my Supabase project to manage its schema and queries?",
-      "source": "synthetic",
+      "query": "how do i connect an ai coding assistant to my supabase project so it can run migrations",
+      "source": "user",
       "relevant": [
         "2f6dc3bc-437d-4c6b-aeec-811623a7b017"
       ],
       "retrieved": [
         "2f6dc3bc-437d-4c6b-aeec-811623a7b017",
-        "8e8315ec-072b-4f94-9280-975f3a669b65",
-        "1dbad218-16e1-493c-8ba7-2855b04981aa",
-        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
-        "df8fee98-0fc9-4213-8917-fd5310304872"
-      ],
-      "recallAtK": 1,
-      "precisionAtK": 0.2,
-      "mrr": 1,
-      "ndcgAtK": 1,
-      "hitRate": 1
-    },
-    {
-      "query": "How do I start the local Supabase development environment?",
-      "source": "synthetic",
-      "relevant": [
-        "df8fee98-0fc9-4213-8917-fd5310304872"
-      ],
-      "retrieved": [
-        "df8fee98-0fc9-4213-8917-fd5310304872",
         "66352cca-08ed-49c6-b49c-64ff36242f56",
-        "05cca948-e989-4454-9f6d-c6b63250a197",
-        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
       ],
       "recallAtK": 1,
       "precisionAtK": 0.2,
@@ -311,17 +26,17 @@
       "hitRate": 1
     },
     {
-      "query": "How can I get notified about Supabase platform outages?",
-      "source": "synthetic",
+      "query": "is there an official supabase mcp server i can point claude or cursor at",
+      "source": "user",
       "relevant": [
-        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017"
       ],
       "retrieved": [
-        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
-        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
-        "8e047084-7081-47a1-ba64-2df402012794",
-        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
-        "e7f1a326-613b-404b-a518-e7258bf02db7"
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017",
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
       ],
       "recallAtK": 1,
       "precisionAtK": 0.2,
@@ -330,16 +45,56 @@
       "hitRate": 1
     },
     {
-      "query": "How do I create a new collection in the database?",
-      "source": "synthetic",
+      "query": "what can an ai agent actually do in my supabase project once it's connected through mcp",
+      "source": "user",
       "relevant": [
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017"
+      ],
+      "retrieved": [
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between the supabase ai and vectors guide and just using pgvector directly",
+      "source": "user",
+      "relevant": [
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f"
+      ],
+      "retrieved": [
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017",
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need a separate vector database or can supabase store embeddings in postgres",
+      "source": "user",
+      "relevant": [
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f"
+      ],
+      "retrieved": [
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
         "90438d24-d735-45de-94c6-d96707935dc3"
       ],
-      "retrieved": [
-        "90438d24-d735-45de-94c6-d96707935dc3",
-        "dd7133ff-6993-4d3d-952c-359c355b01b4",
-        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
-      ],
       "recallAtK": 1,
       "precisionAtK": 0.2,
       "mrr": 1,
@@ -347,8 +102,8 @@
       "hitRate": 1
     },
     {
-      "query": "What authentication methods does Supabase Auth support?",
-      "source": "synthetic",
+      "query": "what authentication methods does supabase auth support out of the box",
+      "source": "user",
       "relevant": [
         "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
       ],
@@ -366,8 +121,507 @@
       "hitRate": 1
     },
     {
-      "query": "How can I set up automatic deployments for my Supabase project?",
-      "source": "synthetic",
+      "query": "why does my oauth sign in redirect back without ever returning a session",
+      "source": "user",
+      "relevant": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+      ],
+      "retrieved": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.2,
+      "ndcgAtK": 0.38685280723454163,
+      "hitRate": 1
+    },
+    {
+      "query": "what does invalid claim missing sub claim mean when setting up google oauth with supabase",
+      "source": "user",
+      "relevant": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+      ],
+      "retrieved": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do i get an auth session missing error after upgrading the supabase js client",
+      "source": "user",
+      "relevant": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+      ],
+      "retrieved": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between a supabase auth session and just verifying a jwt myself",
+      "source": "user",
+      "relevant": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+      ],
+      "retrieved": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i set up multi factor authentication for users in supabase auth",
+      "source": "user",
+      "relevant": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+      ],
+      "retrieved": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i use a custom email provider for auth confirmation emails instead of the default",
+      "source": "user",
+      "relevant": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+      ],
+      "retrieved": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can postgres automatically generate and update embeddings when a row changes without my application code doing it",
+      "source": "user",
+      "relevant": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what trigger does supabase automatic embeddings use to keep vectors in sync with the source column",
+      "source": "user",
+      "relevant": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens to the embedding column if i update the source text column directly in sql",
+      "source": "user",
+      "relevant": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "should i use the vecs python client or talk to pgvector directly through sqlalchemy",
+      "source": "user",
+      "relevant": [
+        "8e8315ec-072b-4f94-9280-975f3a669b65"
+      ],
+      "retrieved": [
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what python client does supabase recommend for storing and querying vector embeddings",
+      "source": "user",
+      "relevant": [
+        "8e8315ec-072b-4f94-9280-975f3a669b65"
+      ],
+      "retrieved": [
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is there a javascript equivalent of the vecs client for node projects",
+      "source": "user",
+      "relevant": [
+        "8e8315ec-072b-4f94-9280-975f3a669b65"
+      ],
+      "retrieved": [
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what compute add-on size do i need to run pgvector embeddings without running out of memory",
+      "source": "user",
+      "relevant": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "retrieved": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does upgrading my supabase compute add-on speed up vector index builds",
+      "source": "user",
+      "relevant": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "retrieved": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does supabase auto scale compute or do i have to manually resize the add-on",
+      "source": "user",
+      "relevant": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "retrieved": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the actual relationship between embeddings and similarity search in plain terms",
+      "source": "user",
+      "relevant": [
+        "32edad27-fd9e-4ad5-a86a-7aca79862765"
+      ],
+      "retrieved": [
+        "32edad27-fd9e-4ad5-a86a-7aca79862765",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do people use cosine distance instead of euclidean distance for embeddings",
+      "source": "user",
+      "relevant": [
+        "32edad27-fd9e-4ad5-a86a-7aca79862765"
+      ],
+      "retrieved": [
+        "32edad27-fd9e-4ad5-a86a-7aca79862765",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do two embeddings from different models give different similarity scores for the same text",
+      "source": "user",
+      "relevant": [
+        "32edad27-fd9e-4ad5-a86a-7aca79862765"
+      ],
+      "retrieved": [
+        "32edad27-fd9e-4ad5-a86a-7aca79862765",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i schedule a recurring job in supabase without writing a server",
+      "source": "user",
+      "relevant": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "retrieved": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can a supabase cron job call an edge function on a schedule",
+      "source": "user",
+      "relevant": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "retrieved": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "where do i see the run history and errors for a pg_cron job in supabase",
+      "source": "user",
+      "relevant": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "retrieved": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "e7f1a326-613b-404b-a518-e7258bf02db7",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the shortest interval i can schedule a supabase cron job to run",
+      "source": "user",
+      "relevant": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "retrieved": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i unschedule or remove a cron job once it is no longer needed",
+      "source": "user",
+      "relevant": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i find my supabase data api url and keys",
+      "source": "user",
+      "relevant": [
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+      ],
+      "retrieved": [
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i select related rows from a foreign table in one rest api call",
+      "source": "user",
+      "relevant": [
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+      ],
+      "retrieved": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "what http method does the rest api use to call a postgres function",
+      "source": "user",
+      "relevant": [
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "why does updating a row through the rest api return no data back",
+      "source": "user",
+      "relevant": [
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+      ],
+      "retrieved": [
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i set up automatic deployments for my supabase project",
+      "source": "user",
       "relevant": [
         "45d262a4-7ada-4643-aeae-1ec4a77dc419"
       ],
@@ -385,13 +639,2696 @@
       "hitRate": 1
     },
     {
-      "query": "How to extract JSON data from an incoming request object in an asynchronous function?",
-      "source": "synthetic",
+      "query": "do i need the pro plan to get preview branches for pull requests",
+      "source": "user",
+      "relevant": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "retrieved": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens to my preview branch data when i merge the pull request",
+      "source": "user",
+      "relevant": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "retrieved": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do migrations in a feature branch get applied to production after merging",
+      "source": "user",
+      "relevant": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "retrieved": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do preview branches get their own separate database or do they share production data",
+      "source": "user",
+      "relevant": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "retrieved": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i integrate openai models into my edge functions",
+      "source": "user",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my edge function take longer to respond the first time it is called",
+      "source": "user",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what causes a function to behave differently in a remote environment versus local dev",
+      "source": "user",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "recallAtK": 0,
+      "precisionAtK": 0,
+      "mrr": 0,
+      "ndcgAtK": 0,
+      "hitRate": 0
+    },
+    {
+      "query": "how do i keep an edge function bundle small so cold starts stay fast",
+      "source": "user",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i pass environment variables and secrets into an edge function",
+      "source": "user",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "can an edge function access the postgres database directly or only through the api",
+      "source": "user",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my edge function time out on a long running request",
+      "source": "user",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "what changes once a postgres table with embeddings grows past a few million rows",
+      "source": "user",
+      "relevant": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "retrieved": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.2,
+      "ndcgAtK": 0.38685280723454163,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i shard or partition a large pgvector table for scale",
+      "source": "user",
+      "relevant": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "retrieved": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "at what table size should i stop relying on a single postgres instance for vector search",
+      "source": "user",
+      "relevant": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "retrieved": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "why did my free supabase project get paused after a week of no activity",
+      "source": "user",
+      "relevant": [
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "retrieved": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.2,
+      "ndcgAtK": 0.38685280723454163,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the easiest way to keep a free supabase project from pausing",
+      "source": "user",
+      "relevant": [
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "retrieved": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.2,
+      "ndcgAtK": 0.38685280723454163,
+      "hitRate": 1
+    },
+    {
+      "query": "how to optimize pgvector index build parameters for query performance",
+      "source": "user",
+      "relevant": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "retrieved": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what should i check before taking a pgvector powered feature from a demo into production",
+      "source": "user",
+      "relevant": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "retrieved": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how many vectors can pgvector handle before query latency becomes a problem",
+      "source": "user",
+      "relevant": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "retrieved": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "is there an official notebook for connecting google colab to a supabase postgres database",
+      "source": "user",
+      "relevant": [
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "retrieved": [
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i load embeddings generated in colab into a supabase table",
+      "source": "user",
+      "relevant": [
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "retrieved": [
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what connection string format does colab need to reach a supabase postgres instance",
+      "source": "user",
+      "relevant": [
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "retrieved": [
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "8e8315ec-072b-4f94-9280-975f3a669b65"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i call a hugging face inference model from a supabase edge function",
+      "source": "user",
       "relevant": [
         "79870e02-6f7f-4353-b111-b393f0a3de5c"
       ],
       "retrieved": [
         "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i generate embeddings with hugging face and store them directly in a supabase table",
+      "source": "user",
+      "relevant": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "retrieved": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need my own hugging face api token to call inference models from supabase",
+      "source": "user",
+      "relevant": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "retrieved": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "8e8315ec-072b-4f94-9280-975f3a669b65"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i combine keyword search and vector search into one ranked result in postgres",
+      "source": "user",
+      "relevant": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is reciprocal rank fusion and why does supabase's hybrid search example use it",
+      "source": "user",
+      "relevant": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does combining keyword and vector search sometimes rank a worse match higher than vector search alone",
+      "source": "user",
+      "relevant": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "32edad27-fd9e-4ad5-a86a-7aca79862765",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i connect supabase projects to vercel",
+      "source": "user",
+      "relevant": [
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c"
+      ],
+      "retrieved": [
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i connect a supabase project to a vercel deployment automatically",
+      "source": "user",
+      "relevant": [
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c"
+      ],
+      "retrieved": [
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does connecting supabase to vercel automatically sync environment variables",
+      "source": "user",
+      "relevant": [
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c"
+      ],
+      "retrieved": [
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how does postgres full text search enable precise word or phrase matching in data retrieval",
+      "source": "user",
+      "relevant": [
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43"
+      ],
+      "retrieved": [
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how does postgres full text search rank results differently from a simple ilike query",
+      "source": "user",
+      "relevant": [
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need a gin index for keyword search to be fast in postgres",
+      "source": "user",
+      "relevant": [
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43"
+      ],
+      "retrieved": [
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i highlight which words matched in a postgres full text search result",
+      "source": "user",
+      "relevant": [
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i use supabase as the vector store backend for a langchain retriever",
+      "source": "user",
+      "relevant": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "retrieved": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what do i need to configure so langchain's supabase vector store can filter by metadata",
+      "source": "user",
+      "relevant": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "retrieved": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does the langchain supabase integration support similarity search with a score threshold",
+      "source": "user",
+      "relevant": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "retrieved": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i set up supabase for local development",
+      "source": "user",
+      "relevant": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56"
+      ],
+      "retrieved": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need docker installed just to run supabase locally",
+      "source": "user",
+      "relevant": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56"
+      ],
+      "retrieved": [
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "what local urls and ports does supabase start expose once it spins up",
+      "source": "user",
+      "relevant": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56"
+      ],
+      "retrieved": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i reset my local supabase database back to a clean state",
+      "source": "user",
+      "relevant": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56"
+      ],
+      "retrieved": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i point the local supabase stack at a remote database instead of a local one",
+      "source": "user",
+      "relevant": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56"
+      ],
+      "retrieved": [
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i start the local supabase development environment",
+      "source": "user",
+      "relevant": [
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "retrieved": [
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i install the supabase cli without using npm globally",
+      "source": "user",
+      "relevant": [
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "retrieved": [
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "8e8315ec-072b-4f94-9280-975f3a669b65"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can the supabase cli generate typescript types from my local database schema",
+      "source": "user",
+      "relevant": [
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "retrieved": [
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i link the supabase cli to an existing remote project",
+      "source": "user",
+      "relevant": [
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "retrieved": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "what does supabase db push actually do compared to supabase db reset",
+      "source": "user",
+      "relevant": [
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "retrieved": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i send instant messages between users in my application using supabase realtime",
+      "source": "user",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my realtime broadcast event never trigger my client side listener",
+      "source": "user",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to mark a realtime channel as private to receive broadcast messages",
+      "source": "user",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why did postgres changes broadcasts stop working after they used to work fine",
+      "source": "user",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how many concurrent realtime connections does a supabase project support before i need to upgrade",
+      "source": "user",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to enable replication on a table before postgres changes events will fire",
+      "source": "user",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i move users from auth0 to supabase",
+      "source": "user",
+      "relevant": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a"
+      ],
+      "retrieved": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "is there an official guide for migrating users from auth0 into supabase auth",
+      "source": "user",
+      "relevant": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a"
+      ],
+      "retrieved": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "66352cca-08ed-49c6-b49c-64ff36242f56"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "are there official supabase examples for common auth migration scenarios besides auth0",
+      "source": "user",
+      "relevant": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a"
+      ],
+      "retrieved": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how often does supabase release updates to the self hosted docker compose stack",
+      "source": "user",
+      "relevant": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "retrieved": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i seed initial schema and data into a self hosted supabase docker setup",
+      "source": "user",
+      "relevant": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "can i mix and match service versions in the self hosted docker compose file",
+      "source": "user",
+      "relevant": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "retrieved": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what services are actually included in the self hosted docker compose stack",
+      "source": "user",
+      "relevant": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "retrieved": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is self hosted supabase officially supported the same way the cloud platform is",
+      "source": "user",
+      "relevant": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "retrieved": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what are the different types of storage buckets available in supabase and what are they used for",
+      "source": "user",
+      "relevant": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e"
+      ],
+      "retrieved": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the maximum file size i can upload to supabase storage",
+      "source": "user",
+      "relevant": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e"
+      ],
+      "retrieved": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i write a storage policy that only lets a user access their own uploaded files",
+      "source": "user",
+      "relevant": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e"
+      ],
+      "retrieved": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i generate a signed url so a private file can be downloaded temporarily",
+      "source": "user",
+      "relevant": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e"
+      ],
+      "retrieved": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "what is the difference between a public bucket and a private bucket with rls policies",
+      "source": "user",
+      "relevant": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e"
+      ],
+      "retrieved": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i resize or transform an image on the fly when serving it from supabase storage",
+      "source": "user",
+      "relevant": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e"
+      ],
+      "retrieved": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i get notified about supabase platform outages",
+      "source": "user",
+      "relevant": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+      ],
+      "retrieved": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "where can i check the current status of supabase services before assuming my project is broken",
+      "source": "user",
+      "relevant": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+      ],
+      "retrieved": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "e7f1a326-613b-404b-a518-e7258bf02db7",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is there an rss feed or webhook for supabase status page incidents",
+      "source": "user",
+      "relevant": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+      ],
+      "retrieved": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c",
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i ensure messages are delivered reliably and only once to background processes using supabase",
+      "source": "user",
+      "relevant": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6"
+      ],
+      "retrieved": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what postgres extension powers supabase queues under the hood",
+      "source": "user",
+      "relevant": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6"
+      ],
+      "retrieved": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why can't my client call pgmq functions directly through the queues api",
+      "source": "user",
+      "relevant": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6"
+      ],
+      "retrieved": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i guarantee a queued message in supabase only gets processed once",
+      "source": "user",
+      "relevant": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6"
+      ],
+      "retrieved": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does the security advisor flag leaked password protection as disabled when i only use oauth",
+      "source": "user",
+      "relevant": [
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283"
+      ],
+      "retrieved": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "what does the supabase security advisor actually scan for in my project",
+      "source": "user",
+      "relevant": [
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283"
+      ],
+      "retrieved": [
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how can i monitor application events and performance using supabase",
+      "source": "user",
+      "relevant": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "retrieved": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what telemetry does supabase collect about my project's database performance",
+      "source": "user",
+      "relevant": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "retrieved": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i export supabase telemetry data to my own observability stack like datadog or grafana",
+      "source": "user",
+      "relevant": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "retrieved": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does the user look logged out for a moment before the session finishes restoring on page load",
+      "source": "user",
+      "relevant": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need both a server side and client side supabase client for sessions to work in next.js",
+      "source": "user",
+      "relevant": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+      ],
+      "retrieved": [
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.2,
+      "ndcgAtK": 0.38685280723454163,
+      "hitRate": 1
+    },
+    {
+      "query": "why don't my edge function secrets show up when i deploy even though they work locally",
+      "source": "user",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "why does config.toml read from a different env file than my edge function does locally",
+      "source": "user",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i push all my local env file secrets to the deployed edge function at once",
+      "source": "user",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "why did my edge function environment variables disappear after redeploying",
+      "source": "user",
+      "relevant": [
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "why doesn't my realtime connection automatically reconnect after a timeout",
+      "source": "user",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the backoff schedule the realtime client uses when retrying a dropped connection",
+      "source": "user",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i keep a realtime websocket alive when the app is in the background",
+      "source": "user",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my realtime channel not get re-added to the client after it reconnects",
+      "source": "user",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what events does presence trigger when a client connects disconnects or updates its state",
+      "source": "user",
+      "relevant": [
+        "8e047084-7081-47a1-ba64-2df402012794"
+      ],
+      "retrieved": [
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i resize an image on the fly when serving it from a storage bucket",
+      "source": "user",
+      "relevant": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e"
+      ],
+      "retrieved": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what resize modes does supabase storage support for image transformations",
+      "source": "user",
+      "relevant": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e"
+      ],
+      "retrieved": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does a preview branch only get reseeded once when it's created or every time i push",
+      "source": "user",
+      "relevant": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "retrieved": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i resolve a migration timestamp conflict between my branch and production",
+      "source": "user",
+      "relevant": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "retrieved": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does my preview branch skip seeding if the migration step fails first",
+      "source": "user",
+      "relevant": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "retrieved": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to enable seeding explicitly in config.toml for persistent preview branches",
+      "source": "user",
+      "relevant": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "retrieved": [
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my cron job never seem to actually execute even though i scheduled it",
+      "source": "user",
+      "relevant": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "does supabase cron run in utc only or can i set a timezone for the schedule",
+      "source": "user",
+      "relevant": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "retrieved": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i unschedule and re-add a pg_cron job to fix it not running",
+      "source": "user",
+      "relevant": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "retrieved": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does supabase cron support sub-minute schedules or just standard cron syntax",
+      "source": "user",
+      "relevant": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "retrieved": [
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what does the visibility timeout actually control when reading a message from a supabase queue",
+      "source": "user",
+      "relevant": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6"
+      ],
+      "retrieved": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens to a message if my consumer fails to process it before the visibility timeout expires",
+      "source": "user",
+      "relevant": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6"
+      ],
+      "retrieved": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i set up a dead letter queue so messages stop retrying forever",
+      "source": "user",
+      "relevant": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1553fbac-4404-4325-8242-bceb2fd7acb6"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "is a message in supabase queues delivered exactly once or could i get duplicates",
+      "source": "user",
+      "relevant": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6"
+      ],
+      "retrieved": [
+        "1553fbac-4404-4325-8242-bceb2fd7acb6",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea",
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i upgrade postgres itself inside a self hosted supabase docker compose stack",
+      "source": "user",
+      "relevant": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "retrieved": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "do self hosted supabase updates auto run database migrations or do i have to do it manually",
+      "source": "user",
+      "relevant": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "retrieved": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how much extra disk space do i need free before upgrading postgres in a self hosted setup",
+      "source": "user",
+      "relevant": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "retrieved": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens if i lose the db-config volume with the encryption key in a self hosted setup",
+      "source": "user",
+      "relevant": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "retrieved": [
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "2b6f9b7a-c444-40bf-90dc-4b2842e6c283",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does db reset discard any manual data changes i made during local development",
+      "source": "user",
+      "relevant": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to run supabase start before db reset will work locally",
+      "source": "user",
+      "relevant": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56"
+      ],
+      "retrieved": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how does seeding interact with a local db reset versus a fresh db push",
+      "source": "user",
+      "relevant": [
+        "66352cca-08ed-49c6-b49c-64ff36242f56"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i generate typescript types from my local database schema with the cli",
+      "source": "user",
+      "relevant": [
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "retrieved": [
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can the cli generate types against a remote database instead of the local one",
+      "source": "user",
+      "relevant": [
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "retrieved": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "8e8315ec-072b-4f94-9280-975f3a669b65"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "do generated types update automatically or do i have to rerun the gen types command myself",
+      "source": "user",
+      "relevant": [
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 0,
+      "precisionAtK": 0,
+      "mrr": 0,
+      "ndcgAtK": 0,
+      "hitRate": 0
+    },
+    {
+      "query": "how do i target a specific schema instead of public when generating types",
+      "source": "user",
+      "relevant": [
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "retrieved": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+      ],
+      "recallAtK": 0,
+      "precisionAtK": 0,
+      "mrr": 0,
+      "ndcgAtK": 0,
+      "hitRate": 0
+    },
+    {
+      "query": "can i generate types as part of a github actions workflow instead of running it locally",
+      "source": "user",
+      "relevant": [
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "can i get a slack or teams notification when supabase has an incident instead of checking the status page",
+      "source": "user",
+      "relevant": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+      ],
+      "retrieved": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c",
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does supabase's status page offer a webhook i can subscribe to for incident updates",
+      "source": "user",
+      "relevant": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+      ],
+      "retrieved": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "e7f1a326-613b-404b-a518-e7258bf02db7",
+        "be76f9f5-a424-4fc2-88cb-83d0e43c7f0c"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is there an rss or atom feed for supabase status page incidents",
+      "source": "user",
+      "relevant": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+      ],
+      "retrieved": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "8e047084-7081-47a1-ba64-2df402012794",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the difference between logs and metrics in supabase's telemetry features",
+      "source": "user",
+      "relevant": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "retrieved": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "can i pipe supabase's prometheus metrics endpoint into grafana or datadog",
+      "source": "user",
+      "relevant": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "retrieved": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "3cec61f6-c17b-471e-9a39-c36f7f17f97a",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how many metrics does the supabase metrics api endpoint actually expose",
+      "source": "user",
+      "relevant": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7"
+      ],
+      "retrieved": [
+        "e7f1a326-613b-404b-a518-e7258bf02db7",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i import existing firebase auth users into supabase auth",
+      "source": "user",
+      "relevant": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a"
+      ],
+      "retrieved": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "is there an official tool to export firebase users to json before importing them into supabase",
+      "source": "user",
+      "relevant": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a"
+      ],
+      "retrieved": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the recommended fallback strategy when migrating users gradually from auth0 to supabase",
+      "source": "user",
+      "relevant": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a"
+      ],
+      "retrieved": [
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i convert a firestore nosql export into a relational schema for supabase",
+      "source": "user",
+      "relevant": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a"
+      ],
+      "retrieved": [
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "df8fee98-0fc9-4213-8917-fd5310304872"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my supabase mcp connection in cursor say it's read-only with no editing permissions",
+      "source": "user",
+      "relevant": [
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017"
+      ],
+      "retrieved": [
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i temporarily disable read-only mode on the supabase mcp server to allow writes",
+      "source": "user",
+      "relevant": [
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017"
+      ],
+      "retrieved": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "why doesn't supabase mcp authentication trigger properly in claude code",
+      "source": "user",
+      "relevant": [
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017"
+      ],
+      "retrieved": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017",
+        "3c42d7a9-7c3a-43fb-92ca-33513db8800f",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i generate a custom mcp connection url for my specific supabase project",
+      "source": "user",
+      "relevant": [
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "3935d3e8-a9c5-4fd6-84d3-d6f209953a51",
+        "2f6dc3bc-437d-4c6b-aeec-811623a7b017"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.2,
+      "ndcgAtK": 0.38685280723454163,
+      "hitRate": 1
+    },
+    {
+      "query": "how does automatic embeddings use pgmq and pg_net together instead of calling an api directly from a trigger",
+      "source": "user",
+      "relevant": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what happens to an automatic embedding job if the edge function fails to process it",
+      "source": "user",
+      "relevant": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does automatic embeddings use pg_cron to process the queue on a schedule",
+      "source": "user",
+      "relevant": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "d99bdae5-c5ba-4dfb-88e2-27f9881bfbea"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why isn't the automatic embeddings guide working when i try to set it up myself",
+      "source": "user",
+      "relevant": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "32edad27-fd9e-4ad5-a86a-7aca79862765",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what does the k parameter in reciprocal rank fusion actually control",
+      "source": "user",
+      "relevant": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "should i use a higher or lower rrf k value when combining keyword and vector search results",
+      "source": "user",
+      "relevant": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "is reciprocal rank fusion better than just averaging normalized scores from each search method",
+      "source": "user",
+      "relevant": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the difference between ts_rank and ts_rank_cd for ranking full text search results",
+      "source": "user",
+      "relevant": [
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "what are the four weight letters a b c d used for in postgres full text search",
+      "source": "user",
+      "relevant": [
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "37d2dcf4-e2f3-4faf-8c66-263344822b43",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how do i create a collection and upsert vectors using the vecs python client",
+      "source": "user",
+      "relevant": [
+        "8e8315ec-072b-4f94-9280-975f3a669b65"
+      ],
+      "retrieved": [
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "why does building a pgvector index fail with an out of memory error on a small compute add-on",
+      "source": "user",
+      "relevant": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "retrieved": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what maintenance_work_mem setting do i need to successfully build an hnsw index",
+      "source": "user",
+      "relevant": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "retrieved": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "can i temporarily upgrade my compute add-on just to finish a slow index build then scale back down",
+      "source": "user",
+      "relevant": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "retrieved": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
         "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
         "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
         "dd7133ff-6993-4d3d-952c-359c355b01b4"
@@ -401,9 +3338,389 @@
       "mrr": 1,
       "ndcgAtK": 1,
       "hitRate": 1
+    },
+    {
+      "query": "why does the free tier's maintenance_work_mem cap make pgvector index creation fail",
+      "source": "user",
+      "relevant": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "why doesn't langchain's supabase vector store support an $in filter for matching a list of ids",
+      "source": "user",
+      "relevant": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "retrieved": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how does langchain's metadata filter actually get translated into a supabase query",
+      "source": "user",
+      "relevant": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "retrieved": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "963caff8-b4e8-4bd6-9ac2-1cae6caccf7f",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "8e8315ec-072b-4f94-9280-975f3a669b65"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what does similarity_search_with_score return compared to a plain similarity search",
+      "source": "user",
+      "relevant": [
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "retrieved": [
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "does pgvector support sharding vector data across multiple nodes natively",
+      "source": "user",
+      "relevant": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "retrieved": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "should i fix query patterns and indexes before jumping straight to sharding postgres",
+      "source": "user",
+      "relevant": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "retrieved": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "how does partitioning help vacuum and reindex performance on a huge table",
+      "source": "user",
+      "relevant": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "retrieved": [
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcgAtK": 0.5,
+      "hitRate": 1
+    },
+    {
+      "query": "at what point does a single postgres instance stop being enough for vector search",
+      "source": "user",
+      "relevant": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "retrieved": [
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "8e8315ec-072b-4f94-9280-975f3a669b65"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "how much database storage and file storage do i actually get on the free tier",
+      "source": "user",
+      "relevant": [
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "retrieved": [
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "05cca948-e989-4454-9f6d-c6b63250a197",
+        "1a7122ae-7aca-4faf-9d22-30e5cc9d605a"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "how many free supabase projects can i have active at the same time",
+      "source": "user",
+      "relevant": [
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "retrieved": [
+        "9bc58f40-80c2-4e6d-bc6b-7c8d63164c27",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "66352cca-08ed-49c6-b49c-64ff36242f56",
+        "df8fee98-0fc9-4213-8917-fd5310304872",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.2,
+      "ndcgAtK": 0.38685280723454163,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the maximum file upload size allowed on the free plan",
+      "source": "user",
+      "relevant": [
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "retrieved": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "bc3349ac-c8ee-4a14-854e-bd41d0e0689e",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "3eb4bbec-85e8-40be-835b-81002a4ea01b",
+        "05cca948-e989-4454-9f6d-c6b63250a197"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.2,
+      "ndcgAtK": 0.38685280723454163,
+      "hitRate": 1
+    },
+    {
+      "query": "how many vectors can pgvector handle before query latency becomes a problem in production",
+      "source": "user",
+      "relevant": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "retrieved": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "why does my pgvector index build slow down dramatically in production compared to testing",
+      "source": "user",
+      "relevant": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "retrieved": [
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why do i need to use the session pooler instead of the direct connection string in google colab",
+      "source": "user",
+      "relevant": [
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "retrieved": [
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "does google colab not support ipv6 which is why i need a different connection string",
+      "source": "user",
+      "relevant": [
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "retrieved": [
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "66352cca-08ed-49c6-b49c-64ff36242f56"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "why does sqlalchemy require postgresql:// instead of the postgres:// uri supabase gives me",
+      "source": "user",
+      "relevant": [
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4",
+        "1dbad218-16e1-493c-8ba7-2855b04981aa",
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "8e8315ec-072b-4f94-9280-975f3a669b65"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the difference between the shared pooler and the dedicated pooler for connecting from colab",
+      "source": "user",
+      "relevant": [
+        "90438d24-d735-45de-94c6-d96707935dc3"
+      ],
+      "retrieved": [
+        "90438d24-d735-45de-94c6-d96707935dc3",
+        "8e8315ec-072b-4f94-9280-975f3a669b65",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "45d262a4-7ada-4643-aeae-1ec4a77dc419",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
+    },
+    {
+      "query": "what's the actual rate limit on the free hugging face inference api for embedding requests",
+      "source": "user",
+      "relevant": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "retrieved": [
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "03b762b7-6c50-4022-87a4-0be7d544a675"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.25,
+      "ndcgAtK": 0.43067655807339306,
+      "hitRate": 1
+    },
+    {
+      "query": "why do i start getting 503 errors when sending a burst of requests to the free hugging face api",
+      "source": "user",
+      "relevant": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "retrieved": [
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "dd7133ff-6993-4d3d-952c-359c355b01b4"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 0.5,
+      "ndcgAtK": 0.6309297535714575,
+      "hitRate": 1
+    },
+    {
+      "query": "do i need to upgrade to a pro hugging face account to get a higher inference rate limit",
+      "source": "user",
+      "relevant": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c"
+      ],
+      "retrieved": [
+        "79870e02-6f7f-4353-b111-b393f0a3de5c",
+        "b248cef8-e88e-4ee2-af1d-59ba0226def0",
+        "46335ae9-358f-4a5b-bdbd-634e9fac6b16",
+        "03b762b7-6c50-4022-87a4-0be7d544a675",
+        "1a5ebed7-eb47-4f20-8f49-72eb3e297473"
+      ],
+      "recallAtK": 1,
+      "precisionAtK": 0.2,
+      "mrr": 1,
+      "ndcgAtK": 1,
+      "hitRate": 1
     }
   ],
-  "evaluatedAt": "2026-06-16T01:59:53.746Z",
+  "evaluatedAt": "2026-06-19T04:42:50.141Z",
   "fingerprint": {
     "corpusHash": "81f377a0863e578255ccd48952d2fa5a999521ee40e672a9f59049453fc7a809",
     "embeddingModel": "gemini-embedding-001"
