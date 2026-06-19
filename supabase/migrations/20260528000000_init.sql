@@ -1,6 +1,11 @@
 CREATE EXTENSION IF NOT EXISTS vector;
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 -- Documents: one row per scraped page or section anchor.
+-- id defaults to a random UUID for ad-hoc inserts, but the ingest CLI always
+-- computes it explicitly via uuid_generate_v5(namespace, source_url || '|' || section_path)
+-- so the same page re-ingested into a fresh database (e.g. a CI run) gets the
+-- same id every time, matching the committed golden dataset's doc references.
 CREATE TABLE IF NOT EXISTS documents (
   id              uuid        PRIMARY KEY DEFAULT gen_random_uuid(),
   source_url      text        NOT NULL,

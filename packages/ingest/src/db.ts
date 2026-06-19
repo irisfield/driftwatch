@@ -15,15 +15,28 @@ export async function closePool(pool: DbPool): Promise<void> {
   await pool.end();
 }
 
+// Fixed namespace UUID for uuid_generate_v5(source_url || section_path) document ids.
+// Deterministic ids let a fresh database (e.g. CI's ephemeral container) re-ingest
+// the same pages and land on the same ids every time, matching golden.json references.
+const DOCUMENT_ID_NAMESPACE = "5b1f9c3a-7e2d-4a6b-9c8f-1a2b3c4d5e6f";
+
 export async function selectOrInsertDocument(pool: DbPool, doc: ScrapedDocument): Promise<string> {
   // INSERT first to avoid a TOCTOU race; ON CONFLICT DO NOTHING lets concurrent
   // workers land on the same document without duplicating rows.
   const insertResult = await pool.query<{ id: string }>(
-    `INSERT INTO documents (source_url, title, section_path, raw_text, corpus, embedding_model)
-     VALUES ($1, $2, $3, $4, $5, $6)
+    `INSERT INTO documents (id, source_url, title, section_path, raw_text, corpus, embedding_model)
+     VALUES (uuid_generate_v5($7::uuid, $1 || '|' || $3), $1, $2, $3, $4, $5, $6)
      ON CONFLICT (source_url, section_path) DO NOTHING
      RETURNING id`,
-    [doc.sourceUrl, doc.title, doc.sectionPath, doc.rawText, doc.corpus, doc.embeddingModel],
+    [
+      doc.sourceUrl,
+      doc.title,
+      doc.sectionPath,
+      doc.rawText,
+      doc.corpus,
+      doc.embeddingModel,
+      DOCUMENT_ID_NAMESPACE,
+    ],
   );
 
   if ((insertResult.rowCount ?? 0) > 0) {
