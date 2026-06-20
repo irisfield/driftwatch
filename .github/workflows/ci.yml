@@ -52,12 +52,12 @@ jobs:
           path: .driftwatch-cache/embeddings
           key: embeds-${{ hashFiles('golden/supabase.json') }}
 
-      # --limit 20 keeps CI fast; the same 20 URLs are fetched every run (sitemap order is stable)
+      # supabase corpus uses a pinned URL list (corpus-config.ts), not a live sitemap
+      # fetch, so the same 30 pages are ingested every run regardless of --limit.
       - name: ingest corpus
         run: |
           bun run packages/ingest/src/cli.ts \
             --corpus supabase \
-            --limit 20 \
             --cache-dir .driftwatch-cache/embeddings
         env:
           DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
@@ -88,12 +88,12 @@ jobs:
           path: .driftwatch-cache/embeddings
           key: embeds-postgres-${{ hashFiles('golden/postgres.json') }}
 
-      # --limit 20 keeps CI fast; same 20 URLs fetched every run (sitemap order is stable)
+      # postgres corpus uses a pinned URL list (corpus-config.ts), not a live sitemap
+      # fetch, so the same 30 pages are ingested every run regardless of --limit.
       - name: ingest corpus (postgres)
         run: |
           bun run packages/ingest/src/cli.ts \
             --corpus postgres \
-            --limit 20 \
             --cache-dir .driftwatch-cache/embeddings
         env:
           DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
