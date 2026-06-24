@@ -15,8 +15,6 @@ driftwatch closes that gap the same way a test suite closes the gap for applicat
 ## Install
 
 ```bash
-npm install @irisfield/driftwatch
-# or
 deno add jsr:@irisfield/driftwatch
 ```
 

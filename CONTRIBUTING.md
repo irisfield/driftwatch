@@ -69,12 +69,9 @@ bun run build
 # 3. Verify the dist output is clean (.mjs and .d.ts only, no .cjs)
 ls dist/
 
-# 4. Publish to npm
-npm publish --access public
+# 4. Publish to JSR
+deno publish
 
-# 5. Publish to JSR
-npx jsr publish
-
-# 6. Tag the release
+# 5. Tag the release
 git tag v<version> && git push origin v<version>
 ```
