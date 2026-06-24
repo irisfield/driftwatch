@@ -4,6 +4,14 @@ When retrieval degrades, the LLM still answers fluently, dashboards stay green, 
 
 ---
 
+## Why this exists
+
+You swap an embedding model, change a chunking strategy, or re-rank results, and nothing visibly breaks: the LLM still answers fluently because it's good at sounding confident even when the retrieved context is wrong or missing. Dashboards stay green because they track latency and error rates, not whether the *right* document came back. Weeks later a user notices the assistant is citing the wrong section, or the answer to an obvious question is suddenly vague, and by then nobody remembers which deploy caused it.
+
+driftwatch closes that gap the same way a test suite closes the gap for application logic: it runs your retriever against a fixed set of query → correct-document pairs on every PR, computes rank metrics, and fails the build the moment those metrics drop past a committed baseline. See "[What a regression looks like](#what-a-regression-looks-like)" below for the actual failure output.
+
+---
+
 ## Install
 
 ```bash
@@ -37,16 +45,36 @@ assertRetrievalHealthy(report, { minRecallAtK: 0.7, minMrr: 0.6 });
 
 ---
 
+## What a regression looks like
+
+Real output from `assertNoRegression` after simulating an embedding-model swap that quietly hurt retrieval quality:
+
+```
+Retrieval regression detected:
+  recallAtK dropped 0.2300 (limit: 0.0500) — before: 0.9400, after: 0.7100
+  hitRate dropped 0.1800 (limit: 0.0500) — before: 0.9700, after: 0.7900
+Golden set: 2 queries (1 user, 1 synthetic)
+```
+
+The thrown `DriftGateError` carries a typed `kind` (`"retriever-regressed"` here) so CI can branch on *why* it failed, not just that it failed.
+
+---
+
 ## MCP client setup
 
-The reference MCP server is deployed as a Supabase Edge Function. To connect Claude Code, add the following to `.claude/settings.json`:
+The reference MCP server runs as a Supabase Edge Function, but there is no shared hosted instance — you deploy your own Supabase project, ingest a corpus, and connect to that. See [CONTRIBUTING.md](CONTRIBUTING.md) for the deploy steps (project link, schema push, secrets, ingest, function deploy).
+
+Once deployed, the function is gated by Supabase's platform-level JWT check (`verify_jwt`, on by default): any request without a valid project JWT gets a 401 before it reaches the function. To connect Claude Code, add the following to `.claude/settings.json`, using your project's anon key as the bearer token:
 
 ```json
 {
   "mcpServers": {
     "driftwatch": {
       "type": "http",
-      "url": "https://<your-project>.supabase.co/functions/v1/driftwatch"
+      "url": "https://<your-project>.supabase.co/functions/v1/driftwatch",
+      "headers": {
+        "Authorization": "Bearer <your-project-anon-key>"
+      }
     }
   }
 }
@@ -60,7 +88,7 @@ The server exposes three tools:
 - `get_document(document_id)` — returns full document text
 - `list_corpora()` — returns available corpora and last ingest time
 
-The function is unauthenticated. See Known Limitations below.
+This is request-level gating only — anyone with your anon key can call all three tools with no finer-grained authorization inside the function itself. See Known Limitations below.
 
 ---
 
@@ -81,8 +109,9 @@ Recall@K, MRR, nDCG, and LLM-as-judge are standard retrieval evaluation techniqu
 | Reference MCP server (`search_docs`, `get_document`, `list_corpora`) | Shipped |
 | pgvector HNSW retrieval with `halfvec(1536)` | Shipped |
 | CI gate (GitHub Actions, pgvector service container) | Shipped |
-| Second corpus (PostgreSQL docs) | In progress |
-| Authentication on the Edge Function | Roadmap |
+| Second corpus (PostgreSQL docs) | Shipped |
+| Edge Function gated by Supabase JWT auth (legacy anon/service key) | Shipped |
+| Fine-grained Edge Function authorization (publishable/secret keys, in-function checks) | Roadmap |
 | Hosted public demo | Roadmap |
 | Embedding-swap study | Roadmap |
 
@@ -90,7 +119,8 @@ Recall@K, MRR, nDCG, and LLM-as-judge are standard retrieval evaluation techniqu
 
 ## Known limitations
 
-- The Edge Function is unauthenticated. Supabase MCP-on-Edge authentication is not yet available. Anyone with the URL can call the tools.
+- Authorization is platform-level only: Supabase's `verify_jwt` check rejects requests without a valid project JWT, but the function itself does no further authorization. Anyone with your anon key can call all three tools, with no per-user or per-corpus restriction.
+- There is no shared hosted instance. Trying this out means deploying your own Supabase project (see CONTRIBUTING.md).
 - This release uses a single embedding model: `gemini-embedding-001` at 1536 dimensions.
 - The ingest CLI is an offline Node/Bun tool. The Edge Function does not ingest documents.
 - The golden dataset requires manual validation. The bootstrap script drafts candidate pairs; a human must validate each one before committing.
