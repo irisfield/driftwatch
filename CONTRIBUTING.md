@@ -30,6 +30,33 @@ bun test --filter packages/eval-core
 
 Issues are triaged weekly. If you open a PR without a prior issue, include enough context for a cold reviewer to understand the motivation.
 
+## Deploying your own instance
+
+There is no shared hosted instance of the reference MCP server. To run one against your own Supabase project:
+
+```bash
+# 1. Link to your project (requires `supabase login` first)
+supabase init
+supabase link --project-ref <your-project-ref>
+
+# 2. Push the schema (pgvector, uuid-ossp, documents/chunks/corpus_snapshots, HNSW index)
+supabase db push
+
+# 3. Set the Edge Function's secrets (DATABASE_URL = Transaction pooler / Supavisor connection
+# string from Project Settings -> Database, port 6543, not the direct connection string)
+supabase secrets set --env-file <(grep -E '^(DATABASE_URL|GEMINI_API_KEY|EMBEDDING_MODEL)=' .env)
+
+# 4. Ingest a corpus into the live project (DATABASE_URL must point at the same project)
+bun run --env-file=.env packages/ingest/src/cli.ts --corpus supabase
+bun run --env-file=.env packages/ingest/src/cli.ts --corpus postgres
+
+# 5. Deploy. Omit --no-verify-jwt to keep Supabase's platform-level JWT gate on
+# (requires the project's anon key as a Bearer token on every request).
+supabase functions deploy driftwatch
+```
+
+`--corpus both` ingests every corpus defined in `corpus-config.ts`, including `mcp`, which has no pinned URL list and no golden dataset — ingest `supabase` and `postgres` individually instead unless you specifically want `mcp` too.
+
 ## Release process (maintainers only)
 
 ```bash
