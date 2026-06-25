@@ -82,6 +82,38 @@ jobs:
           JUDGE_API_KEY: ${{ secrets.JUDGE_API_KEY }}
           JUDGE_MODEL: gemini-2.5-flash-lite
 
+      - name: restore embed cache (github)
+        uses: actions/cache@v5
+        with:
+          path: .driftwatch-cache/embeddings
+          key: embeds-github-${{ hashFiles('golden/github.json') }}
+
+      # github corpus uses a pinned URL list; scrapes GitHub REST API reference docs
+      # which are structurally distinct from the tutorial-style supabase/postgres corpora.
+      - name: ingest corpus (github)
+        run: |
+          bun run packages/ingest/src/cli.ts \
+            --corpus github \
+            --cache-dir .driftwatch-cache/embeddings
+        env:
+          DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: retrieval gate (github)
+        run: bun run scripts/assert-no-regression.ts --corpus github
+        env:
+          DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: judge report (github)
+        continue-on-error: true
+        run: bun run scripts/run-judge.ts --corpus github --sample 5
+        env:
+          DATABASE_URL: ${{ env.EVAL_DATABASE_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          JUDGE_API_KEY: ${{ secrets.JUDGE_API_KEY }}
+          JUDGE_MODEL: gemini-2.5-flash-lite
+
       - name: restore embed cache (postgres)
         uses: actions/cache@v5
         with:
@@ -122,6 +154,8 @@ jobs:
           path: |
             golden/supabase-current.json
             golden/supabase-judge-report.json
+            golden/github-current.json
+            golden/github-judge-report.json
             golden/postgres-current.json
             golden/postgres-judge-report.json
           retention-days: 30

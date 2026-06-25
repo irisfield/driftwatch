@@ -59,6 +59,56 @@ export const CORPORA: Record<string, CorpusConfig> = {
     sitemapUrl: "https://modelcontextprotocol.io/sitemap.xml",
     embeddingModel: "gemini-embedding-001",
   },
+  github: {
+    name: "github",
+    // GitHub REST API docs have no sitemap; pinnedUrls drives all ingestion.
+    sitemapUrl: "https://docs.github.com/en/rest",
+    embeddingModel: "gemini-embedding-001",
+    // GitHub docs render via Next.js but ship full SSR HTML; the scraper's
+    // <main> fallback extracts clean content without a custom contentSelector.
+    pinnedUrls: [
+      // Core concepts
+      "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+      "https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api",
+      "https://docs.github.com/en/rest/using-the-rest-api/troubleshooting-the-rest-api",
+      // Repositories
+      "https://docs.github.com/en/rest/repos/repos",
+      "https://docs.github.com/en/rest/repos/contents",
+      "https://docs.github.com/en/rest/repos/forks",
+      "https://docs.github.com/en/rest/branches/branches",
+      "https://docs.github.com/en/rest/commits/commits",
+      "https://docs.github.com/en/rest/releases/releases",
+      "https://docs.github.com/en/rest/collaborators/collaborators",
+      // Issues
+      "https://docs.github.com/en/rest/issues/issues",
+      "https://docs.github.com/en/rest/issues/comments",
+      "https://docs.github.com/en/rest/issues/labels",
+      "https://docs.github.com/en/rest/issues/milestones",
+      // Pull requests
+      "https://docs.github.com/en/rest/pulls/pulls",
+      "https://docs.github.com/en/rest/pulls/reviews",
+      // Users and organizations
+      "https://docs.github.com/en/rest/users/users",
+      "https://docs.github.com/en/rest/users/followers",
+      "https://docs.github.com/en/rest/orgs/orgs",
+      "https://docs.github.com/en/rest/orgs/members",
+      "https://docs.github.com/en/rest/teams/teams",
+      "https://docs.github.com/en/rest/teams/members",
+      // Git data
+      "https://docs.github.com/en/rest/git/blobs",
+      "https://docs.github.com/en/rest/git/commits",
+      "https://docs.github.com/en/rest/git/refs",
+      "https://docs.github.com/en/rest/git/trees",
+      "https://docs.github.com/en/rest/git/tags",
+      // Search
+      "https://docs.github.com/en/rest/search/search",
+      // Actions
+      "https://docs.github.com/en/rest/actions/workflows",
+      "https://docs.github.com/en/rest/actions/workflow-runs",
+      "https://docs.github.com/en/rest/actions/artifacts",
+      "https://docs.github.com/en/rest/actions/secrets",
+    ],
+  },
   postgres: {
     name: "postgres",
     sitemapUrl: "https://www.postgresql.org/sitemap.xml",
