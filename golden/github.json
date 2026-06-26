@@ -1,0 +1,162 @@
+[
+  {
+    "query": "how to list repositories for an organization using the GitHub REST API",
+    "relevant": ["0495f024-5175-5669-b5ec-a473ddecdcb4"],
+    "source": "synthetic"
+  },
+  {
+    "query": "create a new repository fork on GitHub",
+    "relevant": ["3c60eaa0-011b-5dce-bd91-f617d8003e59"],
+    "source": "synthetic"
+  },
+  {
+    "query": "get the contents of a file in a GitHub repository",
+    "relevant": ["02eb467d-d6b5-561f-a5ff-3570b5800fdf"],
+    "source": "synthetic"
+  },
+  {
+    "query": "list branches for a GitHub repository",
+    "relevant": ["2604bc38-ab3a-58e3-ae4d-1e3cb5f52e8d"],
+    "source": "synthetic"
+  },
+  {
+    "query": "list commits on a repository branch",
+    "relevant": ["98ef7c02-e23f-5117-94f3-a8ec8c8d1b39"],
+    "source": "synthetic"
+  },
+  {
+    "query": "create a release on GitHub with a tag",
+    "relevant": ["8a6992f6-18a9-531a-8180-9c2d1d4cbe23"],
+    "source": "synthetic"
+  },
+  {
+    "query": "add a collaborator to a GitHub repository",
+    "relevant": ["e94ce00d-6839-59f3-92b0-890c8d0c5937"],
+    "source": "synthetic"
+  },
+  {
+    "query": "list open issues in a repository",
+    "relevant": ["c03db8e0-2989-5111-80c2-8f0592c14d43"],
+    "source": "synthetic"
+  },
+  {
+    "query": "add a comment to a GitHub issue",
+    "relevant": ["db414684-ac55-567b-979e-c909f8dea918"],
+    "source": "synthetic"
+  },
+  {
+    "query": "create and apply labels to issues on GitHub",
+    "relevant": ["ca446766-f79c-52ed-a7d8-2d72d60abe15"],
+    "source": "synthetic"
+  },
+  {
+    "query": "create a milestone and assign issues to it",
+    "relevant": ["0ce9fbaa-6ac7-53ad-aadf-d82e452a656c"],
+    "source": "synthetic"
+  },
+  {
+    "query": "open a pull request between two branches",
+    "relevant": ["4ed45a6e-882f-5f93-b763-77b8f22313d2"],
+    "source": "synthetic"
+  },
+  {
+    "query": "request and submit a pull request review on GitHub",
+    "relevant": ["17462601-1ea2-529b-ad2c-64d47856ae64"],
+    "source": "synthetic"
+  },
+  {
+    "query": "get information about a GitHub user",
+    "relevant": ["9e9f375f-2d75-5329-a448-f8e62bae5e87"],
+    "source": "synthetic"
+  },
+  {
+    "query": "list followers of a GitHub user",
+    "relevant": ["29faa81e-c550-58db-9b2a-9084777b322a"],
+    "source": "synthetic"
+  },
+  {
+    "query": "list members of a GitHub organization",
+    "relevant": ["61ff8673-afdf-5d21-ad81-2454a3fe9407"],
+    "source": "synthetic"
+  },
+  {
+    "query": "update organization settings via GitHub REST API",
+    "relevant": ["665c98a0-0dfd-5f71-933f-1e91b97d2d09"],
+    "source": "synthetic"
+  },
+  {
+    "query": "create a team inside a GitHub organization",
+    "relevant": ["295d2243-706d-5575-b353-1d97ea167082"],
+    "source": "synthetic"
+  },
+  {
+    "query": "add a member to a GitHub team",
+    "relevant": ["5cea6fec-a5a7-55de-a7f5-eb3479d223fa"],
+    "source": "synthetic"
+  },
+  {
+    "query": "create a git blob object via the GitHub API",
+    "relevant": ["92fb7b94-3298-57bf-a8bd-86c8c6d75194"],
+    "source": "synthetic"
+  },
+  {
+    "query": "create a git commit object in a GitHub repository",
+    "relevant": ["077964eb-2faf-58db-92e6-cfe94ff4aac8"],
+    "source": "synthetic"
+  },
+  {
+    "query": "list and update git refs and branches via the API",
+    "relevant": ["cc25669d-f1af-53b0-973c-718024aabbbb"],
+    "source": "synthetic"
+  },
+  {
+    "query": "create a git tree with multiple file changes",
+    "relevant": ["bcd25499-ca27-5e74-8b66-09c47625aa3f"],
+    "source": "synthetic"
+  },
+  {
+    "query": "create and list git tags on a GitHub repository",
+    "relevant": ["b04766ea-0f09-5b55-ac76-d92a7386b622"],
+    "source": "synthetic"
+  },
+  {
+    "query": "search for GitHub repositories by topic or language",
+    "relevant": ["0e5aa049-6436-5dc7-80ba-27a0ab13a3eb"],
+    "source": "synthetic"
+  },
+  {
+    "query": "list workflow runs for a GitHub Actions workflow",
+    "relevant": ["bdba23a0-5d18-562e-9914-66e61dddc8e7"],
+    "source": "synthetic"
+  },
+  {
+    "query": "trigger and disable workflows in GitHub Actions",
+    "relevant": ["31647c7a-4a23-5af6-becd-189c193f10ae"],
+    "source": "synthetic"
+  },
+  {
+    "query": "download artifacts from a GitHub Actions workflow run",
+    "relevant": ["68883fcf-1352-576f-8e5a-0661673caf18"],
+    "source": "synthetic"
+  },
+  {
+    "query": "create and list secrets for a GitHub Actions repository",
+    "relevant": ["78479315-3011-555f-8387-5ff1cdd26395"],
+    "source": "synthetic"
+  },
+  {
+    "query": "GitHub API rate limits and how to check remaining requests",
+    "relevant": ["6b9c2eac-8a21-567a-8f41-72d9d913a89b"],
+    "source": "synthetic"
+  },
+  {
+    "query": "paginate through large result sets in the GitHub REST API",
+    "relevant": ["eaa9f9e0-805b-5ced-9550-8747e3ae631a"],
+    "source": "synthetic"
+  },
+  {
+    "query": "debug and troubleshoot GitHub REST API errors",
+    "relevant": ["ec70efad-99b1-57d9-a29d-cfca31d22790"],
+    "source": "synthetic"
+  }
+]
