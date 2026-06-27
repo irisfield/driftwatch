@@ -71,8 +71,7 @@ export const CORPORA: Record<string, CorpusConfig> = {
       "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
       "https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api",
       "https://docs.github.com/en/rest/using-the-rest-api/troubleshooting-the-rest-api",
-      // Repositories
-      "https://docs.github.com/en/rest/repos/repos",
+      // Repositories (repos/repos omitted: 139 chunks, not referenced in golden dataset)
       "https://docs.github.com/en/rest/repos/contents",
       "https://docs.github.com/en/rest/repos/forks",
       "https://docs.github.com/en/rest/branches/branches",
