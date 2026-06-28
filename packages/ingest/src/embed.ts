@@ -258,17 +258,22 @@ export function createCachedEmbedder(embed: EmbedFn, cacheDir: string): EmbedFn 
     }
 
     if (misses.length > 0) {
-      const missTexts = misses.map(({ textIndex }) => texts[textIndex] ?? "");
-      // mkdir before embed so the directory exists if embed() throws mid-batch
-      // and a retry resumes from this point rather than failing on the write.
       await mkdir(resolvedDir, { recursive: true });
-      const embeddings = await embed(missTexts);
-
-      for (const [j, { textIndex, hash }] of misses.entries()) {
-        const embedding = embeddings[j];
-        results[textIndex] = embedding;
-        const filePath = path.join(resolvedDir, `${hash}.json`);
-        await writeFile(filePath, JSON.stringify(embedding), "utf8");
+      // Process and cache one Gemini batch at a time so a mid-run 429 preserves
+      // progress: completed batches are on disk, next retry skips them as cache hits.
+      for (let i = 0; i < misses.length; i += GEMINI_BATCH_SIZE) {
+        const batch = misses.slice(i, i + GEMINI_BATCH_SIZE);
+        const batchTexts = batch.map(({ textIndex }) => texts[textIndex] ?? "");
+        const embeddings = await embed(batchTexts);
+        for (const [j, { textIndex, hash }] of batch.entries()) {
+          const embedding = embeddings[j];
+          results[textIndex] = embedding;
+          await writeFile(
+            path.join(resolvedDir, `${hash}.json`),
+            JSON.stringify(embedding),
+            "utf8",
+          );
+        }
       }
     }
 
