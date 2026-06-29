@@ -23,9 +23,12 @@ deno add jsr:@irisfield/driftwatch
 ## Quickstart
 
 ```typescript
-import { evaluateRetrieval, assertRetrievalHealthy, loadGoldenDataset } from "@irisfield/driftwatch";
+import { evaluateRetrieval, compareReports, assertNoRegression, loadGoldenDataset, type RetrievalReport } from "@irisfield/driftwatch";
+import { readFile } from "node:fs/promises";
 
 const golden = await loadGoldenDataset("golden/my-corpus.json");
+const baseline: RetrievalReport = JSON.parse(await readFile("golden/my-corpus-baseline.json", "utf8"));
+const thresholds = { maxRecallDrop: 0.05, maxHitRateDrop: 0.05 };
 
 const report = await evaluateRetrieval({
   golden,
@@ -36,10 +39,10 @@ const report = await evaluateRetrieval({
   k: 5,
 });
 
-assertRetrievalHealthy(report, { minRecallAtK: 0.7, minMrr: 0.6 });
+assertNoRegression(compareReports(baseline, report), thresholds); // throws DriftGateError on regression
 ```
 
-`assertRetrievalHealthy` throws a `DriftGateError` when metrics fall below the configured thresholds. To diff against a committed baseline instead of fixed thresholds, use `assertNoRegression(compareReports(baseline, report), thresholds)`.
+`assertNoRegression` throws a `DriftGateError` when metrics regress past the configured thresholds. `compareReports` classifies the delta — corpus changed, embedding model changed, or retriever regressed — and `assertNoRegression` acts on that classification.
 
 ---
 
